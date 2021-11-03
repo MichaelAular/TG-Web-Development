@@ -2,12 +2,15 @@ body {background-color: black;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    margin-left: 50%;
 }
 
 .formcontainer {background-color: rgb(91, 112, 156);width: 500px;
     padding: 20px;
+    margin: auto;
 }
 
 .formquestion {font-weight: bolder;
 }
+
+.inputflex {display: flex;
+    justify-content: right; }

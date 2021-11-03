@@ -1,15 +1,35 @@
-body {color: white;
+body {
+    color: white;
 }
 
-.container {background: linear-gradient(to bottom left, green, black);
+.container {
+    background: linear-gradient(to bottom left, #00f4b1, #086631, #020620);
     height: 300px;
     width: 300px;
-    line-height:18px;
+    margin: auto;
+}
+
+.text {
     text-align: center;
+    margin-left: 60px;
+    margin-top: 25px;
+    display: inline-block;
+    line-height:12px;
 }
 
-h1 {font-size: 80px;
+h1 {
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
-h3 {font-size: x20px;
+h2 {
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2px;
+    font-family: 'Courier New', Courier, monospace;
 }
