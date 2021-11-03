@@ -1,3 +1,10 @@
-.formbox {background-color: rgb(91, 112, 156);
-width: 400px;
+body {background-color: black;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
+
+.formcontainer {background-color: rgb(91, 112, 156);
+width: 450px;
+}
+

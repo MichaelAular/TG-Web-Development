@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="formbox">
+    <div class="formcontainer">
         <form method="post">
             <fieldset>
                 <label for="achternaam">Achternaam:</label>
@@ -17,6 +17,47 @@
                 <br>
                 <label for="voornaam">Voornaam:</label>
                 <input type="text" name="voornaam" placeholder="Voornaam">
+                
+                <p>Selecteer uw leeftijd:</p>
+                <div class=forminput>
+                    <input type="radio" id="age1">
+                    label for="age1">16 - 30</label><br>
+                    <input type="radio" id="age2">
+                    <label for="age2">31 - 50</label><br>
+                    <input type="radio" id="age3">
+                    <label for="age3">51 - 70</label><br>
+                    <input type="radio" id="age4">
+                    <label for="age3">71 of ouder</label><br>
+                </div>
+
+                <p>Type rijbewijs:</p>
+                <div class=forminput>
+                    <input type="checkbox" id="AM" name="AM">
+                    <label for="AM">AM: rijbewijs voor bromfiets, scooter, speed-pedelec, snorfiets en brommobiel</label><br>
+                    <input type="checkbox" id="A12" name="A12">
+                <label for="A12">A, A1 en A2: motorrijbewijs</label><br>
+                <input type="checkbox" id="B" name="B">
+                <label for="B">B: autorijbewijs</label><br>
+                <input type="checkbox" id="BEB" name="BEB">
+                <label for="BEB">BE en B+ (code 96): rijbewijs voor auto (B) met aanhanger</label><br>
+                <input type="checkbox" id="C" name="C">
+                <label for="C">C: vrachtwagenrijbewijs</label><br>
+                <input type="checkbox" id="CE" name="CE">
+                <label for="CE">CE: rijbewijs voor vrachtwagen (C) met aanhanger</label><br>
+                <input type="checkbox" id="C1" name="C1">
+                <label for="C1">C1: rijbewijs voor ‘lichte’ vrachtwagen (gewicht tussen 3.500-7.500 kilo)</label><br>
+                <input type="checkbox" id="AM" name="AM">
+                <label for="AM">C1E: rijbewijs voor vrachtwagen (C1) met aanhanger</label><br>
+                <input type="checkbox" id="D" name="D">
+                <label for="D">D: busrijbewijs (vervoer van meer dan 8 personen)</label><br>
+                <input type="checkbox" id="DE" name="DE">
+                <label for="DE">DE: rijbewijs voor bus (D) met aanhanger</label><br>
+                <input type="checkbox" id="D1" name="D1">
+                <label for="D1">D1: rijbewijs voor ‘kleine’ bus (vervoer van 8-16 personen)</label><br>
+                <input type="checkbox" id="D1E" name="D1E">
+                <label for="D1E">D1E: rijbewijs voor 'kleine' bus (D1E) met aanhanger</label><br>
+                <input type="checkbox" id="T" name="T"><label for="T">T - trekkerrijbewijs</label><br>
+            </div>
             </fieldset>
         </form>
     </div>
