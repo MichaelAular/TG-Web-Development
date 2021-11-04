@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 1</title>
+    <link rel="stylesheet" href="style/OpmaakOpdracht1.css">
+</head>
+
+<body>
+    <h1>OPDRACHT 1</h1>
+    <p>Er zijn drie manieren om CSS <b>(Cascading Style Sheets)</b> in je HTML in te laden. Te weten: <b>inline, interne</b> en <b>externe stylesheets</b>
+        Hieronder zal ik per onderdeel uitleggen wat dat inhoudt en waar je deze methode het best voor kan gebruiken.</p>
+        <br>
+
+        <h3>Externe CSS</h3>
+        <p>Met een <b>externe stylesheet</b> kan je door het wijzigen van één file de voorgeving van je gehele website aanpassen. Belangrijk is dat je deze file opslaat met een CSS extensie.
+            Daarnaast moet je HTML file uiteraard weten van het bestaan van dit bestand en het daadwerkelijk gaan gebruiken.
+            Dit bereik je door de bestanden te "linken" in je HTML File met het volgende stukje code:<br></p>
+            <div class="code"">
+                <xmp><link rel="stylesheet" href="mystyle.css"></xmp>
+            </div>
+            <p>In dit voorbeeld (het CSS bestand is hier mystyle.css genoemd) en vertel ik het HTML bestand dat dit zijn <b>stylesheet</b> is.
+                Dit stukje code plaats je in de <b>head</b> van je HTML file. LET OP: In een CSS bestand mag geen HTML staan!</p>
+
+        <h3>INTERNE CSS</h3>
+        <p>Een <b>interne stylesheet</b> kan gebruikt worden als een enkele pagina een afwijkende opmaak heeft.
+            Hiervoor wordt de CSS code direct in het HTML bestand geplaatst. De CSS styling geldt hierdoor enkel voor deze pagina en zal bij aanpassing geen verdere gevolgen voor andere pagina's hebben.
+            Let op! Deze code komt in de <i>head</i> van je HTML bestand te staan.</p>
+<div class="code"">
+<xmp><head>
+<style>
+body {
+background-color: red;
+}
+
+h1 {
+color: blue;
+margin-left: 40px;
+}
+</style>
+</head></xmp>
+</div>
+            <p>In de head wordt middels een style command aangegeven dat het volgende stuk tekst over de styling gaat. Nu mag er in CSS geprogrammeerd worden!
+                In dit geval veranderen we enkel voor deze pagina de achtergrondkleur naar rood en H1 naar blauw. Hierna sluiten het style command en kunnen we verer in HTML. </p>
+
+<h3>Inline CSS</h3>
+        <p><b>Inline CSS</b> als het kleinste stapje in de CSS matroushka. Hiermee kan je namelijk, zoals de benaming al doet vermoeden direct in een HTML regel een stuk styling aanpassen.
+        Denk hierbij bijvoorbeeld aan het aanpassen van de styling van een enkele paragraaf (zie voorbeeld). Dit doe je door na het element (in dit geval de paragraaf) "style=" toe te voegen gevolgd door de gewenste styl.
+        Let op! Dit gebeurt dus in de <i>body</i> van de HTML.</p>
+<div class="code"">
+<xmp>
+<body>
+<p style="color:red;">Enkel deze paragraag is nu rood!</p>
+</body>
+</xmp>
+</div>
+
+                </html>
