@@ -14,29 +14,30 @@
             <fieldset>
                 <div class="formquestion">
                     <label for="achternaam">Achternaam:</label>
-                    <div class="inputflex">
-                        <input type="text" name="achternaam" placeholder="Achternaam">
-                    </div>
-                        <br>
+                    <input type="text" name="achternaam" placeholder="Achternaam">
+                    <br>
                     <label for="voornaam">Voornaam:</label>
-                    <div class="inputflex">
-                        <input type="text" name="voornaam" placeholder="Voornaam">
-                    </div>
+                    <input type="text" name="voornaam" placeholder="Voornaam">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Johndoe@mail.com"><br>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Password"><br>
                 </div>  
 
                 <div class="formquestion">
                 <p>Selecteer uw leeftijd:</p>
                 </div>
-                <div class="forminput">
-                    <input type="radio" id="age1">
+                
+                    <input type="radio" id="age1" name="age">
                     <label for="age1">16 - 30</label><br>
-                    <input type="radio" id="age2">
+                    <input type="radio" id="age2" name="age">
                     <label for="age2">31 - 50</label><br>
-                    <input type="radio" id="age3">
+                    <input type="radio" id="age3" name="age">
                     <label for="age3">51 - 70</label><br>
-                    <input type="radio" id="age4">
+                    <input type="radio" id="age4" name="age">
                     <label for="age3">71 of ouder</label><br>
-                </div>
+                
                 <div class="formquestion">
                 <p>Type rijbewijs:</p>
                 </div>
@@ -65,8 +66,25 @@
                     <label for="D1">D1: rijbewijs voor ‘kleine’ bus (vervoer van 8-16 personen)</label><br>
                     <input type="checkbox" id="D1E" name="D1E">
                     <label for="D1E">D1E: rijbewijs voor 'kleine' bus (D1E) met aanhanger</label><br>
-                    <input type="checkbox" id="T" name="T"><label for="T">T - trekkerrijbewijs</label><br>
-            </div>
+                    <input type="checkbox" id="T" name="T"><label for="T">T - trekkerrijbewijs</label><br><br>
+                </div>
+                <div class="formquestion">
+                    <label for="datum">Datum afspraak:</label><br>
+                    <input type="date" id="datum" name="datum" value="2021-11-01"><br>
+                    <label for="tijd">Tijd afspraak:</label><br>
+                    <input type="time" id="tijd" name="Tijd"><br>
+                    <div class="search">
+                        <label for="site-search">Doorzoek Site</label><br>
+                        <input type="search" id="site-search" name="q" aria-label="Zoek op site"><br>
+                        <button class="button">zoek</button>
+                    </div>
+                </div>
+
+            <input type="reset">
+            <input type="submit">
+
+            <input type="hidden" id="hiddenId" name="hiddenId" value="123456">
+
             </fieldset>
         </form>
     </div>
