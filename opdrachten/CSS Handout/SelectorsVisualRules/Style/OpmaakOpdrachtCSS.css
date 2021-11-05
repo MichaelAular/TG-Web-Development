@@ -4,25 +4,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.container {
-    position: relative;
-    margin-right: 10px;
-}
-
-.containerbackground {
-    position: absolute;
-    font-weight: bolder;
-    font-size: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: -1;
-    margin-top: 180px;
-    margin-left: 45%;
-    transform: rotate(90deg);
-    background: linear-gradient(rgb(10, 34, 32), rgb(8, 12, 12),black);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 h1 {
     font-weight: bolder;
     font-size: 70px;
@@ -60,4 +41,21 @@ p {
     background-color: rgb(29, 39, 38);
     color:turquoise;
     margin-left: 20px;
+}
+button {
+    width: 100px;
+    padding: 5px 2px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.button:hover {
+    background-color: darkcyan;
 }
