@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+    <link rel="stylesheet" href="style/OpmaakOpdrachtCSS.css">
+</head>
+
+<body>
+    <h1>OPDRACHT 3</h1>
+    <h3>Selectors</h3>
+    <p>Er zijn verschillende soorten <b>selectors</b> te weten: <b>type selectors, descendant selectors en class selectors.</b> Hieronder  krijg je uitgelegd wat het verschil is en wat je ermee kan.</p>
+    <h3>Type Selectors</h3>
+    <p>Een <b>Type Selector</b>, of ook wel een Element Selector, selecteren elementen met dezelfde “verbinding”. Denk hierbij aan span of paragraaf. De Type Selector wordt over het algemeen gebruikt om een site in grote lijnen aan te passen.</p>
+    <p>Het wordt vaak als een slechte gewoonte beschouwd om fijne detailwijzigingen toe te passen met alleen een Type Selector. Als je bijvoorbeeld een eigenschap "kleur: wit" op alle div-tags toepast, zou het zelden nuttig zijn op een site. Dit komt omdat div-tags generiek zijn en op sites en voor verschillende doeleinden worden gebruikt. Logischer is het om de Type Selector te gebruiken in de body en zo alle text in één keer wit te maken.</p>
+
+    <div class="code"">
+        <xmp>
+body {
+    color: white;
+}
+</xmp>
+</div>  
+    <br>
+    <h3>Descendant Selector</h3>
+    <p>De <b>Descendant Selector</b> selecteert alle elementen die afstammelingen van een opgegeven element. Vaak hebben we het in HTML over parent en child. Een parent ligt als het ware een laagje hoger dan de child. Stel je hebt een div in die div staat een paragraaf
+        gemaakt dan is de div de parent en de paragraaf daar een child in. De  paragraaf stamt dus af van de div.</p>
+
+    <div class="code"">
+    <xmp>
+<div class="parent">
+    <p>dit is de child</p>
+</div>
+    </xmp>
+    </div>
+
+    <p>Stel we willen voor de gehele website alle paragrafen binnen een div aanspreken kunnen we dit doen door gebruik te maken van de Descendant Selector. In het volgende voorbeeld worden alle p-elementen binnen div-elementen geselecteerd:</p>
+
+    <div class="code"">
+    <xmp>
+div p {
+  background-color: yellow;
+}
+    </xmp>
+    </div>
+    <br>
+    <br>
+    <div class="buttons">
+        <a href="opdracht2.html">
+        <button class="button"><</button></a>
+        <a href="opdracht4.html">
+        <button class="button">></button></a>
+    </div>
+
+</html>
+
+
