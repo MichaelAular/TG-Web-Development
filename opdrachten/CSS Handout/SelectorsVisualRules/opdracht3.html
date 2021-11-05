@@ -17,8 +17,7 @@
     <p>Het wordt vaak als een slechte gewoonte beschouwd om fijne detailwijzigingen toe te passen met alleen een Type Selector. Als je bijvoorbeeld een eigenschap "kleur: wit" op alle div-tags toepast, zou het zelden nuttig zijn op een site. Dit komt omdat div-tags generiek zijn en op sites en voor verschillende doeleinden worden gebruikt. Logischer is het om de Type Selector te gebruiken in de body en zo alle text in één keer wit te maken.</p>
 
     <div class="code"">
-        <xmp>
-body {
+        <xmp>body {
     color: white;
 }
 </xmp>
@@ -29,8 +28,7 @@ body {
         gemaakt dan is de div de parent en de paragraaf daar een child in. De  paragraaf stamt dus af van de div.</p>
 
     <div class="code"">
-    <xmp>
-<div class="parent">
+    <xmp><div class="parent">
     <p>dit is de child</p>
 </div>
     </xmp>
@@ -39,12 +37,32 @@ body {
     <p>Stel we willen voor de gehele website alle paragrafen binnen een div aanspreken kunnen we dit doen door gebruik te maken van de Descendant Selector. In het volgende voorbeeld worden alle p-elementen binnen div-elementen geselecteerd:</p>
 
     <div class="code"">
-    <xmp>
-div p {
+    <xmp>div p {
   background-color: yellow;
 }
     </xmp>
     </div>
+    
+    <h3>Class selector</h3>
+    <p>De <b>.class selector</b> selecteert elementen met een specifiek class attribuut.</p>
+    <p>Om elementen met een specifieke klasse te selecteren, schrijf je een punt (.) teken, gevolgd door de naam van de klasse.</p>
+
+<div class="code""><xmp>.intro {
+  background-color: yellow;
+}
+</xmp></div>
+
+    <p>Je kunt ook specificeren dat alleen specifieke HTML-elementen door een klasse moeten worden beïnvloed. Om dit te doen, begin je met de elementnaam en schrijft vervolgens het punt (.) teken, gevolgd door de naam van de class. zo wordt in het voorbeeld hieronder alle p elementen met class intro gestyled.</p>
+
+<div class="code""><xmp>
+p.intro {
+  background-color: yellow;
+}
+</xmp></div>
+    <p>HTML-elementen kunnen ook naar meer dan één klasse verwijzen. </p>
+
+<div class="code""><xmp><p class="intro large">2 classes!</p>
+</xmp></div>
     <br>
     <br>
     <div class="buttons">
