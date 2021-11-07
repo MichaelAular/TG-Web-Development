@@ -42,6 +42,15 @@ p {
     color:turquoise;
     margin-left: 20px;
 }
+
+.img {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(25, 82,76);
+    width: 420px;
+    margin-left: 20px;
+}
+
 button {
     width: 100px;
     padding: 5px 2px;
@@ -53,9 +62,23 @@ button {
 }
 
 .buttons {
-    text-align: center;
+    margin-left: 20px;
 }
 
 .button:hover {
     background-color: darkcyan;
 }
+
+.uitvoering4 {
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-left:20px;
+}
+
+.uitvoering4 p {
+    color: darkblue;
+    font-size: 24px;
+    margin-left: 0px;
+}
+
