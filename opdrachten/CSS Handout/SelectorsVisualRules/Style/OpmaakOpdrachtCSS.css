@@ -59,9 +59,6 @@ button {
     border-radius: 4px;
     background-color: black;
     color: white;
-}
-
-.buttons {
     margin-left: 20px;
 }
 
@@ -82,3 +79,31 @@ button {
     margin-left: 0px;
 }
 
+.uitvoering5 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-left:20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(25, 82,76);
+    background-color: #e5e5e5;
+    width: 420px;
+}
+
+.uitvoering5 p {
+    font-size: 24px;
+    margin-left: 0px;
+}
+
+.langebuttons button {
+    width: 210px;
+    padding: 5px 2px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    margin-left:20px;
+}
