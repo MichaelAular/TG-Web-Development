@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,64 @@
 <body>
     <h1>Adjacent selectors</h1>
     <h3>de opdracht</h3>
-    <p></p>
-    
+    <p>Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je antwoord naar dat html
+        bestand. Geef in je antwoord ook aan wat de voordelen zijn van elk selector.</p>
+    <p>De HTML-code van mijn <b>Adjacent Selector</b> ziet er als volgt uit:</p>
+
+<div class="code"><xmp><h2>Adjacent Sibling Selector</h2>
+<div class="uitvoering6adjecent">
+<p>Paragraph 1 in the div.</p>
+<p>Paragraph 2 in the div.</p>
+</div>
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+<div>
+<p>Paragraph 5 in the div.</p>
+<p>Paragraph 6 in the div.</p>
+</div>
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+</xmp></div>
+
+    <p>De CSS-code van mijn <b>Adjacent Selector</b> wordt vervolgens:</p>
+
+<div class="code"><xmp>.uitvoering6adjecent + p {
+    background-color: cyan;
+    width: 420px; 
+  }
+</xmp></div>
+
+
+    <h3>de uitvoering</h3>
+    <p>Het uiteindelijke resultaat wordt dan:</p>
+
+    <div class="uitvoering6adjecent">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+    </div >
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+    <div class="uitvoering6adjecent">
+        <p>Paragraph 5 in the div.</p>
+        <p>Paragraph 6 in the div.</p>
+    </div>
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+
+
+    <p>Het voordeel van een Adjecent selector is dat je <i>enkel</i> het eerste element (in dit geval een paragraph) ná een
+        ander specifiek element (een div in dit voorbeeld) kan aanpassen.</p>
+
     <div class="buttons">
+        <br>
+        <br>
         <a href="child.html">
-        <button class="button">child</button></a>
+            <button class="button">child</button></a>
         <a href="../opdracht6.html">
-        <button class="button">back</button></a>
+            <button class="button">back</button></a>
         <a href="general.html">
-        <button class="button">general</button></a>
+            <button class="button">general</button></a>
     </div>
 </body>
+
 </html>

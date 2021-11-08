@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,55 @@
 <body>
     <h1>General selectors</h1>
     <h3>de opdracht</h3>
-    <p></p>
-    
+    <p>Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je antwoord naar dat html
+        bestand. Geef in je antwoord ook aan wat de voordelen zijn van elk selector.</p>
+    <p>De HTML-code van mijn <b>General Selector</b> ziet er als volgt uit:</p>
+
+<div class="code"><xmp><p>Paragraph 1.</p>
+<div class="uitvoering6general">
+<p>Paragraph 2.</p>
+</div>
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+</xmp></div>
+
+    <p>De CSS-code van mijn <b>General Selector</b> wordt vervolgens:</p>
+
+<div class="code"><xmp>.uitvoering6general ~ p {
+    background-color: cyan;
+    width: 420px; 
+  }
+</xmp></div>
+
+
+    <h3>de uitvoering</h3>
+    <p>Het uiteindelijke resultaat wordt dan:</p>
+    <p>Paragraph 1.</p>
+    <div class="uitvoering6general">
+        <p>Paragraph 2.</p>
+    </div>
+    <p>Paragraph 3.</p>
+    <code>Some code.</code>
+    <p>Paragraph 4.</p>
+
+    <div>
+    <p>Het voordeel van een Genral selector is dat je <i>alle</i> elemenmten (in dit geval een paragraphs) ná een
+        ander specifiek element (een div in dit voorbeeld) kan aanpassen.</p></div>
+
     <div class="buttons">
-        <a href="adjacent.html">
-        <button class="button">adjacent</button></a>
-        <a href="../opdracht6.html">
-        <button class="button">back</button></a>
+        <br>
+        <br>
         <a href="child.html">
-        <button class="button">child</button></a>
+            <button class="button">child</button></a>
+        <a href="../opdracht6.html">
+            <button class="button">back</button></a>
+        <a href="general.html">
+            <button class="button">general</button></a>
     </div>
 </body>
+
+</html>
+</body>
+
 </html>
