@@ -10,6 +10,7 @@ h1 {
     font-size: 70px;
     padding-top: 1px;
     padding-bottom:1px;
+    margin-top: 0px;
     background: linear-gradient(to right, rgb(25, 82,76), rgb(33, 100, 93), rgb(25, 82,76), rgb(4, 14, 13), black);
     text-shadow: 2px 2px rgb(48, 143, 133);
     color: black;
@@ -28,7 +29,22 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-size: 20px;
+    padding-top: 1px;
+    padding-bottom:1px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, rgb(25, 82,76), rgb(33, 100, 93), rgb(25, 82,76), rgb(4, 14, 13), black);
+    text-shadow: 2px 2px rgb(48, 143, 133);
+    color: black;
+}
+
 p {
+    font-size: small;
+    margin-right: 20%;
+}
+
+li {
     font-size: small;
     margin-right: 20%;
 }
