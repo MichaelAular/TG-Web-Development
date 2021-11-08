@@ -13,10 +13,86 @@
     <h4>Het Box Model</h4>
     <h1>OPDRACHT 2</h1>
     <h3>de opdracht</h3>
-    <p></p>
+    <p>Maak wat hieronder staat met paragraph en span tags.</p>
+        <img src="../../../pics/CSSBoxModel2.png">
 
     <h3>de uitvoering</h3>
-    <p></p>
+    <div class="opdracht2">
+        <div class="block1">
+           Dit is een block box en neemt de hele breedte in waardoor de volgende box op de volgende regel zit
+        </div>
+        <div class="block2">
+            <br>
+        </div>
+        <div class="block3">
+            In dit blok zit <span>inline tekst</span> in wat dus niet op de volgende regel komt te <span>staan</span>
+        </div>
+    </div>
+
+    <p>De HTML hiervoor ziet er als volgt uit:</p>
+
+<div class="code"><xmp><div class="opdracht2">
+
+    <div class="block1">
+    Dit is een block box en neemt de hele breedte in ...
+    </div>
+
+    <div class="block2">
+    <br>
+    </div>
+
+    <div class="block3">
+    In dit blok zit <span>inline tekst</span> in wat ...
+    </div>
+
+</div>
+</xmp></div>
+
+    <p>De CSS hierbij is:</p>
+    <div class="code"><xmp>.opdracht2 {
+    max-width: 600px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: black;
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Time...
+}
+    
+.opdracht2 span{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.block1 {
+    display: block;
+    background-color: #2a9e4d;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.block2 {
+    display: block;
+    background-color: #63d184;
+}
+
+.block3 {
+    display: block;
+    background-color: #2a9e4d;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+</xmp></div>
+
+
+
+
+
 
     <div class="buttons">
         <br>

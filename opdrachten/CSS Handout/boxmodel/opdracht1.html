@@ -17,15 +17,29 @@
 
     <h3>Block Boxes:</h3>
     <ul>
-        <li>De Block Box zal breken op een nieuwe regel</li>
+        <li>De Block Box zal komen staan op een nieuwe regel</li>
         <li>De Block Box zal zich in de richting van de lijn uitstrekken om de beschikbare ruimte in de container te vullen.
             In de meeste gevallen betekent dit dat de Block Box net zo breed wordt als de container en 100% van de
             beschikbare ruimte opvult</li>
         <li>De breedte- en hoogte-eigenschappen worden gevolgd</li>
-        <li>Padding, margin en border zorgen ervoor dat andere elementen van de Block Box worden geduwd</li>
+        <li>Padding, margin en border zorgen ervoor dat andere <i>elementen</i> van de Block Box af worden geduwd</li>
     </ul>
     <p>
-        <i>Sommige HTML-elementen zoals H1 en P gebruiken Block bij defealt.</i>
+        <i>Sommige HTML-elementen zoals H1 en P gebruiken Block bij default.</i>
+    </p>
+
+    <h3>Inline Boxes:</h3>
+    <ul>
+        <li>De Inline Box zal breek niet op een nieuwe regel</li>
+        <li>De Inline Box volgt <i>geen</i> breedte- en hoogte-eigenschappen</li>
+        <li>Verticale-padding, -margin en -border worden gevolgd maar zorgen er <i>niet</i> voor dat andere <i>Inline Boxes</i>
+            van de
+            Inline Box af worden geduwd</li>
+        <li>Horizontale-padding, -margin en -border worden gevolgd en zorgen ervoor dat andere <i>Inline Boxes</i> van de
+            Inline Box af worden geduwd</li>
+    </ul>
+    <p>
+        <i>Sommige HTML-elementen zoals A, SPAN, EM and STRONG gebruiken Inline bij default.</i>
     </p>
 
     <div class="buttons">

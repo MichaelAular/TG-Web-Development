@@ -94,3 +94,60 @@ button {
     background-color: darkcyan;
 }
 
+.opdracht2 {
+    max-width: 600px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: black;
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.opdracht2 span{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.block1 {
+    display: block;
+    background-color: #2a9e4d;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.block2 {
+    display: block;
+    background-color: #63d184;
+}
+
+.block3 {
+    display: block;
+    background-color: #2a9e4d;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.opdracht3 {
+    max-width: 600px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: black;
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.opdracht3 span{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 100px;
+}
