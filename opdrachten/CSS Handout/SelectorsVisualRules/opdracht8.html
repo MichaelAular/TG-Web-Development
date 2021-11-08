@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +11,125 @@
 
 <body>
     <h1>OPDRACHT 8</h1>
-    <p></p>
     <h3>de opdracht</h3>
-    <p></p>
-    <h3>de uitvoering</h3>
-    <div class="uitvoering5">
-    <h2>Class Selectors</h2>
-    <p style="color: green;">paragraph tekst</p>
-    <p>paragraph tekst2</p>
+    <p>Styling die je toepast wordt toegepast in een bepaalde volgorde. Het kan voorkomen dat je styling toepast en
+        vervolgens niet het gewenste resultaat ziet. Cascade en Inheritance zijn belangrijke concepten om te begrijpen
+        hoe styling werkt. Lees hier in de officiële documentatie meer over cascade en inheritance.
+        Zoek ook andere referenties om het concept te begrijpen.
+        Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te
+        leggen.
+    </p>
+    <h3>Cascade</h3>
+    <p>CSS staat voor <b>Cascading Style Sheets</b>. Dat eerste <b>cascading</b> is belangrijk om te begrijpen. Wat is dat
+        nou
+        eigenlijk? Cascading? Als we de definitie in het woordenboek opzoeken vinden we het volgende:</p>
+    <p>
+        de <b><i>cascade</i></b> zelfst.naamw. (m.)<br>
+        Uitspraak: [kɑs'kadə]<br>
+        Afbreekpatroon: cas·ca·de<br>
+        Verbuigingen: cascades, cascaden <sub>(meerv.)</sub><br>
+        <br>
+        <b>1) water dat trapsgewijs van een hoogte naar beneden stort</b><br>
+        Synoniem: waterval<br>
+        <br>
+        <b>2) proces dat in stappen verloopt</b><br>
+        Voorbeeld: <i>`chemische productie via een cascadereactie`</i><br>
+        Synoniem: proces
+    </p>
+    <p> Als je dit principe toepast op je Style Sheet, dan begrijp je nu misschien al een beetje dat CSS zich aan bepaalde
+        volgordes houdt. Er zijn hiervoor verschillende regels (syntaxes) die we hieronder zullen behandelen.</p>
+
+<div class="code"><xmp><div class="opdracht8">
+    <p>paragraph tekst</p>
+</div>
+</xmp></div>
+<br>
+<div class="code"><xmp>.opdracht8 p{
+    color: red;
+    color: green;
+ }
+</xmp></div>
+
+    <p>Zoals je ziet wordt er in CSS aangegeven dat P in opdracht8 zowel rood als groen moet zijn. Aangezien groen de
+        <i>laatst</i> gegeven opdracht is (cascading!) kiest de browsr voor groen!</p>
+    <div class="opdracht8">
+        <p>paragraph tekst</p>
+    </div>
+
+    <p>Het tweede waar je rekening mee moet houden qua cascading is hoe specifiek je bent. Als je bijvoorbeeld enkel een
+        kleur toebedeelt aan je tekst in de body zal alle text die kleur krijgen! Kijk maar eens in de CSS van deze tekst,
+        daar is bevoorbeeld bepaald dat alle tekst wit is. Echter als je iets specifieker bent, bijvoorbeeld door een div te
+        benoemen dan kan je de tekstkleur enkel in die div veranderen. Een id gaat boven een class en een class weer boven
+        een element.</p>
+
+ <div class="code"><xmp><p class="opdracht8">paragraph tekst</p>
+</xmp></div>
+ <br>
+ <div class="code"><xmp>.opdracht8 {
+ color: blue;
+ }
+</xmp></div>
+
+        <p>Als je kijkt in de CSS van deze pagina zul je zien dat tekst kleur in de body op wit staat. Toch wordt dankzij het
+            vooreeld van hierboven de deze tekst hier blauw. Waarom? Omdat er specifiek is benoemd dat de p in deze pagagraph
+            onder de opmaak van "opdracht8" valt, en die is blauw. Kijk maar:</p>
+        <p class="opdracht8">paragraph tekst</p>
+
+        <h3>Inheritance</h3>
+        <p><b>Inheritance</b> is een ander punt waar we rekeing mee moeten houden bij CSS. Inheritance, of vertaald ervenis,
+            betekend niets anders dan het overnemen van eigenschappen van ouders.
+            Zoals eerder benoemd spreken we me HTML vaak over <b>parents</b> en <b>children</b>. Bekijk een opmaak van een
+            HTML-file maar een beetje als een grote stamboom. Vaak zitten er bij voorbeeld divs in andere divs en daar dan weer
+            een imgage of paragraph in.</p>
+
+<div class="code"><xmp><div class="div1">
+    <p>div 1</p>
+    <div class="div2">
+        <p>div 2</p>
+        <div class="div3">
+            <p>div 3</p>
+        </div>
+    </div>
+</div>
+</xmp></div>
+<br>
+<div class="code"><xmp>.div2 {
+    color: blue;
+}
+</xmp></div>
+
+<p>In het bovenstaande voorbeeld heeft alles in div1 nog de opmaak meegekregen van de body. In div2 hebben we de
+    fontkleur aangepast naar blauw. Als we nu niets aangeven aan div3 (een child van div2) dan zal dus ook de fontkleur
+    van div3 automatisch blauw worden. Div3 erft als het ware de eigenschappen van zijn parent div2.</p>
+
+<div class="div1">
+    <p>div 1</p>
+    <div class="div2">
+        <p>div 2</p>
+        <div class="div3">
+            <p>div 3</p>
+        </div>
+    </div>
 </div>
 
-<div class="buttons">
-    <a href="opdracht7.html">
-    <button class="button"><</button></a>
-    <a href="../index.html">
-    <button class="button">index</button></a>
-</div>
+
+        
+
+
+
+
+
+
+    <div class="buttons">
+        <br>
+        <br>
+        <a href="opdracht6.html">
+            <button class="button"><</button></a>
+        <a href="../index.html">
+            <button class="button">index</button></a>
+        <a href="opdracht8.html">
+            <button class="button">></button></a>
+    </div>
 </body>
+
 </html>
