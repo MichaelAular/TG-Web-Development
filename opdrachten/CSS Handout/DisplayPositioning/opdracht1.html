@@ -12,14 +12,54 @@
 <body>
     <h4>Display & Positioning</h4>
     <h1>OPDRACHT 1</h1>
-    
+
     <h3>de opdracht</h3>
-    <p></p>
+    <p>Welke position values zijn er? Leg voor elke position values uit wat het doet. Geef ook aan welke default
+        position
+        waarde elementen hebben die je gebruikt in html.</p>
 
     <h3>de uitvoering</h3>
-    <p></p>
+    <p>Er zijn 5 <b>position values</b>, te weten:</p>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ul>
 
-<div class="code"><xmp> </xmp></div>
+    <p><b>static</b><br>
+        Elementen met een static position worden niet beïnvloed door top, bottom, left of right properties. Dit is
+        tevens de
+        standaard positionwaarde gebruikt door HTML. Een elementen met <i>position: static;</i> wordt niet
+        gepositioneerd op
+        enige manier maar volgt de normale flow van de web pagina.</p>
+
+    <p><b>relative</b><br>
+        Een element met <i>position: relative;</i> wordt gepositioneerd relatief aan zijn normale postitie. Met andere
+        woorden: top, bottom, left of right properties doen het element verplaatsen relatief aan zijn oorspronkelijke
+        positie. Andere content zal zich <i>niet</i> aanpassen om de gaten op te vullen door deze verschuiving.</p>
+
+    <p><b>fixed</b><br>
+        Een <i>fixed element</i> is een element dat een vaste plek op het scherm heeft ongeacht eventueel scrollen. Het
+        blijft dus altijd op de zelde plek staan. Top, bottom, left of right properties worden gebruikt om het element
+        te postitioneren op het scherm. Een fixed element laat geen gat achter waar het oorspronkelijk had gestaan.</p>
+
+    <p><b>absolute</b><br>
+        Een element met <i>position: absolute;</i> positioneerd zich relatief aan zijn eerste voorouder mét een
+        postionering. Echter, zijn er geen voorouders met een position dan zal het element zich postioneren aan de hand
+        van de body, wat betekent dat het met het scrollen van de pagina mee beweegt.<br>
+        <b>Let op:</b> Een absolute positie haalt een element uit de normale flow van een pagina en kan dus over een
+        ander element heen komen te staan!</p>
+
+    <p><b>sticky</b><br>
+        Als laatst is er <i>position: sticky;</i>. Deze position is zowel relative als fixed, afhankelijk van hoe de
+        gebruiker scrollt. In eerste instantie zal het element zich als een relative element gedragen totdat het een
+        bepaalde positie bereikt op het scherm. Vanaf dan zal het element blijven plakken (sticky!) en op deze plek
+        blijven
+        staan.
+    </p>
+
 
     <div class="buttons">
         <br>
@@ -31,4 +71,5 @@
     </div>
 
 </body>
+
 </html>

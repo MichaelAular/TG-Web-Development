@@ -99,3 +99,99 @@ button {
 .button:hover {
     background-color: darkcyan;
 }
+
+.opdracht2 h1{
+    all:revert;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+.opdracht3 h1{
+    all:revert;
+    color: rgb(255, 0, 0);
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
+.opdracht4 h1{
+    all:revert;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.absoluteH1 h1{
+    all: revert;
+    color:rgb(48, 143, 133);
+    font-size: 40px;
+    font-family: serif;
+}
+
+.absoluteP P{
+    all: revert;
+    color:rgb(48, 143, 133);
+    font-size: 25px;
+    font-family: serif;
+}
+
+.staticIMG {
+    position: relative;
+}
+
+.absoluteH1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.absoluteP {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.opdracht6 img{
+    width: 100px;
+    height: 100px;
+    border-style: none;
+}
+
+.OrangeBlock {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+  } 
+
+.GreenBlock {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 25px;
+    top: 25px;
+    background-color: lime;
+  } 
+
+  .opdracht7 img{
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
+      width: 410px;
+  }
+
+  .opdracht7 {
+      position: relative;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: red;
+  }
+
+  .line1 {
+      position: absolute;
+      top: 10px;
+      right:80px;
+
+  }
