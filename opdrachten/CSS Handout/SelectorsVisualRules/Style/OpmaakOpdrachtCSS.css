@@ -3,8 +3,8 @@ body {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left:20px;
+    z-index: 1;
 }
-
 
 h1 {
     font-weight: bolder;
@@ -16,6 +16,7 @@ h1 {
     text-shadow: 2px 2px rgb(48, 143, 133);
     color: black;
     text-transform: uppercase;
+    z-index: 2;
 }
 
 h2 {
