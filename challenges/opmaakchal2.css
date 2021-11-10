@@ -1,0 +1,25 @@
+.bol {
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    animation: moving1 3s ease-out forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving1 {
+   0% {transform:scale(1.5)};
+}
+
+.een {
+    animation-delay: 0s;
+}
+
+.twee {
+    animation-delay: 1s;
+}
+
+.twee {
+    animation-delay: 2ms;
+}

@@ -187,11 +187,19 @@ button {
       position: relative;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: red;
+      width: 420px;
+      height: 300px;
+      font-family: 'Times New Roman', Times, serif;
   }
 
   .line1 {
       position: absolute;
-      top: 10px;
-      right:80px;
+      top: 50px;
+      right:25px;
+      font-size: 22px;
 
+  }
+
+  .white {
+      color: white;
   }
