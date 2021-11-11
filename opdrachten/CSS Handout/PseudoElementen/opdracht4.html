@@ -14,11 +14,85 @@
     <h1>OPDRACHT 4</h1>
 
     <h3>de opdracht</h3>
-    <p></p>
+    <p>Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
+    <img src="../../../pics/CSSPseudoElementen4.png">
 
     <h3>de uitvoering</h3>
-    <p></p>
 
+    <div class="opdracht4-wrapper">
+        <div class="opdracht4-bluebox">Button</div>
+        <div class="top-corner"></div>
+        <div class="bottom-corner"></div>
+    </div>
+
+    <p>de HTML</p>
+    <div class="code">
+<xmp><div class="opdracht4-wrapper">
+    <div class="opdracht4-bluebox">Button</div>
+    <div class="top-corner"></div>
+    <div class="bottom-corner"></div>
+</div></xmp></div><br>      
+    
+    <p>de CSS</p>
+    <div class="code">
+<xmp>.opdracht4-bluebox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 420px;
+    height:35px;
+    background-color: #20b2aa;
+    text-align: center;
+    align-items: center;
+}
+
+.opdracht4-wrapper {
+    position: relative;
+    width: 420px;
+    height:35px;
+
+}
+
+.bottom-corner::after {
+    content:'';
+    position: absolute;
+    background-color: #ff6347;
+    width: 5px;
+    height: 35px;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-corner::before {
+    content:'';
+    position: absolute;
+    background-color: #ff6347;
+    width: 35px;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+  }
+
+.top-corner::after {
+    content:'';
+    position: absolute;
+    background-color: #ff6347;
+    width: 5px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.top-corner::before {
+    content:'';
+    position: absolute;
+    background-color: #ff6347;
+    width: 35px;
+    height: 5px;
+    top: 0;
+    left: 0;
+  }
+</xmp></div><br>
 
     <div class="buttons">
         <br>

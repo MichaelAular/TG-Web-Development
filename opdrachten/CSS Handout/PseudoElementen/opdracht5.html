@@ -14,10 +14,55 @@
     <h1>OPDRACHT 5</h1>
 
     <h3>de opdracht</h3>
-    <p></p>
+    <p>Hieronder vind je nog eens een voorbeeld van het gebruik van een pseudo-element ::before. Kun jij dit namaken? Zoek
+        een afbeelding op internet.</p>
+    <img src="../../../pics/CSSPseudoElementen5.png">
 
     <h3>de uitvoering</h3>
-    <p></p>
+    
+    <div class="opdracht5-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque.
+                Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet
+                porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut
+                dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis
+                nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa
+                vehicula eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin
+                pellentesque.
+            </p>
+    </div>
+
+    <p>de HTML</p>
+    <div class="code">
+<xmp><div class="opdracht5-container">
+    <p>Lorem ipsum dolor sit amet ... </p>
+</div></xmp></div><br>      
+    
+    <p>de CSS</p>
+    <div class="code">
+<xmp>.opdracht5-container {
+    width: 420px;
+    min-height: 200px;
+    position: relative;
+}
+    
+.opdracht5-container::before {
+    content: '';
+    position: absolute;
+    background: url('../../../../pics/cat-glasses.jpg');
+    opacity: 0.5;
+    background-size: 420px;
+    top: 0px;
+    left: 0px;
+    width: 420px;
+    height: 200px;
+    z-index: -1;
+}
+    
+.opdracht5-container p{
+    padding: 15px;
+    margin-right: 0px;
+    color: cyan;
+}</xmp></div>
 
 
     <div class="buttons">
