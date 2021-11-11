@@ -14,10 +14,113 @@
     <h1>OPDRACHT 1</h1>
 
     <h3>de opdracht</h3>
-    <p></p>
+    <p>Kun je enkele voorbeelden geven van pseudo-elementhtmlen (minimaal 4)? Beschrijf met je eigen woorden wat deze pseudo-elementen inhouden.</p>
+    <ul>
+        <li>::first-letter</li>
+        <li>::first-line</li>
+        <li>::before</li>
+        <li>::after</li>
+    </ul>
 
-    <h3>de uitvoering</h3>
-    <p></p>
+    <h3>::first-letter</h3>
+        <p>Dit geeft een bepaalde stijl aan enkel de eerste letter van een tekst.</p>
+
+<p>de HTML</p>
+<div class="code"><xmp><p>Let op de eerste letter!</p></xmp>
+</div><br>      
+
+<p>de CSS</p>
+<div class="code"><xmp>::first-letter{
+    font-family:Algerian;
+    font-size:3em;
+    color: cyan;
+}</xmp></div><br>
+
+    <p>Voorbeeld</p>
+    <div class="opdracht1-letter">
+    <p>Let op de eerste letter!</p>
+    </div>
+
+
+    <h3>::first-line</h3>
+        <p>Dit geeft een bepaalde stijl aan enkel de eerste regel van een tekst.</p>
+
+<p>de HTML</p>
+<div class="code"><xmp><p>Let op de eerste regel!<br>
+En de tweede.</p></xmp>
+</div><br>      
+
+<p>de CSS</p>
+<div class="code"><xmp>::first-line{
+    font-family:Algerian;
+    font-size:3em;
+    color: cyan;
+}</xmp></div><br>
+
+    <p>Voorbeeld</p>
+    <div class="opdracht1-line">
+        <p>Let op de eerste regel!<br>
+            En de tweede.</p>
+    </div>
+
+
+    <h3>::before</h3>
+        <p>Dit geeft een bepaalde stijl <b>voor</b> een specifiek element.</p>
+
+<p>de HTML</p>
+<div class="code"><xmp><ul type="none">
+    <li>Boter</li>
+    <li>Kaas</li>
+    <li>Eieren</li>
+  </ul></xmp>
+</div><br>      
+
+<p>de CSS</p>
+<div class="code"><xmp>li::before {
+    content: " ♙ ";
+}</xmp></div><br>
+
+    <p>Voorbeeld</p>
+    <div class="opdracht1-before"><ul type="none">
+        <li>Boter</li>
+        <li>Kaas</li>
+        <li>Eieren</li>
+    </ul>
+    </div>
+
+
+    <h3>::after</h3>
+        <p>Dit geeft een bepaalde stijl <b>na</b> een specifiek element.</p>
+
+<p>de HTML</p>
+<div class="code"><xmp><ul type="none">
+    <li>Boter</li>
+    <li>Kaas</li>
+    <li>Eieren</li>
+  </ul></xmp>
+</div><br>      
+
+<p>de CSS</p>
+<div class="code"><xmp>li::after {
+    content: " ♙ ";
+}</xmp></div><br>
+
+    <p>Voorbeeld</p>
+    <div class="opdracht1-after"><ul type="none">
+        <li>Boter</li>
+        <li>Kaas</li>
+        <li>Eieren</li>
+    </ul>
+    </div>
+
+
+
+
+     
+
+  
+
+
 
 
     <div class="buttons">

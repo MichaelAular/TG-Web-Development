@@ -61,6 +61,7 @@ li {
     color:turquoise;
 }
 
+
 img {
     border-style: solid;
     border-width: 1px;
@@ -99,3 +100,83 @@ button {
 .button:hover {
     background-color: darkcyan;
 }
+
+.opdracht1-letter p::first-letter{
+    font-family:Algerian;
+    font-size:3em;
+    color: cyan;
+}
+
+.opdracht1-line p::first-line{
+    font-family:Algerian;
+    font-size:2em;
+    color: cyan;
+}
+
+.opdracht1-before li::before {
+    content: " ♙ ";
+}
+
+.opdracht1-after li::after {
+    content: " ♙ ";
+}
+
+.wrapperLI a{
+    color: white;
+    text-decoration:none;
+}
+
+.wrapperLI a:hover {
+    color:cyan;
+    text-decoration:none;
+}
+
+.opdracht3-backdrop video::backdrop {
+    background: url(../../../../pics/trees.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+}
+
+.opdracht3-file-selector input[type=file]::file-selector-button {
+    transition: 1s;
+    width: 100px;
+    padding: 5px 2px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+      
+.opdracht3-file-selector input[type=file]::file-selector-button:hover {
+    background-color: darkcyan;
+}
+
+.opdracht3-grammar ::grammar-error  {
+    text-decoration: underline red;
+    color: red;
+}
+
+.opdracht3-marker ul li::marker {
+    color:cyan;
+    font-size: 1.5em;
+}
+
+.opdracht3-placeholder input::placeholder {
+    color: darkcyan;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.opdracht3-selection p::selection {
+    color: rgb(255, 83, 112);
+    background-color: none;
+}
+
+.opdracht3-target ::target-text {
+    background-color: cyan;
+    color: black;
+    font-weight: bold;
+}
+  

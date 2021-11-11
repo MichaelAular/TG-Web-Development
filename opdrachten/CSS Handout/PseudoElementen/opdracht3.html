@@ -14,10 +14,241 @@
     <h1>OPDRACHT 3</h1>
 
     <h3>de opdracht</h3>
-    <p></p>
-
+    <p>Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en uitgezocht
+        wat ze doen. Kun je van al deze pseudo-elementen een voorbeeld maken?</p>
+    
     <h3>de uitvoering</h3>
-    <p></p>
+    <ol>
+        <div class="wrapperLI">
+            <li>::after</li>
+            <li><a href=#backdrop>::backdrop</a></li>
+            <li>::before</li>
+            <li><a href=#cue>::cue</a></li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li><a href=#file-selector>::file-selector-button</a></li>
+            <li><a href=#grammar>::grammar-error</a></li>
+            <li><a href=#marker>::marker</a></li>
+            <li><a href=#part>::part</a></li>
+            <li><a href=#placeholder>::placeholder</a></li>
+            <li><a href=#selection>::selection</a></li>
+            <li><a href=#slotted>::slotted</a></li>
+            <li><a href=#spelling>::spelling-error</a></li>
+            <li><a href=#target>::target-text</a></li>
+        </div>
+    </ol>
+
+<div class="opdracht3-backdrop" id="backdrop">
+<h3>::backdrop</h3>
+
+<p>de HTML</p>
+<div class="code"><xmp><video controls
+  src="https://video.mp4"
+  height="420">
+</video>
+</xmp></div><br>      
+
+<p>de CSS</p>
+<div class="code"><xmp>video::backdrop {
+    background: url(../../../../pics/trees.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+}</xmp></div><br>
+
+<p>Voorbeeld<br>
+<i>zet op fullscreen om backdrop te zien</i></p>
+<video controls
+  src="https://assets.mixkit.co/videos/preview/mixkit-tree-with-yellow-flowers-1173-large.mp4"
+ height="420">
+</video>
+</div>
+
+<div class="opdracht3-CUE" id="cue">
+    <h3>::Cue</h3>
+    
+    <p>de HTML</p>
+<div class="code"><xmp></xmp></div><br>      
+    
+    <p>de CSS</p>
+<div class="code"><xmp></xmp></div><br>
+    
+    <p>Voorbeeld</p>
+</div>
+
+-<div class="opdracht3-file-selector" id="file-selector">
+    <h3>::file-selector-button</h3>
+    
+    <p>de HTML</p>
+<div class="code"><xmp><form>
+    <label for="fileUpload">Upload file</label>
+    <input type="file" id="fileUpload">
+</form>
+</xmp></div><br>      
+    
+    <p>de CSS</p>
+<div class="code"><xmp>input[type=file]::file-selector-button {
+    transition: 1s;
+    width: 100px;
+    padding: 5px 2px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+          
+input[type=file]::file-selector-button:hover {
+    background-color: darkcyan;
+}
+</xmp></div><br>
+    
+    <p>Voorbeeld</p>
+    <form>
+        <label for="fileUpload">Upload file</label>
+        <input type="file" id="fileUpload">
+      </form>
+</div>
+
+<div class="opdracht3-grammar" id="grammar">
+    <h3>::grammar-error</h3>
+    
+    <p>de HTML</p>
+<div class="code"><xmp><p>Ik vinden CSS heel leuk.</p></xmp></div><br>      
+    
+    <p>de CSS</p>
+<div class="code"><xmp>::grammar-error  {
+    text-decoration: underline red;
+    color: red;
+  }</xmp></div><br>
+    
+    <p>Voorbeeld</p>
+    <p><i>LET OP! Is nog experimenteel en werkt nog niet!</i></p>
+    <p>Ik vinden CSS heel leuk.</p>
+</div>
+
+<div class="opdracht3-marker" id="marker">
+    <h3>::marker</h3>
+    
+    <p>de HTML</p>
+<div class="code"><xmp><ul>
+    <li>Kwik</li>
+    <li>Kwek</li>
+    <li>Kwak</li>
+</ul></xmp></div><br>      
+    
+    <p>de CSS</p>
+<div class="code"><xmp>ul li::marker {
+    color:cyan;
+    font-size: 1.5em;
+}
+</xmp></div><br>
+    
+    <p>Voorbeeld</p>
+    <ul>
+        <li>Kwik</li>
+        <li>Kwek</li>
+        <li>Kwak</li>
+    </ul>
+</div>
+
+<div class="opdracht3-part" id="part">
+    <h3>::part</h3>
+    
+    <p>de HTML</p>
+<div class="code"><xmp></xmp></div><br>      
+    
+    <p>de CSS</p>
+<div class="code"><xmp></xmp></div><br>
+    
+    <p>Voorbeeld</p>
+</div>
+
+<div class="opdracht3-placeholder" id="placeholder">
+    <h3>::placeholder</h3>
+    
+    <p>de HTML</p>
+<div class="code"><xmp><input placeholder="Type here..."></xmp></div><br>      
+    
+    <p>de CSS</p>
+<div class="code"><xmp>input::placeholder {
+    color: darkcyan;
+    font-size: 1.2em;
+    font-style: italic;
+  }</xmp></div><br>
+    
+    <p>Voorbeeld</p>
+    <input placeholder="Type here...">
+</div>
+
+<div class="opdracht3-selection" id="selection">
+    <h3>::selection</h3>
+
+    <p>de HTML</p>
+    <div class="code">
+<xmp><p>Voorbeeld<br>
+Selecteer deze tekst!<br>
+Lorem ipsum dolor sit amet, ... </p></xmp>
+    </div><br>
+
+    <p>de CSS</p>
+    <div class="code">
+<xmp>p::selection {
+    color: rgb(255, 83, 112);
+    background-color: none;
+}</xmp>
+    </div><br>
+
+    <p>Voorbeeld<br>
+        Selecteer deze tekst!<br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+
+<div class="opdracht3-slotted" id="slotted">
+    <h3>::slotted</h3>
+    
+    <p>de HTML</p>
+<div class="code"><xmp></xmp></div><br>      
+    
+    <p>de CSS</p>
+<div class="code"><xmp></xmp></div><br>
+    
+    <p>Voorbeeld</p>
+</div>
+
+<div class="opdracht3-spelling" id="spelling">
+    <h3>::spelling-error</h3>
+    
+    <p>zie ::grammar-error</p>
+</div>
+
+<div class="opdracht3-target" id="target">
+    <h3>::target-text</h3>
+
+    <p>de HTML</p>
+    <div class="code">
+<xmp><a href="https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy">
+<button class="button">click me!</button></a></xmp>
+    </div><br>
+
+    <p>de CSS</p>
+    <div class="code">
+<xmp>::target-text {
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+  }</xmp>
+    </div><br>
+
+    <p>Voorbeeld</p>
+    <a href="https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy#:~:text=Deep%20Thought%20had%20been%20built%20by%20its%20creators%20to%20give%20the%20answer">
+    <button class="button">click me!</button></a>
+</div>
 
 
     <div class="buttons">
