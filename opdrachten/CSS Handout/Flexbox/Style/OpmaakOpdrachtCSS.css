@@ -99,3 +99,9 @@ button {
 .button:hover {
     background-color: darkcyan;
 }
+
+.opdracht1-container {
+    width: 420px;
+    height: 100px;
+    background-color: darkkhaki;
+}
