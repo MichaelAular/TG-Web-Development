@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 8</title>
+    <link rel="stylesheet" href="style/OpmaakOpdrachtCSS.css">
+</head>
+
+<body>
+    <h4>Flexbox</h4>
+    <h1>OPDRACHT 8</h1>
+
+    <h3>de opdracht</h3>
+    <p>Zie het onderstaande voorbeeld en maak het na met flexbox.</p>
+    <img src="../../../pics/CSSflexbox8.png">
+
+    <h3>de uitvoering</h3>
+    <div class="opdracht8-container">
+        <div class="opdracht8-block een">1</div>
+        <div class="opdracht8-block twee">2</div>
+        <div class="opdracht8-block drie">3</div>
+        <div class="opdracht8-block vier">4</div>
+        <div class="opdracht8-block vijf">5</div>
+        <div class="opdracht8-block zes">6</div>
+    </div>
+
+    <p>de HTML</p>
+    <div class="code">
+<xmp>><div class="opdracht8-container">
+    <div class="opdracht8-block een">1</div>
+    <div class="opdracht8-block twee">2</div>
+    <div class="opdracht8-block drie">3</div>
+    <div class="opdracht8-block vier">4</div>
+    <div class="opdracht8-block vijf">5</div>
+    <div class="opdracht8-block zes">6</div>
+</div></xmp></div>
+        
+    <p>de CSS</p>
+<div class="code"><xmp>.opdracht8-container {
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    width: 430px;
+    height: 280px;
+}
+    
+.opdracht8-block{
+    width:139px;
+    height: 139px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 139px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border-radius: 15px;
+}
+    
+.een {
+    background-color: #ffffe1;
+}
+    
+.twee {
+    background-color: #89cff8;
+}
+    
+.drie {
+    background-color: #c2f8c9;
+}
+    
+.vier {
+    background-color: #ffffff;
+}
+    
+.vijf {
+    background-color: #000000;
+    color: white;
+    border-color: white;
+}
+    
+.zes {
+    background: linear-gradient
+    (90deg, rgba(85,85,253,1) 0%,
+    rgba(191,239,255,1) 100%)
+}</xmp></div>
+
+    <div class="buttons">
+        <br>
+        <br>
+        <a href="opdracht7.html">
+            <button class="button">terug</button></a>
+        <a href="../index.html">
+            <button class="button">index</button></a>
+    </div>
+
+</body>
+</html>

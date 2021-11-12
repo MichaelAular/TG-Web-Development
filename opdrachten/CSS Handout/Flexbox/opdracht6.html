@@ -14,10 +14,51 @@
     <h1>OPDRACHT 6</h1>
 
     <h3>de opdracht</h3>
-    <p></p>
+    <p>Maak het onderstaande na met flexbox. Properties die je o.a dient te gebruiken zijn:</p>
+    <ul>
+        <li>display</li>
+        <li>justify-content</li>
+        <li>flex-direction</li>
+    </ul>
+    <img src="../../../pics/CSSflexbox6.png">
 
     <h3>de uitvoering</h3>
-    <p></p>
+    <div class="opdracht6-container">
+        <div class="opdracht6-bar" style="width:408px;"></div>
+        <div class="opdracht6-bar" style="width:170px;"></div>
+        <div class="opdracht6-bar" style="width:220px;"></div>
+        <div class="opdracht6-bar" style="width:270px;"></div>
+        <div class="opdracht6-bar" style="width:90px;"></div>
+        <div class="opdracht6-bar" style="width:130px;"></div>
+    </div>
+
+    <p>de HTML</p>
+    <div class="code">
+<xmp><div class="opdracht6-container">
+  <div class="opdracht6-bar" style="width:408px;"></div>
+  <div class="opdracht6-bar" style="width:170px;"></div>
+  <div class="opdracht6-bar" style="width:220px;"></div>
+  <div class="opdracht6-bar" style="width:270px;"></div>
+  <div class="opdracht6-bar" style="width:90px;"></div>
+  <div class="opdracht6-bar" style="width:130px;"></div>
+</div></xmp></div>
+        
+                <p>de CSS</p>
+    <div class="code"><xmp>.opdracht6-container {
+    align-items: baseline;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(29, 39, 38);
+    width: 420px;
+    height: 140px;
+}
+    
+.opdracht6-bar {
+    padding: 6px;
+    background-color: cyan;
+    margin-bottom: 4PX;
+}</xmp></div>
 
 
     <div class="buttons">
@@ -30,6 +71,7 @@
         <a href="opdracht7.html">
             <button class="button">volgende</button></a>
     </div>
+
 
 </body>
 </html>

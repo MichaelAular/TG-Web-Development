@@ -101,7 +101,195 @@ button {
 }
 
 .opdracht1-container {
-    width: 420px;
-    height: 100px;
-    background-color: darkkhaki;
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
 }
+
+.opdracht1-block {
+    padding: 20px;
+    background-color: cyan;
+    margin-right: 10px;
+}
+
+.opdracht2-container {
+    display:flex;
+    flex-direction: row-reverse;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+
+.opdracht3-size {
+    flex-grow: 1;
+}
+
+.opdracht4-container-start {
+    display:flex;
+    justify-content: flex-start;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+
+.opdracht4-container-end {
+    display:flex;
+    justify-content: flex-end;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+
+.opdracht4-container-center {
+    display:flex;
+    justify-content: center;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+
+.opdracht4-container-between {
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+
+.opdracht4-container-around {
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+
+.opdracht4-container-evenly {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+
+
+.opdracht5-container-start {
+    align-items: flex-start;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+    width: 420px;
+    height: 140px;
+}
+
+.opdracht5-container-end {
+    align-items: flex-end;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+    width: 420px;
+    height: 140px;
+}
+
+.opdracht5-container-center {
+    align-items: center;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+    width: 420px;
+    height: 140px;
+}
+
+.opdracht5-container-stretch {
+    align-items: stretch;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+    width: 420px;
+    height: 140px;
+}
+
+.opdracht5-container-baseline {
+    align-items: baseline;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+    width: 420px;
+    height: 140px;
+}
+
+
+.opdracht6-container {
+    align-items: baseline;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(29, 39, 38);
+    width: 420px;
+    height: 140px;
+}
+
+.opdracht6-bar {
+    padding: 6px;
+    background-color: cyan;
+    margin-bottom: 4PX;
+}
+
+.opdracht7-container {
+    align-items: center;
+    display:flex;
+    background-color: rgb(29, 39, 38);
+    width: 400px;
+    height: 420px;
+    padding: 10px;
+}
+
+.opdracht8-container {
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    width: 430px;
+    height: 280px;
+}
+
+.opdracht8-block{
+    width:139px;
+    height: 139px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 139px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border-radius: 15px;
+}
+
+.een {
+    background-color: #ffffe1;
+}
+
+.twee {
+    background-color: #89cff8;
+}
+
+.drie {
+    background-color: #c2f8c9;
+}
+
+.vier {
+    background-color: #ffffff;
+}
+
+.vijf {
+    background-color: #000000;
+    color: white;
+    border-color: white;
+}
+
+.zes {
+    background: linear-gradient(90deg, rgba(85,85,253,1) 0%, rgba(191,239,255,1) 100%)
+}
+
+

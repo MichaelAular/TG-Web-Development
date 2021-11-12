@@ -14,11 +14,47 @@
     <h1>OPDRACHT 3</h1>
 
     <h3>de opdracht</h3>
-    <p></p>
+    <p>Zie het onderstaande voorbeeld, een van de items is breder dan de rest. Maak het na met flex. Gebruik geen width,
+        height of line-height.</p>
+        <img src="../../../pics/CSSflexbox3.png">
 
     <h3>de uitvoering</h3>
-    <p></p>
+    <div class="opdracht1-container">
+        <div class="opdracht1-block">1</div>
+        <div class="opdracht1-block opdracht3-size">2</div>
+        <div class="opdracht1-block">3</div>
+        <div class="opdracht1-block">4</div>
+        <div class="opdracht1-block">5</div>
+        <div class="opdracht1-block">6</div>
+    </div>
 
+    <p>de HTML</p>
+<div class="code"><xmp><div class="opdracht1-container">
+    <div class="opdracht1-block">1</div>
+    <div class="opdracht1-block">2</div>
+    <div class="opdracht1-block">3</div>
+    <div class="opdracht1-block">4</div>
+    <div class="opdracht1-block">5</div>
+    <div class="opdracht1-block">6</div>
+</div></xmp></div>
+    
+            <p>de CSS</p>
+<div class="code"><xmp>.opdracht1-container {
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(29, 39, 38);
+    padding: 10px;
+}
+            
+.opdracht1-block {
+    padding: 20px;
+    background-color: cyan;
+    margin-right: 10px;
+}
+
+.opdracht3-size {
+    flex-grow: 1;
+}</xmp></div>
 
     <div class="buttons">
         <br>
