@@ -12,14 +12,40 @@
 <body>
     <h4> Transitions</h4>
     <h1>OPDRACHT 2</h1>
-
+    
     <h3>de opdracht</h3>
-    <p></p>
-
+    <p>Maak een simpele transition wat de kleur van een tekst aanpast.</p>
+    
     <h3>de uitvoering</h3>
-    <p></p>
+    <div class="opdracht2-wrapper">
+        <h3>RAINBOW</h3>
+    </div>
+
+    <p>de CSS</p>
+    <div class="code"><xmp><div class="opdracht2-wrapper">
+    <h3>RAINBOW</h3>
+</div></xmp></div>
 
 
+    <p>de CSS</p>
+    <div class="code"><xmp>.opdracht2-wrapper h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+    sans-serif;
+    color:black;
+    animation: rainbow 5000ms infinite;
+}
+    
+@keyframes rainbow {
+    0% {text-shadow: 3px 3px 10px red;}
+    15% {text-shadow: 3px 3px 10px orange;}
+    30% {text-shadow: 3px 3px 10px yellow;}
+    45% {text-shadow: 3px 3px 10px green;}
+    60% {text-shadow: 3px 3px 10px blue;}
+    65% {text-shadow: 3px 3px 10px purple;}
+    80% {text-shadow: 3px 3px 10px violet;}
+    100% {text-shadow: 3px 3px 10px red;}
+}</xmp></div>
+    
     <div class="buttons">
         <br>
         <br>
