@@ -413,6 +413,10 @@ button {
     border-radius: 6px;
     transition-duration: 0.5s;
     margin-right: 100PX;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgba(0, 255, 255, 0.3);
+    text-shadow: 1px 1px 1px black;
 }
 
 .c1 {
@@ -432,47 +436,40 @@ button {
    position: absolute;
     left: 140px;
     bottom: 10px;
-
 }
 
 .c4 {
     position: absolute;
     left: 205px;
     bottom: 10px;
-
 }
 
 .c1:hover {
     bottom: 30px;
+    margin-right: 300px;
+    color: cyan;
 }
 .c1:hover + #C2 {
     left: 130px;
 }
-.c1:hover + #C3 {
-    left: 195px;
-}
-.c1:hover + #C4 {
-    left: 260px;
-}
 
 .c2:hover {
     bottom: 30px;
+    color: cyan;
 }
 .c2:hover + #C3 {
     left: 195px;
 }
-.c1:hover + #C4 {
-    left: 130px;
-}
-
 
 .c3:hover {
     bottom: 30px;
+    color: cyan;
 }
 .c3:hover + #C4 {
     left: 260px;
 }
 
 .c4:hover { 
-    bottom: 30px;  
+    bottom: 30px;
+    color: cyan; 
 }
