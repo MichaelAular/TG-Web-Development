@@ -120,7 +120,7 @@ button {
 }
 
 .opdracht3-wrapper {
-    position: absolute;
+    position: relative;
     background-color: rgb(29, 39, 38);
     border-color: rgb(25, 82,76);
     border-style: solid;    
@@ -133,6 +133,7 @@ button {
 
 .opdracht3-element {
     position: relative;
+    text-align: center;
     height: 25px;
     width: 25px;
     border-style: solid;
@@ -143,22 +144,335 @@ button {
 }
 
 .opdracht3-one {
-    animation: one 10s infinite
-}
-
-@keyframes one {
-    0% {background-color: black;}
-    50% {background-color: cyan;}
-    100% {background-color: black;}
+    animation: one 9.4s infinite
 }
 
 .opdracht3-two {
-    animation: two 10s infinite
+    animation: two 9.4s infinite
 }
 
+.opdracht3-three {
+    animation: three 9.4s infinite;
+    animation-timing-function: ease-out;
+}
+
+.opdracht3-four {
+    animation: four 9.4s infinite;
+    animation-timing-function: ease-in;
+}
+
+.opdracht3-five {
+    animation: five 9.4s infinite
+}
+
+@keyframes one {
+    15% {left: 0px;
+        background-color: rgb(29, 39, 38);
+        border-radius: 0%;}
+    38% {left: 380px;
+        border-radius: 50%;
+        background-color: cyan;}
+    65% {left: 380px;
+        border-radius: 50%;
+        background-color: cyan;}
+    88% {left: 0px;
+        border-radius: 0%;
+        background-color:  rgb(29, 39, 38)}
+    }
+
 @keyframes two {
-    0% {left: 0px;}
-    45% {left: 380px;}
-    55% {left: 380px;}
-    100% {left: 0px;}
+    15% {left: 0px;
+        background-color: rgb(29, 39, 38);
+        border-radius: 0%;}
+    42% {left: 380px;
+        border-radius: 15%;
+        background-color: cyan;}
+    65% {left: 380px;
+        background-color: cyan;
+        border-radius: 15%;}
+    92% {left: 0px;
+        border-radius: 0%;
+        background-color:rgb(29, 39, 38)}
+}
+
+@keyframes three {
+    15% {left: 0px;
+        background-color: rgb(29, 39, 38);}
+    40% {left: 380px;
+        background-color: cyan;}
+    65% {left: 380px;
+        background-color: cyan;}
+    90% {left: 0px;
+        background-color:rgb(29, 39, 38)}
+}
+ 
+ @keyframes four {
+    15% {left: 0px;
+         background-color: rgb(29, 39, 38);}
+    40% {left: 380px;
+        background-color: cyan;}
+    65% {left: 380px;
+        background-color: cyan;}
+    90% {left: 0px;
+        background-color: rgb(29, 39, 38);}
+    }
+    
+@keyframes five {
+    15% {left: 0px;
+        background-color: rgb(29, 39, 38);}
+    28% {left: 90px;}
+    36% {left: 60px;}
+    45% {left: 380px;
+        background-color: cyan;}
+
+    65% {left: 380px;
+        background-color: cyan;}
+    78% {left: 290px;}
+    86% {left: 320px;}
+    95% {left: 0px;
+        background-color: rgb(29, 39, 38);}
+}
+
+.opdracht4-wrapper {
+    position: relative;
+    align-items: center;
+
+    background-color: rgb(29, 39, 38);
+    border-color: rgb(25, 82,76);
+    border-style: solid;    
+    border-width: 1px;
+    width: 416px;
+    height: 213px;
+    box-shadow: 0 0 0 2px rgb(29, 39, 38);   
+}
+
+.opdracht4-element {
+    position: relative;
+    text-align: center;
+    height: 28px;
+    width: 28px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+}
+
+.opdracht4-one {
+    position: absolute;
+    z-index: 1;
+    animation: fourone 10s infinite;
+   
+}
+
+.opdracht4-two {
+    position: absolute;
+    z-index: 2;
+    animation: fourtwo 10s infinite;
+}
+
+.opdracht4-three {
+    position: absolute;
+    animation-timing-function: ease-out;
+    z-index: 3;
+    animation: fourthree 10s infinite
+}
+
+@keyframes fourone {
+    0% {top: 88px;
+        right: 193px;}
+    10% {top: 50px;
+         right: 193px;}
+    20% {top: 0px;
+        right: 0px;}
+    55% {top: 0px;
+        right: 0px;}
+    60% {top: 40px;
+        right: 0px;}
+    80% {top: 88px;
+        right: 193px;}
+    100% {top: 88px;
+        right: 193px;}
+}
+
+@keyframes fourtwo {
+    0% {top: 88px;
+        left: 193px;}
+    10% {top: 50px;
+        left: 193px;}
+    20% {top: 0px;
+        left: 0px;}
+    55% {top: 0px;
+        left: 0px;}
+    60% {top: 40px;
+        left: 0px;}
+    80% {top: 88px;
+        left: 193px;}
+    100% {top: 88px;
+        left: 193px;}
+}
+
+@keyframes fourthree {
+    0% {top: 88px;
+        left: 194px;}
+    15% {top: 88px;
+        left: 194px;}
+    25%{top: 88px;
+        left:0px;}
+    30%{top: 88px;
+        left:0px;}
+    40%{top:183px;
+        left: 0px;}
+    70%{top:183px;
+        left: 0px;}
+    80%{top:183px;
+        left: 194px;}
+    90% {top: 88px;
+        left:194px}
+    100% {top: 88px;
+        left: 194px;}
+}
+
+.opdracht5-wrapper {
+    position: relative;
+    align-items: center;
+    background-color: rgb(29, 39, 38);
+    border-color: rgb(25, 82,76);
+    border-style: solid;    
+    border-width: 1px;
+    width: 416px;
+    height: 320px;
+    box-shadow: 0 0 0 2px rgb(29, 39, 38);   
+}
+
+.opdracht5-img {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: darkcyan;
+}
+
+.opdracht5-blok {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 11px;
+    left: 11px;
+}
+
+#a {
+    background-color: darkgray;
+    z-index: 2;
+}
+
+#b {
+    z-index: 1;
+}
+
+.opdracht5-blok:hover {
+    animation: slide 300s infinite;
+}
+
+.opdracht5-blok:hover + #b{
+    animation: kleur 300s infinite;
+}
+
+@keyframes slide {
+    1% {transform: rotate(30deg);
+    top: 120px;
+    left: 120px;}
+}
+
+@keyframes kleur {
+    1% {background-color: rgba(28, 255, 217, 0);}
+    2% {background-color: rgba(28, 255, 217, 0.5);}
+}
+
+.opdracht6 {
+    position: relative;
+
+    background-color: rgb(29, 39, 38);
+    border-color: rgb(25, 82,76);
+    border-style: solid;    
+    border-width: 1px;
+    width: 416px;
+    height: 200px;
+    
+
+}
+
+.card {
+    height: 160px;
+    width: 109px;
+    background-image: url(../../../../pics/deckback.jpg);
+    background-size: contain;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 160px;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    margin-right: 100PX;
+}
+
+.c1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin-right: 400px;
+}
+
+.c2 {
+    position: absolute;
+    left: 75px;
+    bottom: 10px;
+}
+
+.c3 {
+   position: absolute;
+    left: 140px;
+    bottom: 10px;
+
+}
+
+.c4 {
+    position: absolute;
+    left: 205px;
+    bottom: 10px;
+
+}
+
+.c1:hover {
+    bottom: 30px;
+}
+.c1:hover + #C2 {
+    left: 130px;
+}
+.c1:hover + #C3 {
+    left: 195px;
+}
+.c1:hover + #C4 {
+    left: 260px;
+}
+
+.c2:hover {
+    bottom: 30px;
+}
+.c2:hover + #C3 {
+    left: 195px;
+}
+.c1:hover + #C4 {
+    left: 130px;
+}
+
+
+.c3:hover {
+    bottom: 30px;
+}
+.c3:hover + #C4 {
+    left: 260px;
+}
+
+.c4:hover { 
+    bottom: 30px;  
 }
