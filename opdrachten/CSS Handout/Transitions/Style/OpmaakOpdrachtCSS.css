@@ -473,3 +473,55 @@ button {
     bottom: 30px;
     color: cyan; 
 }
+
+.opdracht7 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 39, 38);
+    border-color: rgb(25, 82,76);
+    border-style: solid;    
+    border-width: 1px;
+    width: 416px;
+    height: 416px;
+}
+
+.druppel {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    animation: druppel 4.05s infinite;
+}
+
+@keyframes druppel {
+    
+    0% {transform: rotate(45deg);
+        border-radius: 0 50% 50% 50%;
+        background-color: grey;}
+    12.5%{transform: rotate(90deg);
+        border-radius: 50%;
+        background-color: rgb(25, 90, 110);}
+    25% {transform: rotate(45deg);
+        border-radius: 0 50% 50% 50%;
+        background-color: blue;}
+    37.5% {transform: rotate(0deg);
+        border-radius: 0 50% 50% 0;
+        background-color: lightblue;}
+    50% {transform: rotate(-45deg);
+        border-radius: 0 50% 0 0;
+        background-color: cyan}
+    62.5% {transform: rotate(-90deg);
+        border-radius: 0 0 0 0;
+        background-color: lightblue}
+    75% {transform: rotate(-45deg);
+        border-radius: 0 50% 0 0;
+        background-color: blue;}
+    87.5% {transform: rotate(0deg);
+        border-radius: 0 50% 50% 0;
+        background-color: rgb(25, 90, 110);}
+    100% {transform: rotate(45deg);
+         border-radius: 0 50% 50% 50%;
+         background-color: grey;}       
+        
+}
