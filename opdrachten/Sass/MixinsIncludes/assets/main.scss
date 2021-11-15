@@ -1,0 +1,20 @@
+@import 'button';
+@import 'colortrans';
+
+body {
+    background-color: black;
+}
+
+button {
+    @include knopje;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.colorChangingSquare {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    @include colortrans;
+}

@@ -1,0 +1,7 @@
+@mixin colortrans {
+    transition-duration: 3s;
+    background-color: cadetblue;
+    &:hover {
+        background-color: crimson;
+    }
+}

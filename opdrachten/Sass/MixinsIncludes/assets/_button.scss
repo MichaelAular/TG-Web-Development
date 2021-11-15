@@ -1,0 +1,17 @@
+@mixin knopje {
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color:  rgb(38, 255, 38);
+    border-width: 2px;
+    border-radius: 50%;
+    background-color: rgb(2, 59, 2);
+    color:  rgb(38, 255, 38);
+    &:hover {
+        background-color: rgb(38, 255, 38);
+        color: rgb(255, 255, 255);
+        border-color:   rgb(255, 255, 255);
+    }
+}
+
+
