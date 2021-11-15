@@ -1,0 +1,12 @@
+@import 'colors';
+
+button {width: 200px;
+    padding: 5px 2px;
+    background-color: $button-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    &:hover {
+        background-color: $button-hover-color;}
+    }
+      

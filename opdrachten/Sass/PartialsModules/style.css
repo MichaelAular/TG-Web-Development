@@ -1,0 +1,13 @@
+button {
+  width: 200px;
+  padding: 5px 2px;
+  background-color: #3d0000;
+  color: silver;
+  border: 1px solid silver;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #920000;
+}
+/*# sourceMappingURL=style.css.map */
