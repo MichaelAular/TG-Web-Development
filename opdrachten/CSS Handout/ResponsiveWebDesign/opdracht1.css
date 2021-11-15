@@ -1,0 +1,155 @@
+html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: GhostWhite;
+}
+body {
+  background-image: url("../../../pics/space.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.clearfix {
+  clear: both;
+}
+/* Title and Description */
+.page-title {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+}
+.logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("../../../pics/spaceship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+.page-title h1 {
+  display: inline-block;
+}
+
+.main {
+  text-align: center;
+}
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
+}
+.learn-more {
+  color: DarkOrange;
+  text-decoration: none;
+  display: block;
+  margin: 25px 0 0 0;
+  font-weight: bold;
+}
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.gallery-item {
+  margin: 20px;
+}
+.gallery-item .thumbnail {
+  width: 240px;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+}
+/* Footer Navigation */
+nav {
+  margin-top: 30px;
+}
+nav ul {
+  display: block;
+}
+nav li {
+  display: inline;
+  margin: 0 20px 0 0;
+  color: GhostWhite;
+}
+nav a {
+  line-height: 60px;
+  border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
+  text-align: center;
+}
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+@media(max-width:480px),(orientation: portrait){.page-title {
+width: 270px;}
+
+}
+
+@media(min-device-width: 320px) and (max-device-width: 480px){.gallery-item .thumbnail {
+    width: 95%;}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    background-image: url("../../../pics/spaceship.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    top: 1em;}
+  }
+
+@media(min-resolution: 150dpi){.logo {
+    height: 80px;
+    width: 80px;
+    background-image: url("../../../pics/spaceship2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 1em;}
+}
+
+@media(max-resolution: 150dpi) and (max-width:480px) {.page-description{
+    font-size: 20px;
+}}
+
+/* Het scherm heeft een minimale breedte van 768px;
+Het scherm heeft een maximale breedte van 1024px;
+Het scherm heeft als oriëntatie ‘landscape’.
+
+Deze query zorgt ervoor dat de paginatitel en beschrijving links van de gallery afbeeldingen komen te zweven. */
+
+@media(min-width:768px),(max-width:1024px),(orientation:landscape) {
+    /* Title and Description */
+.page-title {
+    text-align: center;
+    margin: auto;
+    line-height: 2em;
+    float: left;
+    max-width: 20%;
+    padding: 30px;
+}
+
+.page-description {
+    font-size: 0.8rem;
+    padding: 30px;
+    float:left;
+    max-width: 20%;
+  }
+}
