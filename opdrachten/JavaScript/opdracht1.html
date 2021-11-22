@@ -12,63 +12,129 @@
 <body>
     <h4>Intro to Java Script - Opdracht 1</h4>
     <h1>Variables & Datatypes</h1>
-
-    <h3>Opdracht 1.1:</h3>
+    
+    <h3>Opdracht 1.1</h3>
     <p><b>We onderzoeken het verschil tussen var, let en const. Gegeven zijn een aantal voorbeelden - schrijf eerst je
-        verwachtingen op voordat je ze zelf nabootst. Kijk vervolgens wat er bij jou in de console gelogd wordt - is dat wat
-        je verwachtte? Zo nee, deel het dan aan het einde van de dag met je groep.</b><br><br>
+            verwachtingen op voordat je ze zelf nabootst. Kijk vervolgens wat er bij jou in de console gelogd wordt - is dat
+            wat
+            je verwachtte? Zo nee, deel het dan aan het einde van de dag met je groep.</b><br><br>
         <img src="assets/img/1-1A.png"><br>
-        Ik verwachtte dat de console een tekst zou produceren met "Let Tekst Twee!". Ik keerg een error. Dit omdat de Identifier al eerder was benoemd.<br><br>
-
+        Ik verwachtte dat de console een tekst zou produceren met "Let Tekst Twee!". Ik keerg een error. Dit omdat de
+        Identifier al eerder was benoemd.<br><br>
+    
         <img src="assets/img/1-1B.png"><br>
-        Ik verwachtte dat de console een tekst zou produceren met "Let Tekst" en daarondernogmaals eeb met "Let Tekst Twee!". Dit was correct.<br><br>
-
+        Ik verwachtte dat de console een tekst zou produceren met "Let Tekst" en daarondernogmaals eeb met "Let Tekst
+        Twee!". Dit was correct.<br><br>
+    
         <img src="assets/img/1-1C.png"><br>
-         Aangezien dit een const betreft neem ik aan dat deze code in een error resulteert: Een const kan niet gewijzigd worden. Ook deze aanname klopt.<br><br>
-
+        Aangezien dit een const betreft neem ik aan dat deze code in een error resulteert: Een const kan niet gewijzigd
+        worden. Ook deze aanname klopt.<br><br>
+    
         <img src="assets/img/1-1D.png"><br>
-        Var is hier in de eerste wijziging volgens mij nog niet benoemd... dit kan twee dingen betekenen: of een error of deze regel wordt genegeerd. Bij het eerste geval wordt dit één error. Is het anders dan produceerd de console de teksten "Var Tekst Twee!" en "Var Tekst Drie!".<br>
-        De console produceerde de teksen "Var Tekst", "Var Tekst Twee", "Var Tekst Drie". Blijkbaar was de eerste regel voldoende.</p>
-        <br><br>
-
-        <h3>Opdracht 1.2:</h3>
-        <p><b>We onderzoeken de verschillende datatypes.<br>
+        Var is hier in de eerste wijziging volgens mij nog niet benoemd... dit kan twee dingen betekenen: of een error of
+        deze regel wordt genegeerd. Bij het eerste geval wordt dit één error. Is het anders dan produceerd de console de
+        teksten "Var Tekst Twee!" en "Var Tekst Drie!".<br>
+        De console produceerde de teksen "Var Tekst", "Var Tekst Twee", "Var Tekst Drie". Blijkbaar was de eerste regel
+        voldoende.
+    </p>
+    <br><br>
+    
+    <h3>Opdracht 1.2</h3>
+    <p><b>We onderzoeken de verschillende datatypes.<br>
             Gegeven de volgende code:<br>
             <img src="assets/img/1-2.png"><br>
-            Vervang bij het voorbeeld <i>“Number”</i> door de volgenden:<br>           
+            Vervang bij het voorbeeld <i>“Number”</i> door de volgenden:<br>
             Wat zie je in de console? Was dat wat je verwachtte?</b><br><br>
+    
+        <i>Number:</i> This is a function, with the value:function Number() { [native code] }<br>
+        <i>True:</i> This is a boolean, with the value:true<br>
+        <i>False:</i> This is a boolean, with the value:false<br>
+        <i>Undefined:</i> This is a undefined, with the value:undefined<br>
+        <i>22:</i> This is a number, with the value:22<br>
+        <i>22n:</i> This is a bigint, with the value:22<br>
+        <i>Symbol():</i> Uncaught TypeError: Cannot convert a Symbol value to a string<br>
+        <i>null:</i> This is a object, with the value:null<br>
+        <i>{}:</i> This is a object, with the value:[object Object]<br>
+        <i>new Object();:</i> This is a object, with the value:[object Object]<br>
+        <i>function calculateSomething() {}:</i>This is a function, with the value:function calculateSomething() {}
+    </p><br><br>
+    
+    <h3>Opdracht 1.3</h3>
+    <p>Gegeven de volgende code:<br>
+        <img src="assets/img/1-3.png"><br>
+    <ul>
+        <li>Wat komt hier uit?<br>
+            Uit de gegeven code komt 55. Omdat anotherNumber geen nummer is wordt deze niet opgeteld maar
+            <i>achter</i> someNumber geplaatst.
+        </li>
+        <li>Wat komt er uit als je van beiden een number maakt?<br>
+            Nu worden beide variables als een waarde gezien en dus opgeteld! De weergave in de console is dus 10!
+        </li>
+        <li>Wat komt er uit als je de + vervangt door:</li>
+        <ul>
+            <li>==<br>
+                Het symbool == checkt op gelijke waardes. Hierbij maakt het niet uit of de variables nog op een
+                getal staan of als tekst worden behandeld. Ze blijven gelijk en de consol weergave is "true".</li>
+            <li>===<br>
+                Deze operator zoekt naar <i>zowel</i> gelijke waardes als gelijke datatypes. Ze moeten beide
+                aanwezig zijn in de vergelijking. Bij de eerste optie wordt dit dus een False, omdat de datatypes
+                niet hetzelfde zijn. Halen we zoals eerder de aanhalingstekens weg dan wordt ook dit een getal en
+                zijn zowel waarde als datatype gelijk. De console toont nu dus een True.</li>
+            <li>!=<br>
+                Hier wordt gekeken naar naar een ongelijke waarde. False in zowel optie 1 als 2 (de waardes zijn
+                gelijk!). Let op: != is het tegenovergestelde van ==</li>
+            <li>!==<br>
+                De operatorzoek naar of een ongelijke waarde of een ongelijk datatype. Optie 1 geeft een true in de
+                console (ongelijk datatype), optie 2 een false.</li>
+        </ul>
+    </ul>
+    </p>
+    <br><br>
+    
+    <h3>Opdracht 1.4</h3>
+    <p>We gaan operators wat nader onderzoeken, en ermee experimenteren.
+        <ul>
 
-            <i>Number:</i> This is a function, with the value:function Number() { [native code] }<br>
-            <i>True:</i> This is a boolean, with the value:true<br>
-            <i>False:</i> This is a boolean, with the value:false<br>
-            <i>Undefined:</i> This is a undefined, with the value:undefined<br>
-            <i>22:</i> This is a number, with the value:22<br>
-            <i>22n:</i> This is a bigint, with the value:22<br>
-            <i>Symbol():</i> Uncaught TypeError: Cannot convert a Symbol value to a string<br>
-            <i>null:</i> This is a object, with the value:null<br>
-            <i>{}:</i> This is a object, with the value:[object Object]<br>
-            <i>new Object();:</i> This is a object, with the value:[object Object]<br>
-            <i>function calculateSomething() {}:</i>This is a function, with the value:function calculateSomething() {}</p><br><br>
+        <li>Wat komt er uit het volgende?<br>
+        <img src="assets/img/1-4A.png"><br>
+        Op mijn console kwam 2 2 te staan.</li>
         
-            <h3>Opdracht 1.3:</h3>
-            <p><b>Gegeven de volgende code:<br>
-                <img src="assets/img/1-3.png"><br>              
-                <ul>
-                <li>Wat komt hier uit?<br>
-                    Uit de gegeven code komt 55. Omdat anotherNumber geen nummer is wordt deze niet opgeteld maar <i>achter</i> someNumber geplaatst.</li>
-                <li>Wat komt er uit als je van beiden een number maakt?<br>
-                    Nu worden beide variables als een waarde gezien en dus opgeteld! De weergave in de console is dus 10!</li>
-                <li>Wat komt er uit als je de + vervangt door:</li>
-                <ul>
-                <li>==<br>
-                    Het symbol == checkt op gelijke waardes. Hierbij maakt het niet uit of de variables nog op een getal staan of als tekst worden behandeld. Ze blijven gelijk en de consol weergave is "true".</li>
-                <li>===</li>
-                <li>!=</li>
-                <li>!==</li>
-                </ul></ul></b><br><br>
-                
-
-                </p>
+        <li>Wat komt er uit als je de console.log() hierboven omdraait?<br>
+        Console geeft nu 1 3</li>
+        
+        <li>Wat komt er uit het volgende?<br>
+        <img src="assets/img/1-4C.png"><br>
+        Console geeft 4 en 2.4</li>
+            
+        
+        <li>Wat komt er uit het volgende? (spaties toegevoegd voor helderheid)<br>
+        <img src="assets/img/1-4D.png"><br>
+        False</li>
+        
+        <li>Wat komt er uit bovenstaand als je someNumber verandert in:
+            <ul>
+                <li>5 - false</li>
+                <li>Boolean - false</li>
+                <li>false - true</li>
+                <li>“false” - false</li>
+                <li>true - false</li>
+                <li>“true” - false</li>
+                <li>null - true</li>
+                <li>Undefined - true</li>
+            </ul>
+        </li>
+        
+        <li>Zoek op of experimenteer wat += doet. Werkt deze ook met Strings? Weet je hoe je deze anders kan schrijven?
+        Doe hetzelfde voor -=, *=, /=, %= en **=.<br>
+        <ul>
+            <li>+= voegt de waarde van de rechter operand toe aan een varriabele. Dit kan kan ook met Strings!</li>
+            <li>-= trekt de waarde van de rechter operand af van een varriabele.</li>
+            <li>*= Vermenigvuldigt de waarde van de rechter operand met die van een varriabele.</li>
+            <li>%= Deelt de waarde van de varriabele door de rechter operand en deelt het rest getal toe aan de varriabele. (voorbeeld:  als de varriabele 5 is en de rechter opperand 2, dan past de rechter operand 2 keer in de varriabel wat vier is. Er blijft nu een rest over van 1 bij de varriabel. Dit rest getal wordt geproduceerd.</li>
+            <li>**= verhoogt de waarde van de varriabel tot de macht van de rechter opperand.</li>
+        </ul></li>
+        </ul>
+        </p>
 
             
 
