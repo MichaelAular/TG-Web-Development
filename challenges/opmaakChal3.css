@@ -1,6 +1,7 @@
 body {
-  color: #fff;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #1f1f1f;
 }
 
 .main {
@@ -10,6 +11,16 @@ body {
 .sub {
   display: block;
   font-size: 1.5em;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .button {
@@ -28,32 +39,34 @@ body {
           align-items: center;
   width: 200px;
   height: 200px;
-  background-color: coral;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.heading {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  background-color: #2e2e2e;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .button:hover {
-  -webkit-box-shadow: inset 0 0 0 2px black, inset 10px 10px 20px black;
-          box-shadow: inset 0 0 0 2px black, inset 10px 10px 20px black;
+  -webkit-box-shadow: inset 0 0 0 2px black, inset 10px 10px 20px black, inset -10px -10px 20px #6f7a88;
+          box-shadow: inset 0 0 0 2px black, inset 10px 10px 20px black, inset -10px -10px 20px #6f7a88;
+  border-radius: 7px;
 }
 
 .button:hover .heading {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  color: white;
+  text-shadow: 1px 1px 10px cadetblue;
 }
 
 .container {
-  width: 500px;
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
+  top: 150px;
+  margin-left: calc(50% - 200px);
 }
 /*# sourceMappingURL=opmaakchal3.css.map */
