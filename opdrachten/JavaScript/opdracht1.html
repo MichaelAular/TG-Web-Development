@@ -14,10 +14,63 @@
     <h1>Variables & Datatypes</h1>
 
     <h3>Opdracht 1.1:</h3>
-    <p>We onderzoeken het verschil tussen var, let en const. Gegeven zijn een aantal voorbeelden - schrijf eerst je
+    <p><b>We onderzoeken het verschil tussen var, let en const. Gegeven zijn een aantal voorbeelden - schrijf eerst je
         verwachtingen op voordat je ze zelf nabootst. Kijk vervolgens wat er bij jou in de console gelogd wordt - is dat wat
-        je verwachtte? Zo nee, deel het dan aan het einde van de dag met je groep.</p>
+        je verwachtte? Zo nee, deel het dan aan het einde van de dag met je groep.</b><br><br>
+        <img src="assets/img/1-1A.png"><br>
+        Ik verwachtte dat de console een tekst zou produceren met "Let Tekst Twee!". Ik keerg een error. Dit omdat de Identifier al eerder was benoemd.<br><br>
 
+        <img src="assets/img/1-1B.png"><br>
+        Ik verwachtte dat de console een tekst zou produceren met "Let Tekst" en daarondernogmaals eeb met "Let Tekst Twee!". Dit was correct.<br><br>
+
+        <img src="assets/img/1-1C.png"><br>
+         Aangezien dit een const betreft neem ik aan dat deze code in een error resulteert: Een const kan niet gewijzigd worden. Ook deze aanname klopt.<br><br>
+
+        <img src="assets/img/1-1D.png"><br>
+        Var is hier in de eerste wijziging volgens mij nog niet benoemd... dit kan twee dingen betekenen: of een error of deze regel wordt genegeerd. Bij het eerste geval wordt dit één error. Is het anders dan produceerd de console de teksten "Var Tekst Twee!" en "Var Tekst Drie!".<br>
+        De console produceerde de teksen "Var Tekst", "Var Tekst Twee", "Var Tekst Drie". Blijkbaar was de eerste regel voldoende.</p>
+        <br><br>
+
+        <h3>Opdracht 1.2:</h3>
+        <p><b>We onderzoeken de verschillende datatypes.<br>
+            Gegeven de volgende code:<br>
+            <img src="assets/img/1-2.png"><br>
+            Vervang bij het voorbeeld <i>“Number”</i> door de volgenden:<br>           
+            Wat zie je in de console? Was dat wat je verwachtte?</b><br><br>
+
+            <i>Number:</i> This is a function, with the value:function Number() { [native code] }<br>
+            <i>True:</i> This is a boolean, with the value:true<br>
+            <i>False:</i> This is a boolean, with the value:false<br>
+            <i>Undefined:</i> This is a undefined, with the value:undefined<br>
+            <i>22:</i> This is a number, with the value:22<br>
+            <i>22n:</i> This is a bigint, with the value:22<br>
+            <i>Symbol():</i> Uncaught TypeError: Cannot convert a Symbol value to a string<br>
+            <i>null:</i> This is a object, with the value:null<br>
+            <i>{}:</i> This is a object, with the value:[object Object]<br>
+            <i>new Object();:</i> This is a object, with the value:[object Object]<br>
+            <i>function calculateSomething() {}:</i>This is a function, with the value:function calculateSomething() {}</p><br><br>
+        
+            <h3>Opdracht 1.3:</h3>
+            <p><b>Gegeven de volgende code:<br>
+                <img src="assets/img/1-3.png"><br>              
+                <ul>
+                <li>Wat komt hier uit?<br>
+                    Uit de gegeven code komt 55. Omdat anotherNumber geen nummer is wordt deze niet opgeteld maar <i>achter</i> someNumber geplaatst.</li>
+                <li>Wat komt er uit als je van beiden een number maakt?<br>
+                    Nu worden beide variables als een waarde gezien en dus opgeteld! De weergave in de console is dus 10!</li>
+                <li>Wat komt er uit als je de + vervangt door:</li>
+                <ul>
+                <li>==<br>
+                    Het symbol == checkt op gelijke waardes. Hierbij maakt het niet uit of de variables nog op een getal staan of als tekst worden behandeld. Ze blijven gelijk en de consol weergave is "true".</li>
+                <li>===</li>
+                <li>!=</li>
+                <li>!==</li>
+                </ul></ul></b><br><br>
+                
+
+                </p>
+
+            
 
     <div class="buttons">
         <br>
