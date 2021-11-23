@@ -98,7 +98,34 @@ The character at index 66 is k
 
         </ul></p>
 
-
+    <h3>Opdracht 2.2</h3>
+    <p>substring() en slice() lijken erg op elkaar. We onderzoeken de verschillen. Test dit met een eigen string, of
+        gebruik het vorige voorbeeld.<br>
+        <br>
+        Beide functies hebben dezelfde syntax. Ze selecteren een een gedeelte van de string en produceren het
+        geselecteerde gedeelte als nieuwe string.
+        Start en eind parameters worden gebruikt om de selectie te specificeren (let op: eerste karakter begint met een
+        nul). Start is hierbuij verplicht.
+        Een eind is niet nodig! Bij het niet aangeven van een eind wordt de resterende string gebruikt.<br>
+        Als start==stop dan geven beide functies een lege string terug als antwoord. Als een argument groter is dan een
+        string lengte dan zal de string lengte worden gebruikt.<br>
+        <br>
+        substring() en slice() kunnen 2 waardes meegegeven worden - een index waar de nieuwe waarde begint en een index
+        waar deze moet eindigen.<br>
+        <li>Wat doet substring() als het eerste getal hoger is dan het tweede getal?<br>
+            Als start > stop, dan wisselt substring de waardes.</li><br>
+        <li>Wat doet slice() als het eerste getal hoger is dan het tweede getal?<br>
+            Als start > stop, dan geeft slice een lege string (“”).</li><br>
+        Deze waardes hoeven niet per se positief te zijn - je kan ook negatieve getallen meegeven.<br>
+        <li>Wat doet substring() bij negatieve waardes?
+            Als een argument negatief is of NaN, dan wordt het behandeld als 0.</li><br>
+        <li>Wat doet slice() bij negatieve waardes<br>
+            Als start negatief is dan wordt het de char van het eind van de zin gebruikt.<br>
+            Als stop negatief is dan wordt stop als volgt vertaald:<br>
+<div class="code"><xmp>        
+stop = string.length – Math.abs(stop)
+</xmp></div>
+Dit houdt in dat als de string lengte 100 is en de stop -20, de stop wordt vertaald naar 80.></li></p>
 
 
     <div class="buttons">
