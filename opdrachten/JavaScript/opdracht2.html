@@ -11,13 +11,94 @@
 
 <body>
     <h4>Intro to Java Script - Opdracht 2</h4>
-    <h1>OPDRACHT 2</h1>
+    <h1>String Methods</h1>
 
-    <h3>de opdracht</h3>
-    <p></p>
+    <h3>Opdracht 2.1</h3>
+    <p>Gegeven de volgende String:<br>
+        <img src="assets/img/2-1.png">
+        <ul>
+        <li>Splits de String met een array method op in 2 aparte zinnen. Stop beiden in een aparte variabele.
+<div class="code"><xmp>
+<script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+    let line = someKittens.split("! ");
 
-    <h3>de uitvoering</h3>
-    <p></p>
+    let line1 = line[0] + "!";
+    console.log(line1);
+
+    let line2 = line[1];
+    console.log(line2);
+</script>
+</xmp></div><br></li>
+
+        <li>Zo’n geweldig nieuws verdient upper case. Zet someKittens om naar hoofdletters.<div class="code"><xmp>
+<script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+        
+    const someKittens2 = someKittens.toUpperCase();
+           
+    let line = someKittens2.split("! ");
+    let line1 = line[0] + "!";
+    let line2 = line[1];
+    console.log(line1);
+    console.log(line2);
+</script>
+</xmp></div><br></li>
+
+        <li>Geef de eerste en laatste index van KITTENS.<div class="code"><xmp>
+<script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+
+    const someKittens2 = someKittens.toUpperCase();
+
+    let line = someKittens2.split("! ");
+    let line1 = line[0] + "!";
+    let line2 = line[1];
+    console.log(line1);
+    console.log(line2);
+
+    console.log(someKittens.indexOf('kittens'));
+    console.log(someKittens.lastIndexOf('kittens'));
+</script>
+</xmp></div><br></li>
+
+        <li>Gebruik charAt() op beiden. Welk teken krijg je terug?
+<div class="code"><xmp>
+<script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+
+    const someKittens2 = someKittens.toUpperCase();
+
+    let line = someKittens2.split("! ");
+    let line1 = line[0] + "!";
+    let line2 = line[1];
+    console.log(line1);
+    console.log(line2);
+
+    console.log(someKittens.indexOf('kittens'));
+    console.log(someKittens.lastIndexOf('kittens'));
+
+    const index1 = someKittens.indexOf('kittens');
+    const index2 = someKittens.lastIndexOf('kittens');
+
+    console.log(`The character at index ${index1} is ${someKittens.charAt(index1)}`);
+    console.log(`The character at index ${index2} is ${someKittens.charAt(index2)}`);
+</script>
+</xmp></div></li>
+<br>
+<p> console geeft nu:</p>
+<div class="code"><xmp>
+DE POES VAN DE BUURMAN HEEFT KITTENS GEHAD!
+HIJ VRAAGT OF WIJ NOG KITTENS WILLEN.
+29
+66
+The character at index 29 is k
+The character at index 66 is k
+</xmp></div>
+
+        </ul></p>
+
+
 
 
     <div class="buttons">

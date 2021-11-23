@@ -48,15 +48,18 @@ img {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(25, 82,76);
-    /* width: 420px; */
 }
 
-/* .normalwidth img{
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-} */
+.code {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(25, 82,76);
+    padding: 10px;
+    padding-left: 25px;
+    width: 800px;
+    background-color: rgb(29, 39, 38);
+    color:turquoise;
+}
 
 button {
     width: 100px;

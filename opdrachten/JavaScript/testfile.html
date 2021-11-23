@@ -1,6 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+
     <script>
-        let someNumbern = 5;
-        let anotherNumber = "5";
-        console.log(someNumbern == anotherNumber)
+        let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+
+        const someKittens2 = someKittens.toUpperCase();
+   
+        let line = someKittens2.split("! ");
+        let line1 = line[0] + "!";
+        let line2 = line[1];
+        console.log(line1);
+        console.log(line2);
+        
+        console.log(someKittens.indexOf('kittens'));
+        console.log(someKittens.lastIndexOf('kittens'));
+
+        const index1 = someKittens.indexOf('kittens');
+        const index2 = someKittens.lastIndexOf('kittens');
+        
+        console.log(`The character at index ${index1} is ${someKittens.charAt(index1)}`);
+        console.log(`The character at index ${index2} is ${someKittens.charAt(index2)}`);
     </script>
 
+
+</body>
+</html>
