@@ -16,27 +16,92 @@
     <h3>Opdracht 3.1</h3>
     <p>Conditions werken erg vaak met operators. Om goed met conditions te kunnen werken, moet je operators echt goed begrijpen. Daarom onderzoeken we ze hier nogmaals:<br>
         <br>        
-        <li>Wat is het verschil tussen == en ===?</li>
-        <li>Wat is het verschil tussen > en >=? En tussen < en <=?</li>
+        <li>Wat is het verschil tussen == en ===?<br>
+        Bij de operator == wordt er enkel gecheckt of de de variabele gelijk is. Dit kan betekenen dat er een string met een
+            cijferreeks wordt vergeleken. hebben deze bijde dezelfde waarde (bijvoorbeeld 10) dan is dit statement true.<br>
+            Bij de operator === daarintegen wordt er naast de waarde ook het type vergeleken. Hierbij kan de waarde wel gelijk
+            zijn (zoals in het vorrige voorbeeld) naar zijn de types niet gelijk is dit statement nogsteeds false. Zowel waarde
+            als type moeten gelijk zijn voor een true statement.</li>
+        <li>Wat is het verschil tussen > en >=?<br>
+            De eerste betekend groter dan. De tweede groter dan of gelijk aan.</li>
+        <li>En tussen < en <=?<br>
+            Kleiner dan. Kleiner dan of gelijk aan</li>
+
         <br>
-        Soms controleert een conditie meerdere dingen tegelijkertijd. Dit doet met de hulp van Logical Operators:
-        <li>&&		EN</li>
-        <li>||		OF</li>
-        <li>!		NIET</li>
-        
+        Soms controleert een conditie meerdere dingen tegelijkertijd. Dit doet JS met de hulp van Logical Operators:
+        <xmp>&&		EN
+||		OF
+!		NIET</xmp>
+
         Soms worden deze in combinatie gebruikt. Gegeven volgende code:<br>
         <img src="assets/img/3-1.png"><br>
-        <br>       
-        <li>Schrijf de If conditie zo, dat je alleen Results ziet als x==4 en y==8</li>
-        <li>Schrijf het nu zo dat je alleen Results ziet als x==4 OF y==8</li>
-        <li>Zet nu de console.log(“Results”) in een Else { } na de If. Kan je de conditie omdraaien zodat je alsnog Results te zien krijgt?</li>
-        <li>Kan je het vorige antwoord ook geven zonder || te gebruiken?</li>
+        <br>
+
+        <li>Schrijf de If conditie zo, dat je alleen Results ziet als x==4 en y==8<br>
+        <i>zie console</i></li>
+        <script>
+            let x1 = 4;
+            let y1 = 8;
+            if (x1===4 && y1===8) {
+                console.log("result1")
+            }
+        </script>
+
+        <li>Schrijf het nu zo dat je alleen Results ziet als x==4 OF y==8<br>
+        <i>zie console</i></li>
+        <script>
+            let x2 = 4;
+            let y2 = 8;
+            if (x2===4 || y2===8) {
+                console.log("result2")
+            }
+        </script>
+
+        <li>Zet nu de console.log(“Results”) in een Else { } na de If. Kan je de conditie omdraaien zodat je alsnog Results te zien krijgt?<br>
+        <i>zie console</i></li>
+        <script>
+            let x3 = 4;
+            let y3 = 8;
+            if (!(x3===4 || y3===8)) {
+                console.log("fout result3");
+                } else {console.log("result3")
+            }
+        </script>
+        <li>Kan je het vorige antwoord ook geven zonder || te gebruiken?<br>
+            <script>
+                let x4 = 4;
+                let y4 = 8;
+                if (x4!==4 && y3!==8) {
+                    console.log("fout result3");
+                    } else {console.log("result4")
+                }
+            </script>
+        </li>
+
         <br>
         Schrijf voor de volgende opdrachten 1 If/Else die 1 variabele waarde controleert, en zorg voor het volgende:<br>
         <li>Log het in je console als de waarde groter dan 5 EN kleiner dan 10 is.</li>
         <li>Zo niet, log dan in je console als de waarde 11 of groter EN 20 of kleiner is.</li>
         <li>Zo niet, log dan in je console als de waarde 21 of 23 is.</li>
-        <li>Zo niet, log dan in je console als de waarde kleiner dan 35 OF tussen de 40 en 45 is.</li>
+        <li>Zo niet, log dan in je console als de waarde kleiner dan 35 OF tussen de 40 en 45 is.<br>
+
+            <script>
+                let someValue = 23;
+
+                if (someValue > 5 && someValue < 10) {
+                    console.log("5 t/m 10");
+                    } else if (someValue >= 11 && someValue <= 20) {
+                    console.log("11 t/m 20");
+                    } else if (someValue === 21 || someValue === 23) {
+                    console.log("21 of 23");
+                    } else if (someValue>35 || someValue > 40 && someValue < 45) {
+                    console.log("Kleiner dan 35 of tussen 40 en 45");
+                }
+
+            </script>
+            
+        </li>
+
         <li>Test of je bij alle uitkomsten kan komen. Verandert er iets als je alle If/Else omzet in aparte If blokken?</li>
         </p>
 
