@@ -4,6 +4,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left:20px;
     font-size: 14px;
+    padding-right: 20%;
 }
 
 h1 {
@@ -70,17 +71,17 @@ button {
     color: white;
 }
 
-.largebutton button {
-    width: 210px;
+.button:hover {
+    background-color: darkcyan;
+}
+
+input {
+    width: 100px;
     padding: 5px 2px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: black;
-    color: white;
-    text-align: left;
-}
-
-.button:hover {
-    background-color: darkcyan;
+    color: cyan;
+    text-align: center;
 }
