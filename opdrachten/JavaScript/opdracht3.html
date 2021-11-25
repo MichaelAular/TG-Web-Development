@@ -150,8 +150,8 @@
   <p>
     We oefenen nog wat extra met grotere If/Else blokken, Switch/case en
     Ternary Operators.<br>
-  
-  <ul>
+
+    <ul>
     <li>Schrijf een If/Else blok die een eigen variabele controleert:</li>
     <ul>
       <li>Gelijk aan 3?</li>
@@ -176,74 +176,127 @@
     </script>
 </ul>
 
-    <ul>
-      <li>
-        Test je variabele met 2, 3, 4, 5 en 20. Gebeurt er iets
-        onverwachts?<br />
-        Er gebeurt niets onverwachts. De echter de het gebruik van if/else op
-        deze manier lijkt niet correct. Bij 4 krijg ik een error: 4 is niet
-        gedefinieerd in deze code! 20 geeft ook een "vasle" uitslag: code kan
-        stoppen bij groter dan 4 (wat 20 is!) en komt dus nooit verder in de
-        else/if string. Dit zou wél werken als je de code omdraait. Dit zodat
-        eerst de grote getallen worden gecheckt. (is x<30? nee? is x>11? nee? x>4? etc)
-      </li>
+<ul>
+  <li>
+    Test je variabele met 2, 3, 4, 5 en 20. Gebeurt er iets
+    onverwachts?<br />
+    Er gebeurt niets onverwachts. De echter de het gebruik van if/else op
+    deze manier lijkt niet correct. Bij 4 krijg ik een error: 4 is niet
+    gedefinieerd in deze code! 20 geeft ook een "vasle" uitslag: code kan
+    stoppen bij groter dan 4 (wat 20 is!) en komt dus nooit verder in de
+    else/if string. Dit zou wél werken als je de code omdraait. Dit zodat
+    eerst de grote getallen worden gecheckt. (is x<30? nee? is x>11? nee? x>4? etc)
+  </li>
 
 
-    <li>Schrijf een If/Else die een variabele op numerieke waarde controleert, en
+  <li>Schrijf een If/Else die een variabele op numerieke waarde controleert, en
     de passende maand in je console logt.</li>
-    <ul>
-      <li>Januari</li>
-      <li>Februari</li>
-      <li>Maart</li>
-      <li>April</li>
-      <li>Mei</li>
-      <li>Juni</li>
-      <li>Juli</li>
-      <li>Augustus</li>
-      <li>September</li>
-      <li>October</li>
-      <li>November</li>
-      <li>December</li>
-      <li>Andere getallen loggen (“Geen geldige maand!”).</li>
-      </ul>
-      <i>zie console en code</i><br />
+  <ul>
+    <li>Januari</li>
+    <li>Februari</li>
+    <li>Maart</li>
+    <li>April</li>
+    <li>Mei</li>
+    <li>Juni</li>
+    <li>Juli</li>
+    <li>Augustus</li>
+    <li>September</li>
+    <li>October</li>
+    <li>November</li>
+    <li>December</li>
+    <li>Andere getallen loggen (“Geen geldige maand!”).</li>
   </ul>
-      <script>
-        let maand= 1;
-        if (maand === 1) {
-        console.log("januari");
-      } else if (maand === 2) {
-        console.log("februari");
-      } else if (maand === 3) {
-        console.log("maart");
-      }else if (maand === 4) {
-        console.log("april");
-      } else if (maand ===5) {
-        console.log("mei");
-      } else if (maand === 6) {
-        console.log("juni");
-      } else if (maand === 7) {
-        console.log("juli");
-      } else if (maand === 8) {
-        console.log("augustus");
-      } else if (maand === 9) {
-        console.log("september");
-      } else if (maand === 10) {
-        console.log("oktober");
-      } else if (maand === 11) {
-        console.log("november");
-      } else if (maand === 12) {
-        console.log("december");
-      } else {console.log("geen geldige maand");
-      }
-      </script>
+  <i>zie console en code</i><br />
 
-    Bouw nu vorrige opdrach met een Switch/case.<br />
-    Gegeven de volgende code:<br />
-    <img src="assets/img/3-2.png" />
-    <br />
-    Herschrijf dit als een Ternary Operator.</p>
+  <script>
+    let maand = 1;
+    if (maand === 1) {
+      console.log("januari");
+    } else if (maand === 2) {
+      console.log("februari");
+    } else if (maand === 3) {
+      console.log("maart");
+    } else if (maand === 4) {
+      console.log("april");
+    } else if (maand === 5) {
+      console.log("mei");
+    } else if (maand === 6) {
+      console.log("juni");
+    } else if (maand === 7) {
+      console.log("juli");
+    } else if (maand === 8) {
+      console.log("augustus");
+    } else if (maand === 9) {
+      console.log("september");
+    } else if (maand === 10) {
+      console.log("oktober");
+    } else if (maand === 11) {
+      console.log("november");
+    } else if (maand === 12) {
+      console.log("december");
+    } else {
+      console.log("geen geldige maand");
+    }
+  </script>
+<li>Bouw nu vorrige opdrach met een Switch/case.</li>
+<i>zie console en code</i><br />
 
+  <script>
+    let nieuweMaand = 2;
+    switch(nieuweMaand) {
+  case 1:
+    {console.log("januari")}
+    break;
+    case 2:
+    {console.log("februari")}
+    break;
+    case 3:
+    {console.log("maart")}
+    break;
+    case 4:
+    {console.log("april")}
+    break;
+    case 5:
+    {console.log("mei")}
+    break;
+    case 6:
+    {console.log("juni")}
+    break;
+    case 7:
+    {console.log("juli")}
+    break;
+    case 8:
+    {console.log("augustus")}
+    break;
+    case 9:
+    {console.log("september")}
+    break;
+    case 10:
+    {console.log("oktober")}
+    break;
+    case 11:
+    {console.log("november")}
+    break;
+    case 12:
+    {console.log("december")}
+    break;
+    default:
+    {console.log("geen geldige maand")}
+}
+  </script>
+
+<li>Gegeven de volgende code:</li>
+  <img src="assets/img/3-2.png" />
+  <br />
+<li>Herschrijf dit als een Ternary Operator.</li>
+
+<script>
+  let x = 2;
+  let result = (x<=4 && x>=0) ? 2 : 5
+  console.log(result);
+</script>
+
+</ul></p>
 
   <div class="buttons">
     <br />
