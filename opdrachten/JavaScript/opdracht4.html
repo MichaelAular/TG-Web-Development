@@ -14,22 +14,29 @@
     <h1>Functions</h1>
     <h3>Opdracht 4.1:</h3>
     <p>We gaan functies oefenen door bij het begin te beginnen:
-    <ul>
-        <li>Maak een button en verbind er een functie aan. Zorg ervoor dat de functie in de console "Hello World” logt.<br>
-            <button class="button" onclick="functieButton4()">click me!</button></li>
+    <ol type="a">
+        <li>Maak een button en verbind er een functie aan. Zorg ervoor dat de functie in de console "Hello World”
+            logt.<br>
+            <button class="button" onclick="functieButton()">click me!</button>
+        </li>
 
         <li>Maak een input element en geef het een bepaald ID. Sla dat ID op in een variabele via
             document.GetElementByID().<br>
-            <input type="text" id="naam_input" size =10 placeholder="type name here" onchange="logName()"></li>
+            <input type="text" id="input1" size=10 placeholder="type here...">
+        </li>
 
-        <li>Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie
-            je in de console?<br>
+        <li>Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee.
+            Wat zie je in de console?<br>
+            <button class="button" onclick="log1(varInput)">click me!</button>
+        </li>
 
         <li>Geef je functie een return waarde, bijvoorbeeld de parameter * 2. Maak
             vervolgens een nieuwe variabele “result”. Roep je functie op met een getal
             als parameter en wijs de return waarde toe aan “result”. Log de variabele
-            daarna in je console.</li>
-    </ul>
+            daarna in je console.<br>
+            <input type="number" id="input2" placeholder="enter number" onchange="log2()">
+        </li>
+    </ol>
     </p>
 
     <div class="buttons">
@@ -39,7 +46,7 @@
         <a href="opdracht5.html"> <button class="button">volgende</button></a>
     </div>
 
-    <script type="text/javascript" src="opdracht4.js" />
+    <script type="text/javascript" src="opdracht4.js"></script>
 </body>
 
 </html>
