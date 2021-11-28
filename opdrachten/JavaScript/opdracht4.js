@@ -34,5 +34,9 @@ function trigger42aIV() {
 }
 
 function trigger42aV() {
-  document.getElementById("vraag42aV").innerHTML = "ook cyan!";
+  document.getElementById("vraag42aV").innerHTML = "Hello World!";
 }
+
+function trigger42aVI() {
+    document.getElementById("vraag42aV").innerHTML = "Hello World!";
+  }
