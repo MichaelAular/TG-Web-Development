@@ -62,31 +62,6 @@ function randomNumber() {
 }
 
 // 4.3 B
-
-// function randomNumberI() {
-//   let x = 1;
-//   let antwoord43bI = document.getElementById("input43bI").innerHTML = Math.floor(Math.random() * x);
-//   console.log(antwoord43bI)
-// }
-
-// function randomNumberII() {
-//   let x = 7;
-//   let antwoord43bII = document.getElementById("input43bII").innerHTML = Math.floor(Math.random() * x);
-//   console.log(antwoord43bII)
-// }
-
-// function randomNumberIII() {
-//   let x = 20;
-//   let antwoord43bIII = document.getElementById("input43bIII").innerHTML = Math.floor(Math.random() * x);
-//   console.log(antwoord43bIII)
-// }
-
-// function randomNumberIV() {
-//   let x = 138;
-//   let antwoord43bIV = document.getElementById("input43bIV").innerHTML = Math.floor(Math.random() * x);
-//   console.log(antwoord43bIV)
-// }
-
 const nummer1 = document.getElementById("input43bI")
 function randomNumberI() {
   let x = 7;
@@ -126,7 +101,6 @@ function randomNumberV() {
   console.log(antwoord43bV)
   nummer5.innerHTML = antwoord43bV
 }
-
 
 // 4.3 C
 function logmathmin() {
