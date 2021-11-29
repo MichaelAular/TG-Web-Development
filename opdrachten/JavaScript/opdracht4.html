@@ -27,7 +27,7 @@
 
         <li>Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee.
             Wat zie je in de console?<br>
-            <button class="button" onclick="log1(varInput)">click me!</button>
+            <input type="text" id="input41c" size=10 placeholder="type here..." onchange="log41c()">
         </li>
 
         <li>Geef je functie een return waarde, bijvoorbeeld de parameter * 2. Maak
@@ -82,8 +82,43 @@
 
         <li>Bij opdracht 4.1c heb je een input als parameter meegegeven. Roep die functie nu aan met een oninput ipv
             onchange,
-            en console.log() de parameter.value ipv de parameter. Zie je het verschil in beide gevallen?</li>
+            en console.log() de parameter.value ipv de parameter. Zie je het verschil in beide gevallen?<br>
+            <button class="button" onclick="log42b(varInput2)">click me!</button><br>
+            De een (4.1c) geeft undefined weer in de console terwijl  4.2b de ingegeven waarde retourneert!
+            </li>
     </ol>
+
+    <h3>Opdracht 4.3:</h3>
+    <p>Eerder heb je kennis gemaakt met het String object en de built-in String Methods. Nu gaan we kennismaken met nog zo een - het Math object.
+        Het Math object heeft namelijk ook methods die bij functies erg veel gebruikt worden:
+        <ol type="a">
+        <li>Maak een functie randomNumber() en verbindt die aan een button. Zorg dat de functie Math.random() in de console logt.
+        Wat merk je op als je deze meerdere keren gebruikt?<br>
+        <button class="button big" id ="input43a" onclick="randomNumber()">click me!</button></li>
+
+        <br>
+        Math.random() geeft dus een getal 0 >= x < 1 terug - het kan wel 0 zijn, maar nooit 1. Als je die laat afronden met Math.round(),
+        zal het vaker afronden naar beneden dan naar boven.<br>
+        Als je een willekeurig getal wil tonen, moet je Math.floor() gebruiken op Math.random(). Als je dit zo doet, krijg je altijd 0 terug.<br>
+        <br>
+        <li>Verander je functie nu dat hij een parameter x gebruikt, en zorg dat hij het volgende in je console logt: Math.floor(Math.random() * x).
+            Test nu je functie met verschillende waardes voor x. Valt iets je op?<br>
+            <button class="button big" id ="input43bI" onclick="randomNumberI()">X = 7</button><br>
+            <button class="button big" id ="input43bII" onclick="randomNumberII()">X = 20</button><br>
+            <button class="button big" id ="input43bIII" onclick="randomNumberIII()">X =483</button><br>
+            <button class="button big" id ="input43bIV" onclick="randomNumberIV()">X = 725</button><br>
+            <button class="button big" id ="input43bV" onclick="randomNumberV()">x = 2000</button><br>
+            Er wordt een random <i>afgerond</i>nummer gegenereerd van: 0 tot x (let op kan wel 0 zijn maar nooit x!).
+        </li>
+
+        <li>Er zijn nog 2 belangrijke Math methods die handig zijn om te kennen. Onderzoek wat Math.min() en Math.max() doen. Kan je van beide al een voorbeeld geven?<br>
+            Math.min() geeft de laagst ingevoerde waarde terug of NaN als er een niet naar een nummer coverteerbare waarde ingevoerd is. Math.max() geeft logischerwijs  het tegenovergestelde resultaat: de hoogste waarde.<br>
+            Voorbeeld van Math.min() en Math.max() aan de hand van de antwoorden gegenereerd in opdracht  4.3b:<br><br>
+            <button class="button big" id ="mathmin" onclick="logmathmin()">mathMin()</button>
+            <button class="button big" id ="mathmax" onclick="logmathmax()">mathMax()</button>
+        </li>
+    </ol></p>
+
 
     <div class="buttons">
         <br />
