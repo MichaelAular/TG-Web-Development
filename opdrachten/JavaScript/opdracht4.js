@@ -34,9 +34,9 @@ function trigger42aIV() {
 }
 
 function trigger42aV() {
-  document.getElementById("vraag42aV").innerHTML = "Hello World!";
+  document.getElementById("vraag42aV").innerHTML = color = "cyan";
 }
 
 function trigger42aVI() {
-    document.getElementById("vraag42aV").innerHTML = "Hello World!";
+    document.getElementById("vraag42aVI").innerText = "Hello World!";
   }
