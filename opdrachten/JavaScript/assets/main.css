@@ -87,7 +87,7 @@ button {
 }
 
 .big {
-    width: 200px;
+    width: 206px;
 }
 
 .button:hover {
@@ -95,7 +95,7 @@ button {
 }
 
 input {
-  width: 100px;
+  width: 200px;
   padding: 5px 2px;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -103,4 +103,9 @@ input {
   background-color: black;
   color: cyan;
   text-align: center;
+}
+
+#antwoord44a, #antwoord44c{
+  font-size: large;
+  color: cyan;
 }

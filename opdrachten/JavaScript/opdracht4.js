@@ -104,9 +104,73 @@ function randomNumberV() {
 
 // 4.3 C
 function logmathmin() {
-  document.getElementById("mathmin").innerText = Math.min(nummer1.innerHTML, nummer2.innerHTML, nummer3.innerHTML, nummer4.innerHTML ,nummer5.innerHTML);
+  document.getElementById("mathmin").innerText = Math.min(
+    nummer1.innerHTML,
+    nummer2.innerHTML,
+    nummer3.innerHTML,
+    nummer4.innerHTML,
+    nummer5.innerHTML);
 }
 
 function logmathmax() {
-document.getElementById("mathmax").innerText = Math.max(nummer1.innerHTML, nummer2.innerHTML, nummer3.innerHTML, nummer4.innerHTML ,nummer5.innerHTML);
+document.getElementById("mathmax").innerText = Math.max(
+    nummer1.innerHTML,
+    nummer2.innerHTML,
+    nummer3.innerHTML,
+    nummer4.innerHTML,
+    nummer5.innerHTML);
+}
+
+// 4.4 A
+function log44a() {
+  const inputname = ((document.getElementById("input44a").value).toLowerCase())
+  switch (inputname) {
+    case "alfijah":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    case "fatos":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    case "michael":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    case "zico":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    default:
+      console.log("geen geldige naam!");
+      return inputname + " zit niet in de groep!";
+  }
+}
+
+// // 4.4 B
+function printAntwoord() {
+ document.getElementById("antwoord44a").innerText = log44a()
+}
+
+// // 4.4 C
+log44c = () => {
+  const inputname = ((document.getElementById("input44c").value).toLowerCase())
+
+  switch (inputname) {
+    case "alfijah":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    case "fatos":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    case "michael":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    case "zico":
+      console.log(inputname + " zit in de groep!");
+      return inputname + " zit in de groep!";
+    default:
+      console.log("geen geldige naam!");
+      return inputname + " zit niet in de groep!";
+  }
+}
+
+printAntwoord2 = () => {
+ document.getElementById("antwoord44c").innerText = log44c()
 }
