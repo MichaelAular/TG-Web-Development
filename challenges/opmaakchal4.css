@@ -1,0 +1,88 @@
+body {
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #1f1f1f;
+}
+
+input {
+  width: 130px;
+  height: 40px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e2e2e), color-stop(#565656), to(#2e2e2e));
+  background-image: linear-gradient(to right, #2e2e2e, #565656, #2e2e2e);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border-radius: 2px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+input:hover {
+  -webkit-box-shadow: inset 0 0 0 1px black, inset 3px 3px 5px black, inset -3px -3px 5px #6f7a88, inset 1px 1px 10px cadetblue;
+          box-shadow: inset 0 0 0 1px black, inset 3px 3px 5px black, inset -3px -3px 5px #6f7a88, inset 1px 1px 10px cadetblue;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+  color: white;
+  text-shadow: 1px 1px 2px cadetblue;
+}
+
+.container_input {
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#2e2e2e), color-stop(#3c3c3c), to(#2e2e2e));
+  background-image: linear-gradient(to top right, #2e2e2e, #3c3c3c, #2e2e2e);
+  top: 100px;
+  margin-left: calc(50% - 150px);
+  width: 170px;
+  height: 130px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-right: 1px solid #0a0a0a;
+  border-bottom: 1px solid #0a0a0a;
+}
+
+.container_display {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#2e2e2e), color-stop(#3c3c3c), to(#2e2e2e));
+  background-image: linear-gradient(to top right, #2e2e2e, #3c3c3c, #2e2e2e);
+  width: 185px;
+  height: 185px;
+  left: 0px;
+  bottom: -187px;
+  border-right: 1px solid #0a0a0a;
+  border-bottom: 1px solid #0a0a0a;
+}
+
+.display {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 85px;
+  width: 165px;
+  left: 10px;
+  top: 10px;
+  -webkit-box-shadow: inset 3px 3px 5px black, inset 1px 1px 10px cadetblue;
+          box-shadow: inset 3px 3px 5px black, inset 1px 1px 10px cadetblue;
+}
+
+.days {
+  position: absolute;
+  bottom: -90px;
+  font-size: 76px;
+  text-shadow: 3px 3px 5px #1f1f1f;
+}
+
+#count {
+  color: cadetblue;
+  font-size: 70px;
+}
+/*# sourceMappingURL=opmaakchal4.css.map */

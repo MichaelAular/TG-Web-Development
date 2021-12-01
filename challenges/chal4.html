@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>challenge 4</title>
+    <link rel="stylesheet" href="opmaakChal4.css" />
+  </head>
+
+ <body>
+    <div class="container_input">
+      <label for="start">Start date:</label>
+      <input type="date" id="inputStart" onchange="printDiff()" />
+      <br />
+      <label for="start">End date:</label>
+      <input type="date" id="inputEnd" onchange="printDiff()" />
+      <div class="container_display">
+        <div class="display"><p id="count">X</p>
+          <div class="days">DAYS</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function getNumberOfDays(start, end) {
+            const date1 = new Date(start);
+            const date2 = new Date(end);
+
+            // een dag in ms
+            const oneDay = 1000 * 60 * 60 * 24;
+
+            // tijd tussen twee datums
+            const diffInTime = date2.getTime() - date1.getTime();
+
+            // dagen tussen datums
+            const diffInDays = Math.round(diffInTime / oneDay);
+            return diffInDays;
+        }
+
+        function printDiff() {
+            let a = document.getElementById("inputStart").value;
+            let b = document.getElementById("inputEnd").value;
+            console.log(getNumberOfDays(a, b));
+            document.getElementById("count").innerText = getNumberOfDays(a, b)
+        }
+
+    </script>
+
+
+    </script>
+  </body>
+</html>
