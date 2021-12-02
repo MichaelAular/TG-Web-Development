@@ -53,7 +53,7 @@ for (let i=0; i < 21; i++, i++) {
     console.log("5.2 C: even is: " + i)
 }
 
-// // // 5.2D i = 1
+// // // 5.2D - E - F
 for (let i=1; i < 4; i++) {
 
   console.log("5.2: for loop draait: " + i + " keer");
@@ -64,7 +64,40 @@ for (let i=1; i < 4; i++) {
     console.log("5.2 E: for loop van 2 logt: " + i2);
   }
   for (let i3 = 0; i3 < 31; i3++, i3++, i3++) {
-    console.log("5.2 E: for loop van 3 logt: " + i3);
+    console.log("5.2 F: for loop van 3 logt: " + i3);
+  }
+}
+
+// // // 5.2G
+let array52g = [0,1];
+
+for (let i=0; i <= 50; i++) {
+    let eennaLaatstGetal = array52g.slice((array52g.length - 2), (array52g.length - 1));
+    let laatstGetal = array52g.slice((array52g.length - 1));
+    let nieuwGetal = +laatstGetal + +eennaLaatstGetal;
+    array52g.push(nieuwGetal)
+}
+console.log("5.2 G: "+ array52g);
+
+// // // 5.2H
+const array52h = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+
+let c1 = 0;
+let c2 = 1;
+
+  for (let i = 0; i < array52h.length - 1; i++) {
+    console.log("5.2 H:" + i);
+
+    if (array52h[c1] > array52h[c2]) {
+      console.log(
+        "WARNING: " + array52h[c1] + " is groter dan " + array52h[c2]
+      );
+      b = array52h[c1];
+      array52h[c1] = array52h[c2];
+      array52h[c2] = b;
+    }
+
+    c1++, c2++;
   }
 
-}
+console.log(array52h)
