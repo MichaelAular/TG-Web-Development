@@ -9,18 +9,20 @@
   </head>
 
  <body>
+   <div class="container">
     <div class="container_input">
-      <label for="start">Start date:</label>
+      <label for="start">Date 1:</label>
       <input type="date" id="inputStart" onchange="printDiff()" />
       <br />
-      <label for="start">End date:</label>
+      <label for="start">Date 2:</label>
       <input type="date" id="inputEnd" onchange="printDiff()" />
       <div class="container_display">
-        <div class="display"><p id="count">X</p>
+        <div class="display"><p id="count">?</p>
           <div class="days">DAYS</div>
         </div>
       </div>
     </div>
+  </div>
 
     <script>
         function getNumberOfDays(start, end) {
@@ -42,8 +44,19 @@
             let a = document.getElementById("inputStart").value;
             let b = document.getElementById("inputEnd").value;
             console.log(getNumberOfDays(a, b));
-            document.getElementById("count").innerText = getNumberOfDays(a, b)
+
+            if  (getNumberOfDays(a, b) < 0 ) {
+              let c =
+              getNumberOfDays(a, b) * -1;
+              document.getElementById("count").innerText = c
+            } else if (getNumberOfDays(a, b) >= 0 ) {
+              let c =
+              getNumberOfDays(a, b);
+            document.getElementById("count").innerText = c
         }
+            }
+
+
 
     </script>
 
