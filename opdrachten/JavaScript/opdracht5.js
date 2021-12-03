@@ -34,7 +34,7 @@ array51b.unshift("aardbei🍓")
 console.log("5.1 H: " + array51b)
 
 // // // 5.2A
-const dutchSports = ["voetbal", "Hockey", "Schaatsen"]
+const dutchSports = ["Voetbal⚽", "Hockey🏑", "Schaatsen⛸"];
     console.log("5.1 A: " + dutchSports[0])
     console.log("5.1 A: " + dutchSports[1])
     console.log("5.1 A: " + dutchSports[2])
@@ -101,4 +101,66 @@ for (let loop = array52h.length - 1; loop > 0; loop--) {
   }
 }
 
-console.log("5.2 H: " + array52h)
+console.log("5.2 H: " + array52h);
+
+// // // 5.3A
+dutchSports.push("Zeilen⛵", "Zwemmen🏊‍♂️");
+console.log("5.3 A: " + dutchSports);
+
+// // // 5.3B
+dutchSports.unshift("Volleybal🏐");
+console.log("5.3 B: " + dutchSports);
+
+// // // 5.3C
+const ballSports = ["Voetbal⚽", "Hockey🏑", "Volleybal🏐"];
+console.log("5.3 C: " + ballSports);
+
+// // // 5.3D
+dutchSports.splice(0, 3);
+console.log("5.3 D: " + dutchSports);
+
+// // // 5.3E
+dutchSports.sort();
+console.log("5.3 E: " + dutchSports);
+
+// // // 5.3F
+for (const item_dS of dutchSports) {
+  console.log("5.3 F: " + item_dS)
+}
+for (const item_bS of ballSports) {
+  console.log("5.3 F: " +item_bS)
+}
+
+// // // 5.3G
+const sportsLenght = dutchSports.map(x => x.length);
+console.log("5.3 G: " +sportsLenght);
+
+// // // 5.4
+let arrayLike = document.querySelectorAll('div')
+
+// // // 5.4A
+const antw54a = Array.from(arrayLike);
+console.log(antw54a)
+
+// // // 5.4B
+function drempelVijf(array52h) {
+  return array52h > 5;
+}
+console.log("5.4 B: " + array52h.filter(drempelVijf))
+// Alles boven de 5
+
+// // // 5.4C
+console.log("5.4 C: " + array52h.find(drempelVijf))
+// eerste waarde die voldoet aan deze eis (in dit geval groteer dan 5)
+
+// // // 5.4D
+console.log("5.4 D: " + array52h.some(drempelVijf))
+// checkt of er een waarde (uit een functie!) in de array zit die voldoet aan de eis (er zit iets tussen groter dan 5 dus true)
+
+// // // 5.4E
+console.log("5.4 E: " + array52h.every(drempelVijf))
+// checkt of alle waardes die in de array zittenvoldoen aan de eis (niet alles is groter dan 5 dus false)
+
+// // // 5.4F
+console.log("5.4 F: " + array52h.includes(4))
+// checkt of er een waarde in de array zit die voldoet aan de eis (er zit iets tussen groter dan 5 dus true)
