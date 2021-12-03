@@ -82,22 +82,23 @@ console.log("5.2 G: "+ array52g);
 // // // 5.2H
 const array52h = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
 
-let c1 = 0;
-let c2 = 1;
+for (let loop = array52h.length - 1; loop > 0; loop--) {
+    let c1 = 0;
+    let c2 = 1;
 
-  for (let i = 0; i < array52h.length - 1; i++) {
-    console.log("5.2 H:" + i);
+  for (let i = 0; i < loop; i++) {
 
     if (array52h[c1] > array52h[c2]) {
-      console.log(
-        "WARNING: " + array52h[c1] + " is groter dan " + array52h[c2]
-      );
-      b = array52h[c1];
-      array52h[c1] = array52h[c2];
-      array52h[c2] = b;
+
+         b = array52h[c1];
+        array52h[c1] = array52h[c2];
+        array52h[c2] = b;
+        c1++, c2++;
+
+    } else {
+        c1++, c2++;
     }
-
-    c1++, c2++;
   }
+}
 
-console.log(array52h)
+console.log("5.2 H: " + array52h)
