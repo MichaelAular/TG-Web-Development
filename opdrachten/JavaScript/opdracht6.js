@@ -142,7 +142,6 @@ function clubInput(name, type, leden, adres, tel, contactpersoon) {
   this.contactpersoon = contactpersoon
 }
 
-
 let club1 = new clubInput ("Force Electro II", "Frisbee", 23, "Wegisweg 1, Zutphen","555-121212", "F. van Bee");
 let club2 = new clubInput ("Knit Knot","Breiclub", 12, "Melkweg 12, Amsterdam", "555-98765", "Mvr Schaap");
 let club3 = new clubInput ("Kicken!", "Boksschool", 455, "Slagomarm 1, Den Haag", "555-000123", "M. Ali");
