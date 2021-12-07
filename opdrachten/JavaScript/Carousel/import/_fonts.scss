@@ -1,37 +1,27 @@
 body {
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    line-height: 0.89;
+    line-height: 0.85;
 }
 
-span {
-    color: $darkblue;
-    font-size: 2.1em;
-    line-height: 0.78;
+.size21 {
+      font-size: 2.1em;
+      line-height: 0.9;
+  }
+
+.size16 {
+    font-size: 1.6em;
+    line-height: 1.1;
 }
 
-span1 {
-    font-size: 1em;
-    line-height: 0.78;
-}
-
-span2 {
-    color: $darkblue;
+.size11 {
     font-size: 1.1em;
 }
 
-span3 {
-    font-size: 0.8em;
-}
-span4 {
-    font-size: 1.66em;
+.size08 {
+    font-size: 0.78em;
 }
 
-.numbertext {
-    color: $lightbrown;
-    font-size: 20px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0px;
-    z-index: 2;
-  }
+.colorblue {
+    color: $darkblue;
+}

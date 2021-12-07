@@ -2,25 +2,26 @@
 .carousel_container {
   position: relative;
   margin: auto;
-  top: 50px;
-  height: 500px;
-  width: 500px;
-  background-color: $blue;
+  top: 15%;
+  height: 504px;
+  width: 560px;
+  background-color: rgba(225, 225, 135, .3)
 }
 
 .text_container {
   position: absolute;
   height: 500px;
   width: 230px;
-  right: 5px;
-  padding: 10px;
+  right: 15px;
+  padding: 3px;
+  text-shadow: 1px 1px $darkestblue;
 }
 
 .img_container {
   position: absolute;
   height: 500px;
   width: 300px;
-  left: -60px;
+  left: 0px;
   border: 2px solid $darkblue;
   overflow: hidden;
 }

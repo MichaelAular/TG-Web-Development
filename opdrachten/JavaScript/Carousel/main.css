@@ -10,64 +10,54 @@ body {
 body {
   font-size: 2em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  line-height: 0.89;
+  line-height: 0.85;
 }
 
-span {
-  color: #000064;
+.size21 {
   font-size: 2.1em;
-  line-height: 0.78;
+  line-height: 0.9;
 }
 
-span1 {
-  font-size: 1em;
-  line-height: 0.78;
+.size16 {
+  font-size: 1.6em;
+  line-height: 1.1;
 }
 
-span2 {
-  color: #000064;
+.size11 {
   font-size: 1.1em;
 }
 
-span3 {
-  font-size: 0.8em;
+.size08 {
+  font-size: 0.78em;
 }
 
-span4 {
-  font-size: 1.66em;
-}
-
-.numbertext {
-  color: #a0641e;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0px;
-  z-index: 2;
+.colorblue {
+  color: #000064;
 }
 
 .carousel_container {
   position: relative;
   margin: auto;
-  top: 50px;
-  height: 500px;
-  width: 500px;
-  background-color: #e1e187;
+  top: 15%;
+  height: 504px;
+  width: 560px;
+  background-color: rgba(225, 225, 135, 0.3);
 }
 
 .text_container {
   position: absolute;
   height: 500px;
   width: 230px;
-  right: 5px;
-  padding: 10px;
+  right: 15px;
+  padding: 3px;
+  text-shadow: 1px 1px #000001;
 }
 
 .img_container {
   position: absolute;
   height: 500px;
   width: 300px;
-  left: -60px;
+  left: 0px;
   border: 2px solid #000064;
   overflow: hidden;
 }
