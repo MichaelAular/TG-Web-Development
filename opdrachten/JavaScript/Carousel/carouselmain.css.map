@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,UAAU;EAC5B,KAAK,EAAE,OAAO;CACjB",
+    "mappings": "ACGA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAJA,OAAkB;EAKlC,KAAK,EAJM,OAAgB;CAK9B;;ACND,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,yDAAyD;EACtE,cAAc,EAAE,GAAG;CACtB",
     "sources": [
-        "carouselmain.scss"
+        "carouselmain.scss",
+        "import/_colors.scss",
+        "import/_fonts.scss"
     ],
     "names": [],
     "file": "carouselmain.css"

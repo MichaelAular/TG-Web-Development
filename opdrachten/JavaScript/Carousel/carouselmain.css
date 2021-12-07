@@ -1,5 +1,11 @@
 body {
-  background-color: chartreuse;
+  background-color: #f3e2c8;
   color: crimson;
+}
+
+body {
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.7;
 }
 /*# sourceMappingURL=carouselmain.css.map */
