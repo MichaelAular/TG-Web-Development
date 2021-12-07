@@ -1,5 +1,5 @@
 body {
-  background-color: #e1e187;
+  background-color: white;
   color: #a0641e;
   background-image: url("img/QOTSA_BG.jpg");
   background-position: center;
@@ -8,9 +8,9 @@ body {
 }
 
 body {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  line-height: 0.85;
+  line-height: 1.2;
 }
 
 .size21 {
@@ -31,8 +31,10 @@ body {
   font-size: 0.78em;
 }
 
-.colorblue {
-  color: #000064;
+#setColor {
+  text-shadow: 6px 6px 6px #00000a;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .carousel_container {
@@ -40,17 +42,19 @@ body {
   margin: auto;
   top: 15%;
   height: 504px;
-  width: 560px;
-  background-color: rgba(225, 225, 135, 0.3);
+  width: 650px;
+  background-color: rgba(160, 100, 30, 0.2);
+  -webkit-box-shadow: 15px 15px 30px #00000a;
+          box-shadow: 15px 15px 30px #00000a;
 }
 
 .text_container {
   position: absolute;
   height: 500px;
-  width: 230px;
-  right: 15px;
-  padding: 3px;
-  text-shadow: 1px 1px #000001;
+  width: 290px;
+  left: 300px;
+  padding: 8px;
+  text-shadow: 3px 3px 5px #00000a;
 }
 
 .img_container {
@@ -75,7 +79,7 @@ img {
   top: 50%;
   width: auto;
   padding: 5px;
-  color: #646464;
+  color: white;
   opacity: 0.9;
   text-shadow: 1px 1px #000064;
   font-size: 40px;
@@ -90,7 +94,7 @@ img {
 
 .prev:hover, .next:hover {
   background-color: #a0641e;
-  color: #e1e187;
+  color: white;
   opacity: 0.7;
   border-radius: 3px;
 }
@@ -105,11 +109,11 @@ img {
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
   background-color: #646464;
   opacity: 0.7;
-  border: 1px solid #e1e187;
+  border: 1px solid white;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
