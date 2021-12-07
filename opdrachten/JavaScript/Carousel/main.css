@@ -15,6 +15,11 @@ span {
   line-height: 0.78;
 }
 
+span1 {
+  font-size: 1em;
+  line-height: 0.78;
+}
+
 span2 {
   color: #000064;
   font-size: 1.1em;
@@ -30,10 +35,11 @@ span4 {
 
 .numbertext {
   color: #a0641e;
-  font-size: 12px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 0px;
+  z-index: 2;
 }
 
 .carousel_container {
@@ -42,6 +48,7 @@ span4 {
   top: 50px;
   height: 500px;
   width: 500px;
+  background-color: #e1e187;
 }
 
 .text_container {
@@ -50,10 +57,6 @@ span4 {
   width: 230px;
   right: 5px;
   padding: 10px;
-}
-
-img {
-  width: 330px;
 }
 
 .img_container {
@@ -65,53 +68,54 @@ img {
   overflow: hidden;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+img {
+  width: 330px;
+  position: relative;
+  top: -25px;
+  left: -14px;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 5px;
-  color: #000064;
-  text-shadow: 1px 1px #e1e187;
-  font-size: 36px;
+  color: #646464;
+  opacity: 0.9;
+  text-shadow: 1px 1px #000064;
+  font-size: 40px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #000064;
   color: #e1e187;
-  opacity: 0.5;
+  opacity: 0.7;
   border-radius: 3px;
 }
 
-/* The dots/bullets/indicators */
 .dot_box {
-  width: 100px;
-  height: 40px;
-  border: 1ps solid red;
+  position: absolute;
+  width: 200px;
+  height: 0px;
   bottom: 30px;
+  left: 80px;
 }
 
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: red;
+  background-color: #646464;
+  opacity: 0.7;
+  border: 1px solid #e1e187;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
@@ -119,10 +123,9 @@ img {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #a0641e;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;

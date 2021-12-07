@@ -4,6 +4,7 @@
   top: 50px;
   height: 500px;
   width: 500px;
+  background-color: $background_Color;
 }
 
 .text_container {
@@ -14,11 +15,6 @@
   padding: 10px;
 }
 
-img {
-  width: 330px;
-}
-
-
 .img_container {
   position: absolute;
   height: 500px;
@@ -28,64 +24,62 @@ img {
   overflow: hidden;
 }
 
-
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
+img {
+  width: 330px;
+  position: relative;
+  top: -25px;
+  left: -14px;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 5px;
-  color: $darkblue;
-  text-shadow: 1px 1px $background_Color;
-  font-size: 36px;
+  color: $mousegrey;
+  opacity: 0.9;
+  text-shadow: 1px 1px $darkblue;
+  font-size: 40px;
   transition: 0.6s ease;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: $darkblue;
   color: $background_Color;
-  opacity: 0.5;
+  opacity: 0.7;
   border-radius: 3px;
 }
 
-/* The dots/bullets/indicators */
 .dot_box {
-  width: 100px;
-  height: 40px;
-  border: 1ps solid red;
+  position: absolute;
+  width: 200px;
+  height: 0px;
   bottom: 30px;
+  left: 80px;
 }
 
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: rgb(255, 0, 0);
+  background-color: $mousegrey;
+  opacity: 0.7;
+  border: 1px solid $background_Color;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: $lightbrown;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
