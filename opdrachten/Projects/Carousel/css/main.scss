@@ -50,5 +50,22 @@
 
 /// /// /// NAV /// /// ///
 .carousel_nav {
-    background: pink;
+    // background: pink;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator {
+    border: O;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: black;
+    opacity: 0.6;
+    margin: 7px;
+}
+
+.carousel_indicator.current-slide {
+    background: red;
 }
