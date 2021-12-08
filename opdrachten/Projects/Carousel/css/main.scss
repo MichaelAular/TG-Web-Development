@@ -1,0 +1,54 @@
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.carousel_img {
+    height: 600px;
+}
+
+.carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/// /// /// buttons /// /// ///
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.prev {
+    left:-30px;
+}
+
+.next {
+    right: -30px;
+}
+
+/// /// /// NAV /// /// ///
+.carousel_nav {
+    background: pink;
+}
