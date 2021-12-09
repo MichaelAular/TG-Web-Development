@@ -1,12 +1,12 @@
 .carousel {
     position: relative;
     height: 600px;
-    width: 300px;
-    margin: 0 auto;
+    width: 350px;
+    margin: auto;
 }
 
 .carousel_img {
-    height: 600px;
+    height: 100%;
 }
 
 .carousel_track-container {
@@ -17,9 +17,12 @@
 }
 
 .carousel_track {
+    position: relative;
+    height: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
+    transition: transform 500ms ease-in;
 }
 
 .carousel_slide {
@@ -62,8 +65,9 @@
     width: 15px;
     height: 15px;
     background: black;
-    opacity: 0.6;
+    opacity: 0.8;
     margin: 7px;
+    cursor: pointer;
 }
 
 .carousel_indicator.current-slide {
