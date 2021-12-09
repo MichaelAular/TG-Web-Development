@@ -1,8 +1,10 @@
+@import url(_colors.scss);
 .carousel {
   position: relative;
   height: 600px;
   width: 350px;
-  margin: auto;
+  margin-left: 10%;
+  margin-top: 60px;
 }
 
 .carousel_img {
@@ -54,13 +56,9 @@
 }
 
 .carousel_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px 0;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 75px;
 }
 
 .carousel_indicator {

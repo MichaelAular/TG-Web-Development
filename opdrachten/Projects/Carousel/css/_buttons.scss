@@ -1,0 +1,15 @@
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.prev {
+    left:-30px;
+}
+.next {
+    right: -30px;
+}

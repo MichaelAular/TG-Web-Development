@@ -10,7 +10,7 @@ const lastSlide = slides[slides.length - 1];
 const firstDot = dots[dots.length - dots.length];
 const lastDot = dots[dots.length - 1];
 
-// arrange slides
+/// arrange slides
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWith * index + 'px';
 };
@@ -54,7 +54,7 @@ const setClassOnDot = (currentDot, targetDot) => {
     }
   };
 
-// slide left
+/// slide left
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
@@ -65,7 +65,7 @@ prevButton.addEventListener('click', e => {
 
 })
 
-// slide right
+/// slide right
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
@@ -76,8 +76,7 @@ nextButton.addEventListener('click', e => {
     updateDots(currentDot, nextDot);
 });
 
-
-// click nav indicator move to slide
+/// click nav indicator move to slide
 dotsNav.addEventListener('click', e => {
 const targetDot = e.target.closest('button');
 
