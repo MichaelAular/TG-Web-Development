@@ -1,4 +1,4 @@
-const track = document.querySelector('.carousel_track')
+const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
@@ -9,6 +9,8 @@ const firstSlide = slides[slides.length - slides.length];
 const lastSlide = slides[slides.length - 1];
 const firstDot = dots[dots.length - dots.length];
 const lastDot = dots[dots.length - 1];
+const colorWords = document.querySelector('p');
+const words = Array.from(colorWords.children);
 
 /// arrange slides
 const setSlidePosition = (slide, index) => {
@@ -55,30 +57,24 @@ const setClassOnDot = (currentDot, targetDot) => {
     }
   };
 
+/// Color change Lyrics
   const lyricColorChange = (slides, prevButton, nextButton, targetIndex) => {
-
-
     if (targetIndex === 0) {document.getElementById("setColor").style.color = "#950a0c"};
     if (targetIndex === 1) {document.getElementById("setColor").style.color = "#77b9d1"};
     if (targetIndex === 2) {document.getElementById("setColor").style.color = "#bb3860"};
     if (targetIndex === 3) {document.getElementById("setColor").style.color = "#d32701"};
     if (targetIndex === 4) {document.getElementById("setColor").style.color = "#0b2054"};
     if (targetIndex === 5) {document.getElementById("setColor").style.color = "#46c2da"};
-    if (targetIndex === 6) {document.getElementById("setColor").style.color = "#950a0c"};
-
-    
-
-  }
+}
 
 /// slide left
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling;
+    const prevSlide = currentSlide.previousElementSibling || currentSlide.parentElement.lastElementChild;
     const currentDot = dotsNav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
     const prevIndex = slides.findIndex(slide => slide === prevSlide);
-    console.log(prevIndex)
-
+    if(prevIndex === -1) return slides.findIndex(slide => slide === prevSlide);
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
     lyricColorChange(slides, prevButton, nextButton, prevIndex);
@@ -87,15 +83,16 @@ prevButton.addEventListener('click', e => {
 /// slide right
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
+    const nextSlide = currentSlide.nextElementSibling || currentSlide.parentElement.firstElementChild;
     const currentDot =  dotsNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
-    console.log(nextIndex)
 
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
     lyricColorChange(slides, prevButton, nextButton, nextIndex);
+
+    console.log(nextIndex)
 });
 
 /// click nav indicator move to slide
@@ -113,4 +110,3 @@ moveToSlide(track, currentSlide, targetSlide);
 updateDots(currentDot, targetDot);
 lyricColorChange(slides, prevButton, nextButton, targetIndex);
 });
-

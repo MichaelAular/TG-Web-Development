@@ -15,11 +15,33 @@ body {
     width: 350px;
     margin-left: 10%;
     margin-top: 70px;
+    border: 4px solid $borderColor;
+    border-radius: 6px;
     box-shadow: 10px 10px 20px $borderColor;
+}
+
+.border {
+    position: absolute;
+    height: 600px;
+    width: 350px;
+    border: 4px solid $borderColor;
+    border-radius: 6px;
+    opacity: 0.8;
+}
+
+.border_One {
+    z-index: 2;
+    transform: rotate(3deg);
+}
+
+.border_Two {
+    z-index: -1;
+    transform: rotate(-3deg);
 }
 
 .carousel_img {
     height: 100%;
+    border-radius: 6px;
 }
 
 .carousel_track-container {
@@ -96,11 +118,31 @@ body {
     background: $mainfont;
 }
 
-/// /// /// Lyrics /// /// ///@include
-.lyrics {
+/// /// /// Lyrics /// /// ///
+.lyrics p{
     position: absolute;
     left: 450px;
     top: -30px;
     width: 500px;
     text-align: right;
+    transition: 0.6s ease-in;
+}
+
+.steadyFont {
+    color: $mainfont;
+}
+
+/// /// /// LOGO /// /// ///
+.logo {
+    position: absolute;
+    right: -1000px;
+    bottom: -100px;
+    height: 500px;
+    width: 500px;
+    background-image: url('../img/QOTSA_logo.jpg');
+    background-size: 810px;
+    background-position: 49%;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.05;
 }
