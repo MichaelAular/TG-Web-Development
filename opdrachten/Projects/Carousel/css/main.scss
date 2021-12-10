@@ -1,11 +1,21 @@
-@import url(_colors.scss);
+@import '_colors.scss';
+@import '_fonts.scss';
+
+body {
+    background-image: url('../img/QOTSA_BG.jpg');
+    backdrop-filter: blur(3px);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
 
 .carousel {
     position: relative;
     height: 600px;
     width: 350px;
     margin-left: 10%;
-    margin-top: 60px; 
+    margin-top: 70px;
+    box-shadow: 10px 10px 20px $borderColor;
 }
 
 .carousel_img {
@@ -35,7 +45,6 @@
     width: 100%;
 }
 
-
 /// /// /// buttons /// /// ///
 .carousel_button {
     position: absolute;
@@ -44,13 +53,25 @@
     background: transparent;
     border: 0;
     cursor: pointer;
+    color: $borderColor;
+    text-shadow: 1px 1px  $mainfont;
+    font-size: 50px;
+    z-index: 1;
+    opacity: .8;
+    transition: .05s ease-in;
+    &:hover {
+        color: $mainfont;
+        text-shadow: 1px 1px  $borderColor;
+        font-size: 55px;
+    }
 }
 
 .prev {
-    left:-30px;
+    left: -60px;
 }
+
 .next {
-    right: -30px;
+    right: -60px;
 }
 
 /// /// /// NAV /// /// ///
@@ -65,12 +86,21 @@
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background: black;
+    background: $borderColor;
     opacity: 0.8;
     margin: 7px;
     cursor: pointer;
 }
 
 .carousel_indicator.current-slide {
-    background: red;
+    background: $mainfont;
+}
+
+/// /// /// Lyrics /// /// ///@include
+.lyrics {
+    position: absolute;
+    left: 450px;
+    top: -30px;
+    width: 500px;
+    text-align: right;
 }

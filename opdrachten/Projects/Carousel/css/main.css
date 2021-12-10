@@ -1,10 +1,39 @@
-@import url(_colors.scss);
+p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  color: #a0641e;
+  text-shadow: 2px 2px 4px #000014;
+}
+
+.size1 {
+  font-size: 70px;
+}
+
+.size2 {
+  font-size: 50px;
+}
+
+.size3 {
+  font-size: 25px;
+}
+
+body {
+  background-image: url("../img/QOTSA_BG.jpg");
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
 .carousel {
   position: relative;
   height: 600px;
   width: 350px;
   margin-left: 10%;
-  margin-top: 60px;
+  margin-top: 70px;
+  -webkit-box-shadow: 10px 10px 20px #000014;
+          box-shadow: 10px 10px 20px #000014;
 }
 
 .carousel_img {
@@ -45,14 +74,27 @@
   background: transparent;
   border: 0;
   cursor: pointer;
+  color: #000014;
+  text-shadow: 1px 1px #a0641e;
+  font-size: 50px;
+  z-index: 1;
+  opacity: .8;
+  -webkit-transition: .05s ease-in;
+  transition: .05s ease-in;
+}
+
+.carousel_button:hover {
+  color: #a0641e;
+  text-shadow: 1px 1px #000014;
+  font-size: 55px;
 }
 
 .prev {
-  left: -30px;
+  left: -60px;
 }
 
 .next {
-  right: -30px;
+  right: -60px;
 }
 
 .carousel_nav {
@@ -66,13 +108,21 @@
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background: black;
+  background: #000014;
   opacity: 0.8;
   margin: 7px;
   cursor: pointer;
 }
 
 .carousel_indicator.current-slide {
-  background: red;
+  background: #a0641e;
+}
+
+.lyrics {
+  position: absolute;
+  left: 450px;
+  top: -30px;
+  width: 500px;
+  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */

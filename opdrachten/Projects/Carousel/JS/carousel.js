@@ -14,6 +14,7 @@ const lastDot = dots[dots.length - 1];
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWith * index + 'px';
 };
+
 slides.forEach(setSlidePosition);
 
 const setCurrentSlide = (track, currentSlide, targetSlide) => {
@@ -54,15 +55,33 @@ const setClassOnDot = (currentDot, targetDot) => {
     }
   };
 
+  const lyricColorChange = (slides, prevButton, nextButton, targetIndex) => {
+
+
+    if (targetIndex === 0) {document.getElementById("setColor").style.color = "#950a0c"};
+    if (targetIndex === 1) {document.getElementById("setColor").style.color = "#77b9d1"};
+    if (targetIndex === 2) {document.getElementById("setColor").style.color = "#bb3860"};
+    if (targetIndex === 3) {document.getElementById("setColor").style.color = "#d32701"};
+    if (targetIndex === 4) {document.getElementById("setColor").style.color = "#0b2054"};
+    if (targetIndex === 5) {document.getElementById("setColor").style.color = "#46c2da"};
+    if (targetIndex === 6) {document.getElementById("setColor").style.color = "#950a0c"};
+
+    
+
+  }
+
 /// slide left
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
+    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+    console.log(prevIndex)
+
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
-
+    lyricColorChange(slides, prevButton, nextButton, prevIndex);
 })
 
 /// slide right
@@ -71,9 +90,12 @@ nextButton.addEventListener('click', e => {
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot =  dotsNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
+    const nextIndex = slides.findIndex(slide => slide === nextSlide);
+    console.log(nextIndex)
 
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
+    lyricColorChange(slides, prevButton, nextButton, nextIndex);
 });
 
 /// click nav indicator move to slide
@@ -89,5 +111,6 @@ const targetSlide = slides[targetIndex];
 
 moveToSlide(track, currentSlide, targetSlide);
 updateDots(currentDot, targetDot);
-
+lyricColorChange(slides, prevButton, nextButton, targetIndex);
 });
+
