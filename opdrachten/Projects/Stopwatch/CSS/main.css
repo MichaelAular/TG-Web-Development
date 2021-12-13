@@ -1,0 +1,25 @@
+body {
+  background-color: red;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: royalblue;
+  border-radius: 50%;
+  margin: auto;
+  top: 10vh;
+}
+
+.logo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  padding: 4rem 4rem;
+  background-color: white;
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */
