@@ -1,3 +1,85 @@
+.btn {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  border-radius: 50%;
+  border-bottom: 2px solid #646464;
+  border-right: 2px solid #646464;
+  color: #3c3c3c;
+  font-weight: bolder;
+  font-weight: bold;
+  background: radial-gradient(circle, #1e1e1f 0%, black 100%);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: #3a3a3a;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: #3d3d3d;
+}
+
+.btn:hover {
+  --animationcolor: cyan;
+  -webkit-animation: glow 700ms infinite;
+          animation: glow 700ms infinite;
+  color: white;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 3px var(--animationcolor);
+            box-shadow: inset 0px 0px 3px var(--animationcolor);
+    border-bottom: 2px solid #646464;
+    border-right: 2px solid #646464;
+  }
+  60% {
+    -webkit-box-shadow: inset 0px 0px 30px var(--animationcolor);
+            box-shadow: inset 0px 0px 30px var(--animationcolor);
+    border-bottom: 2px solid #787878;
+    border-right: 2px solid #787878;
+  }
+  100% {
+    -webkit-box-shadow: inset 0px 0px var(--animationcolor);
+            box-shadow: inset 0px 0px var(--animationcolor);
+    border-bottom: 2px solid #646464;
+    border-right: 2px solid #646464;
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-box-shadow: inset 0px 0px 3px var(--animationcolor);
+            box-shadow: inset 0px 0px 3px var(--animationcolor);
+    border-bottom: 2px solid #646464;
+    border-right: 2px solid #646464;
+  }
+  60% {
+    -webkit-box-shadow: inset 0px 0px 30px var(--animationcolor);
+            box-shadow: inset 0px 0px 30px var(--animationcolor);
+    border-bottom: 2px solid #787878;
+    border-right: 2px solid #787878;
+  }
+  100% {
+    -webkit-box-shadow: inset 0px 0px var(--animationcolor);
+            box-shadow: inset 0px 0px var(--animationcolor);
+    border-bottom: 2px solid #646464;
+    border-right: 2px solid #646464;
+  }
+}
+
 body {
   background-color: red;
 }
@@ -6,20 +88,96 @@ body {
   position: relative;
   height: 400px;
   width: 400px;
-  background-color: royalblue;
   border-radius: 50%;
   margin: auto;
   top: 10vh;
+  background: radial-gradient(circle, #babac6 0%, #788387 100%);
+  -webkit-box-shadow: inset 0px 0px 0px 3px gray, inset 10px 20px 50px 10px black;
+          box-shadow: inset 0px 0px 0px 3px gray, inset 10px 20px 50px 10px black;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  left: 220px;
+  top: 100px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 3;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 180px;
+  left: 300px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .logo {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  display: block;
   position: absolute;
-  padding: 4rem 4rem;
-  background-color: white;
-  z-index: 1;
+  width: 208px;
+  height: 80px;
+  margin-left: 96px;
+  margin-top: 60px;
+  color: black;
+}
+
+.time {
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  background-color: black;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button_container {
+  position: absolute;
+  width: 208px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 260px;
+  margin-left: 96px;
+}
+
+.logo {
+  font-size: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: gray;
+  text-shadow: 1px 1px 2px #5a5858;
 }
 /*# sourceMappingURL=main.css.map */
