@@ -1,4 +1,4 @@
-/// /// /// /// construct  2 divs (logo, time) in stopwatch_container /// /// /// ///
+/// /// /// /// construct  4 divs (logo, time, stopwatch, bannerlogo) in stopwatch_container /// /// /// ///
 const logo = document.createElement('div')
 logo.classList.add('logo')
 container.appendChild(logo)
@@ -10,6 +10,10 @@ container.appendChild(time)
 const stopWatch = document.createElement('div')
 stopWatch.classList.add('stopWatch')
 container.appendChild(stopWatch)
+
+const bannerlogo = document.createElement('div')
+bannerlogo.classList.add('banner')
+container.appendChild(bannerlogo)
 
 /// /// /// /// make 3 buttons (in start, pause, stop) in container /// /// /// ///
 const button_container = document.createElement('div')
@@ -48,7 +52,7 @@ function showTime() {
 
   setInterval(showTime, 1000);
 
-// /// /// /// /// set time + funstions to buttons /// /// /// ///
+// /// /// /// /// set time + functions to buttons /// /// /// ///
 const timer = document.createElement('div');
 stopWatch.appendChild(timer)
 timer.innerText = '00:00:00'

@@ -2,21 +2,19 @@
 @import '../CSS/fonts';
 
 body {
-    background-color: blue;
+    background-image: url('../img/vincent-bourilhon-time.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
-
-@font-face {
-    font-family: time-Font;
-    src: url(../fonts/TickingTimebombBB.ttf);
-  }
 
 .container {
     position: relative;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    margin: auto;
-    top: 10vh;
+    margin-left: 15%;
+    top: 20%;
     background: radial-gradient(circle, rgba(186,186,198,1) 0%, rgba(120,131,135,1) 100%);
     box-shadow: inset 0px 0px 0px 3px gray, inset 10px 20px 50px 10px black, ;
 }
@@ -92,7 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     color: gray;
-    text-shadow: 1px 1px 2px rgb(90, 88, 88);
+    text-shadow: 1px -2px 2px rgb(90, 88, 88);
 }
 
 .stopWatch {
@@ -111,4 +109,16 @@ body {
     margin-top: 160px;
     display: flex;
     opacity: 0;
+}
+
+.banner {
+    position:absolute;
+    background-image: url('../img/seiko_logo.png');
+    background-repeat:no-repeat;
+    height: 180px;
+    width: 520px;
+    top: 100%;
+    right: -210%;
+    opacity: 0.3;
+
 }
