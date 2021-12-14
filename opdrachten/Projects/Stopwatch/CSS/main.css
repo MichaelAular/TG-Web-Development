@@ -82,26 +82,16 @@
 
 @font-face {
   font-family: time-Font;
-  src: url(../fonts/);
+  src: url(../fonts/TickingTimebombBB.ttf);
 }
 
 body {
-  background-color: red;
+  background-color: blue;
 }
 
-.time {
+@font-face {
   font-family: time-Font;
-  color: cyan;
-  font-size: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  src: url(../fonts/TickingTimebombBB.ttf);
 }
 
 .container {
@@ -126,7 +116,7 @@ body {
   opacity: 0.1;
   border-radius: 50%;
   background-color: white;
-  z-index: 3;
+  z-index: 10;
 }
 
 .container::after {
@@ -139,6 +129,7 @@ body {
   opacity: 0.1;
   border-radius: 50%;
   background-color: white;
+  z-index: 10;
 }
 
 .logo {
@@ -152,9 +143,17 @@ body {
 
 .time {
   position: absolute;
-  width: 300px;
+  width: 240px;
   height: 80px;
   background-color: black;
+  font-family: time-Font;
+  color: #2f7474;
+  font-size: 80px;
+  padding-left: 60px;
+  padding-top: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
   margin-left: 50px;
   margin-top: 160px;
@@ -177,7 +176,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 260px;
+  margin-top: 270px;
   margin-left: 96px;
 }
 
@@ -199,5 +198,27 @@ body {
           align-items: center;
   color: gray;
   text-shadow: 1px 1px 2px #5a5858;
+}
+
+.stopWatch {
+  position: absolute;
+  width: 260px;
+  height: 80px;
+  background-color: black;
+  font-family: time-Font;
+  color: #2f7474;
+  font-size: 80px;
+  padding-left: 40px;
+  padding-top: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

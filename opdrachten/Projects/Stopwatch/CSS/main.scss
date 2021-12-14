@@ -2,17 +2,13 @@
 @import '../CSS/fonts';
 
 body {
-    background-color: red ;
+    background-color: blue;
 }
 
-.time {
+@font-face {
     font-family: time-Font;
-    color: cyan;
-    font-size: 50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+    src: url(../fonts/TickingTimebombBB.ttf);
+  }
 
 .container {
     position: relative;
@@ -35,7 +31,7 @@ body {
   opacity: 0.1;
   border-radius: 50%;
   background-color: white;
-  z-index: 3;
+  z-index: 10;
 }
 
 .container::after {
@@ -48,6 +44,7 @@ body {
   opacity: 0.1;
   border-radius: 50%;
   background-color: white;
+  z-index: 10;
 }
 
 .logo {
@@ -61,9 +58,15 @@ body {
 
 .time {
     position: absolute;
-    width: 300px;
+    width: 240px;
     height: 80px;
     background-color: black;
+    font-family: time-Font;
+    color: rgb(47, 116, 116);
+    font-size: 80px;
+    padding-left: 60px;
+    padding-top: 7px;
+    align-items: center;
     border-radius: 5px ;
     margin-left: 50px;
     margin-top: 160px;
@@ -77,7 +80,7 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 260px;
+    margin-top: 270px;
     margin-left: 96px;
 }
 
@@ -90,4 +93,22 @@ body {
     align-items: center;
     color: gray;
     text-shadow: 1px 1px 2px rgb(90, 88, 88);
+}
+
+.stopWatch {
+    position: absolute;
+    width: 260px;
+    height: 80px;
+    background-color: black;
+    font-family: time-Font;
+    color: rgb(47, 116, 116);
+    font-size: 80px;
+    padding-left: 40px;
+    padding-top: 7px;
+    align-items: center;
+    border-radius: 5px ;
+    margin-left: 50px;
+    margin-top: 160px;
+    display: flex;
+    opacity: 0;
 }
