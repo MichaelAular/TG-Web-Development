@@ -1,13 +1,17 @@
 @import '../CSS/buttons';
+@import '../CSS/fonts';
 
 body {
     background-color: red ;
 }
 
 .time {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: time-Font;
     color: cyan;
     font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
