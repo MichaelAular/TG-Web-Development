@@ -27,6 +27,7 @@ for (i=1; i < 13 ; i++) {
 
     const fiveMinuteMark = document.createElement('div')
     fiveMinuteMark.classList.add('number'+i, 'number')
+    fiveMinuteMark.innerHTML = i
     rotationdisc.appendChild(fiveMinuteMark)
 }
 /// /// /// /// style  3 pointers (hour minutes seconds) /// /// /// ///

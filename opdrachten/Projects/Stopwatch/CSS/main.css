@@ -139,13 +139,13 @@
 
 .time {
   position: absolute;
-  width: 240px;
+  width: 260px;
   height: 80px;
   background-color: black;
   font-family: time-Font;
   color: #2f7474;
   font-size: 80px;
-  padding-left: 60px;
+  padding-left: 40px;
   padding-top: 7px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -234,15 +234,15 @@ body {
   top: 100%;
   right: -210%;
   opacity: 0.3;
-  z-index: 10;
+  z-index: -100;
 }
 
 .analogue_clock {
   position: absolute;
   width: 750px;
   height: 750px;
-  top: 0px;
-  right: 0px;
+  top: -85px;
+  right: -70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,101 +252,177 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.4;
+  opacity: 0.5;
+  z-index: -3;
 }
 
 .outerCircle {
   position: absolute;
   height: 750px;
   width: 750px;
-  border: 3px solid #3c9696;
   border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 20px #3c9696;
+          box-shadow: inset 0px 0px 20px #3c9696;
 }
 
 .innerCircle {
   position: absolute;
-  height: 600px;
-  width: 600px;
-  border: 3px solid #3c9696;
+  height: 620px;
+  width: 620px;
+  -webkit-box-shadow: 0px 0px 60px #3c9696;
+          box-shadow: 0px 0px 60px #3c9696;
   border-radius: 50%;
 }
 
 .number {
-  color: green;
-  font-size: 100px;
-  border: 3px solid #3c9696;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3c9696;
+  text-shadow: 1px 1px 4px white;
+  font-size: 70px;
+  font-family: anologue-number-Font;
   height: 80px;
   width: 80px;
   border-radius: 50%;
   margin: -13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 60px #3c9696;
+          box-shadow: 0px 0px 60px #3c9696;
 }
 
 .rotationdisc {
   position: absolute;
   height: 420px;
   width: 420px;
-  border: 2px solid #3c9696;
   border-radius: 50%;
 }
 
 .disc1 {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+  -webkit-box-shadow: inset 0px 0px 60px #3c9696;
+          box-shadow: inset 0px 0px 60px #3c9696;
+}
+
+.number1 {
+  -webkit-transform: rotate(-75deg);
+          transform: rotate(-75deg);
 }
 
 .disc2 {
-  -webkit-transform: rotate(75deg);
-          transform: rotate(75deg);
-}
-
-.disc3 {
   -webkit-transform: rotate(105deg);
           transform: rotate(105deg);
 }
 
-.disc4 {
+.number2 {
+  -webkit-transform: rotate(-105deg);
+          transform: rotate(-105deg);
+}
+
+.disc3 {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
-.disc5 {
+.number3 {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.disc4 {
   -webkit-transform: rotate(165deg);
           transform: rotate(165deg);
 }
 
-.disc6 {
+.number4 {
+  -webkit-transform: rotate(-165deg);
+          transform: rotate(-165deg);
+}
+
+.disc5 {
   -webkit-transform: rotate(195deg);
           transform: rotate(195deg);
 }
 
-.disc7 {
+.number5 {
+  -webkit-transform: rotate(-195deg);
+          transform: rotate(-195deg);
+}
+
+.disc6 {
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
 }
 
-.disc8 {
+.number6 {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.disc7 {
   -webkit-transform: rotate(255deg);
           transform: rotate(255deg);
 }
 
-.disc9 {
+.number7 {
+  -webkit-transform: rotate(-255deg);
+          transform: rotate(-255deg);
+}
+
+.disc8 {
   -webkit-transform: rotate(285deg);
           transform: rotate(285deg);
 }
 
-.disc10 {
+.number8 {
+  -webkit-transform: rotate(-285deg);
+          transform: rotate(-285deg);
+}
+
+.disc9 {
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
 }
 
-.disc11 {
+.number9 {
+  -webkit-transform: rotate(-315deg);
+          transform: rotate(-315deg);
+}
+
+.disc10 {
   -webkit-transform: rotate(345deg);
           transform: rotate(345deg);
 }
 
-.disc12 {
+.number10 {
+  -webkit-transform: rotate(-345deg);
+          transform: rotate(-345deg);
+}
+
+.disc11 {
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
+}
+
+.number11 {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.disc12 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.number12 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .test {

@@ -3,82 +3,128 @@
     // border: 1px solid red;
     width: 750px;
     height: 750px;
-    top: 0px;
-    right: 0px;
+    top: -85px;
+    right: -70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.4;
+    opacity: 0.5;
+    z-index: -3;
 }
 
 .outerCircle {
     position: absolute;
     height: 750px;
     width: 750px;
-    border: 3px solid $clock_color_main;
+    // border: 3px solid $clock_color_main;
     border-radius: 50%;
+    box-shadow: inset 0px 0px 20px $clock_color_main;
 }
 
 .innerCircle {
     position: absolute;
-    height: 600px;
-    width: 600px;
-    border: 3px solid $clock_color_main;
+    height: 620px;
+    width: 620px;
+    // border: 3px solid $clock_color_main;
+    box-shadow: 0px 0px 60px $clock_color_main;
     border-radius: 50%;
 }
 
 .number {
-    color: green;
-    font-size: 100px;
-    border: 3px solid $clock_color_main;
+    display: flex;
+    color: $clock_color_main;
+    text-shadow: 1px 1px 4px white;
+    font-size: 70px;
+    font-family: anologue-number-Font;
+    // border: 3px solid $clock_color_main;
     height: 80px;
     width: 80px;
     border-radius: 50%;
     margin: -13px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 60px $clock_color_main;
 }
 
 .rotationdisc {
     position: absolute;
     height: 420px;
     width: 420px;
-    border: 2px solid $clock_color_main;
+    // border: 2px solid $clock_color_main;
     border-radius: 50%;
+    
 }
 
-
-  .disc1 {
+.disc1 {
+    transform: rotate(75deg);
+    box-shadow: inset 0px 0px 60px $clock_color_main;
+  }
+.number1 {
+    transform: rotate(-75deg);
+}
+.disc2 {
+    transform: rotate(105deg);
+}
+.number2 {
+    transform: rotate(-105deg);
+}
+.disc3 {
+    transform: rotate(135deg);
+}
+.number3 {
+    transform: rotate(-135deg);
+}
+.disc4 {
+    transform: rotate(165deg);
+}
+.number4 {
+    transform: rotate(-165deg);
+}
+.disc5 {
+    transform: rotate(195deg);
+}
+.number5 {
+    transform: rotate(-195deg);
+}
+.disc6 {
+    transform: rotate(225deg);
+}
+.number6 {
+    transform: rotate(-225deg);
+}
+.disc7 {
+    transform: rotate(255deg);
+}
+.number7 {
+    transform: rotate(-255deg);
+}
+.disc8 {
+    transform: rotate(285deg);
+}
+.number8 {
+    transform: rotate(-285deg);
+}
+.disc9 {
+    transform: rotate(315deg);
+}
+.number9 {
+    transform: rotate(-315deg);
+}
+.disc10 {
+    transform: rotate(345deg);
+}
+.number10 {
+    transform: rotate(-345deg);
+}
+.disc11 {
+transform: rotate(15deg);
+}
+.number11 {
+    transform: rotate(-15deg);
+}
+.disc12 {
     transform: rotate(45deg);
   }
-  .disc2 {
-    transform: rotate(75deg);
-  }
-  .disc3 {
-    transform: rotate(105deg);
-  }
-  .disc4 {
-    transform: rotate(135deg);
-  }
-  .disc5 {
-    transform: rotate(165deg);
-  }
-  .disc6 {
-    transform: rotate(195deg);
-  }
-  .disc7 {
-    transform: rotate(225deg);
-  }
-  .disc8 {
-    transform: rotate(255deg);
-  }
-  .disc9 {
-    transform: rotate(285deg);
-  }
-  .disc10 {
-    transform: rotate(315deg);
-  }
-  .disc11 {
-    transform: rotate(345deg);
-  }
-  .disc12 {
-    transform: rotate(15deg);
-  }
+.number12 {
+    transform: rotate(-45deg);
+}
