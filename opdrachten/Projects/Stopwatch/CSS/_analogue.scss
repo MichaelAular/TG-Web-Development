@@ -1,0 +1,27 @@
+.analogue_clock {
+    position: absolute;
+    // border: 1px solid red;
+    width: 750px;
+    height: 750px;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outerCircle {
+    position: absolute;
+    height: 750px;
+    width: 750px;
+    border: 3px solid $clock_color_main;
+    border-radius: 50%;
+}
+
+.innerCircle {
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border: 3px solid $clock_color_main;
+    border-radius: 50%;
+}

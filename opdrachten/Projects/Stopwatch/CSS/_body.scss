@@ -1,0 +1,17 @@
+body {
+    background-image: url('../img/vincent-bourilhon-time.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner {
+    position:absolute;
+    background-image: url('../img/seiko_logo.png');
+    background-repeat:no-repeat;
+    height: 180px;
+    width: 520px;
+    top: 100%;
+    right: -210%;
+    opacity: 0.3;
+}

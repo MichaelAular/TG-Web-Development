@@ -85,11 +85,9 @@
   src: url(../fonts/TickingTimebombBB.ttf);
 }
 
-body {
-  background-image: url("../img/vincent-bourilhon-time.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+@font-face {
+  font-family: anologue-number-Font;
+  src: url(../fonts/Via_Appia.ttf);
 }
 
 .container {
@@ -99,7 +97,7 @@ body {
   border-radius: 50%;
   margin-left: 15%;
   top: 20%;
-  background: radial-gradient(circle, #babac6 0%, #788387 100%);
+  background: radial-gradient(circle, #babac6 0%, gray 100%);
   -webkit-box-shadow: inset 0px 0px 0px 3px gray, inset 10px 20px 50px 10px black;
           box-shadow: inset 0px 0px 0px 3px gray, inset 10px 20px 50px 10px black;
 }
@@ -195,7 +193,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: gray;
-  text-shadow: 1px -2px 2px #5a5858;
+  text-shadow: 1px -2px 2px #585858;
 }
 
 .stopWatch {
@@ -220,6 +218,13 @@ body {
   opacity: 0;
 }
 
+body {
+  background-image: url("../img/vincent-bourilhon-time.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
 .banner {
   position: absolute;
   background-image: url("../img/seiko_logo.png");
@@ -229,5 +234,44 @@ body {
   top: 100%;
   right: -210%;
   opacity: 0.3;
+}
+
+.analogue_clock {
+  position: absolute;
+  width: 750px;
+  height: 750px;
+  top: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.outerCircle {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  border: 3px solid #3c9696;
+  border-radius: 50%;
+}
+
+.innerCircle {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  border: 3px solid #3c9696;
+  border-radius: 50%;
+}
+
+.test {
+  font-family: anologue-number-Font;
+  color: red;
+  font-size: 100px;
 }
 /*# sourceMappingURL=main.css.map */

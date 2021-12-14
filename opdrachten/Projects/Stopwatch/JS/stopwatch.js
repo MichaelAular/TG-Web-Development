@@ -92,6 +92,11 @@ function timerCycle() {
       sec = 0;
       centi = 0;
     }
+    if (min == 100) {
+      min =  0;
+      sec = 0;
+      centi = 0;
+    }
 
     if (centi < 10) {
       centi = '0' + centi;
@@ -107,14 +112,6 @@ function timerCycle() {
 
     setTimeout("timerCycle()", 10);
   }
-}
-
-function resetTimer() {
-    timer.innerHTML = '00:00:00';
-    stoptime = true;
-    hr = 0;
-    sec = 0;
-    min = 0;
 }
 
 function stopTimer() {

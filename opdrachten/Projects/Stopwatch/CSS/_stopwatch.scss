@@ -1,0 +1,103 @@
+
+.container {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-left: 15%;
+    top: 20%;
+    background: radial-gradient(circle, $light-gray 0%, $mid-gray 100%);
+    box-shadow: inset 0px 0px 0px 3px $mid-gray, inset 10px 20px 50px 10px black, ;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  left: 220px;
+  top: 100px;
+  width: 120px;
+  height: 120px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 180px;
+  left: 300px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    width: 208px;
+    height: 80px;
+    margin-left: 96px;
+    margin-top: 60px;
+    color: black;
+}
+
+.time {
+    position: absolute;
+    width: 240px;
+    height: 80px;
+    background-color: black;
+    font-family: time-Font;
+    color: $displayednumbers_color;
+    font-size: 80px;
+    padding-left: 60px;
+    padding-top: 7px;
+    align-items: center;
+    border-radius: 5px ;
+    margin-left: 50px;
+    margin-top: 160px;
+    display: flex;
+}
+
+.button_container {
+    position: absolute;
+    width: 208px;
+    height: 80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 270px;
+    margin-left: 96px;
+}
+
+.logo {
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $mid-gray;
+    text-shadow: 1px -2px 2px $dark-gray;
+}
+
+.stopWatch {
+    position: absolute;
+    width: 260px;
+    height: 80px;
+    background-color: black;
+    font-family: time-Font;
+    color: $displayednumbers_color;
+    font-size: 80px;
+    padding-left: 40px;
+    padding-top: 7px;
+    align-items: center;
+    border-radius: 5px ;
+    margin-left: 50px;
+    margin-top: 160px;
+    display: flex;
+    opacity: 0;
+}
