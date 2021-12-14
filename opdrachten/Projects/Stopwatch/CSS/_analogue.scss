@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.4;
 }
 
 .outerCircle {
@@ -25,3 +26,59 @@
     border: 3px solid $clock_color_main;
     border-radius: 50%;
 }
+
+.number {
+    color: green;
+    font-size: 100px;
+    border: 3px solid $clock_color_main;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: -13px;
+}
+
+.rotationdisc {
+    position: absolute;
+    height: 420px;
+    width: 420px;
+    border: 2px solid $clock_color_main;
+    border-radius: 50%;
+}
+
+
+  .disc1 {
+    transform: rotate(45deg);
+  }
+  .disc2 {
+    transform: rotate(75deg);
+  }
+  .disc3 {
+    transform: rotate(105deg);
+  }
+  .disc4 {
+    transform: rotate(135deg);
+  }
+  .disc5 {
+    transform: rotate(165deg);
+  }
+  .disc6 {
+    transform: rotate(195deg);
+  }
+  .disc7 {
+    transform: rotate(225deg);
+  }
+  .disc8 {
+    transform: rotate(255deg);
+  }
+  .disc9 {
+    transform: rotate(285deg);
+  }
+  .disc10 {
+    transform: rotate(315deg);
+  }
+  .disc11 {
+    transform: rotate(345deg);
+  }
+  .disc12 {
+    transform: rotate(15deg);
+  }

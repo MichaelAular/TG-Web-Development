@@ -234,6 +234,7 @@ body {
   top: 100%;
   right: -210%;
   opacity: 0.3;
+  z-index: 10;
 }
 
 .analogue_clock {
@@ -251,6 +252,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0.4;
 }
 
 .outerCircle {
@@ -267,6 +269,84 @@ body {
   width: 600px;
   border: 3px solid #3c9696;
   border-radius: 50%;
+}
+
+.number {
+  color: green;
+  font-size: 100px;
+  border: 3px solid #3c9696;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: -13px;
+}
+
+.rotationdisc {
+  position: absolute;
+  height: 420px;
+  width: 420px;
+  border: 2px solid #3c9696;
+  border-radius: 50%;
+}
+
+.disc1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.disc2 {
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+}
+
+.disc3 {
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+}
+
+.disc4 {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.disc5 {
+  -webkit-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.disc6 {
+  -webkit-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.disc7 {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.disc8 {
+  -webkit-transform: rotate(255deg);
+          transform: rotate(255deg);
+}
+
+.disc9 {
+  -webkit-transform: rotate(285deg);
+          transform: rotate(285deg);
+}
+
+.disc10 {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.disc11 {
+  -webkit-transform: rotate(345deg);
+          transform: rotate(345deg);
+}
+
+.disc12 {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 .test {

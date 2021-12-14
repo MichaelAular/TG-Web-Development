@@ -1,15 +1,15 @@
-/// /// /// /// const div elements (circle 3 pointers) /// /// /// ///
-const pointer_hour = document.createElement('div')
-pointer_hour.classList.add('point_H')
-analogue_clock.appendChild(pointer_hour)
+/// /// /// /// const div elements (circle 3 hands) /// /// /// ///
+const hand_hour = document.createElement('div')
+hand_hour.classList.add('hand_H')
+analogue_clock.appendChild(hand_hour)
 
-const pointer_minute = document.createElement('div')
-pointer_minute.classList.add('point_M')
-analogue_clock.appendChild(pointer_minute)
+const hand_minute = document.createElement('div')
+hand_minute.classList.add('hand_M')
+analogue_clock.appendChild(hand_minute)
 
-const pointer_second = document.createElement('div')
-pointer_second.classList.add('point_S')
-analogue_clock.appendChild(pointer_second)
+const hand_second = document.createElement('div')
+hand_second.classList.add('hand_S')
+analogue_clock.appendChild(hand_second)
 
 /// /// /// /// style  clock /// /// /// ///
 const outerCircle = document.createElement('div')
@@ -21,12 +21,14 @@ innerCircle.classList.add('innerCircle')
 analogue_clock.appendChild(innerCircle)
 
 for (i=1; i < 13 ; i++) {
-    let fiveMinuteMark = document.createElement('div')
-    fiveMinuteMark.classList.add('mark'+i)
-    analogue_clock.appendChild(fiveMinuteMark)
-}
-console.log(analogue_clock)
+    const rotationdisc = document.createElement('div')
+    rotationdisc.classList.add('disc'+i, 'rotationdisc')
+    analogue_clock.appendChild(rotationdisc)
 
+    const fiveMinuteMark = document.createElement('div')
+    fiveMinuteMark.classList.add('number'+i, 'number')
+    rotationdisc.appendChild(fiveMinuteMark)
+}
 /// /// /// /// style  3 pointers (hour minutes seconds) /// /// /// ///
 /// /// /// /// set time to clock /// /// /// ///
 
