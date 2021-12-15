@@ -3,16 +3,18 @@ body {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
 .banner {
     position:absolute;
     background-image: url('../img/seiko_logo.png');
     background-repeat:no-repeat;
-    height: 180px;
-    width: 520px;
-    top: 100%;
-    right: -210%;
+    background-size: contain;
+    height: 100px;
+    width: 300px;
+    bottom: -40%;
+    right: -215%;
     opacity: 0.3;
     z-index: -100;
 }

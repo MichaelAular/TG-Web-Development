@@ -1,14 +1,20 @@
 /// /// /// /// const div elements (circle 3 hands) /// /// /// ///
 const hand_hour = document.createElement('div')
-hand_hour.classList.add('hand_H')
+hand_hour.classList.add('hand_H', 'hand')
+// let content = document.createTextNode("data-hour-hand")
+// hand_hour.appendChild(content)
 analogue_clock.appendChild(hand_hour)
 
 const hand_minute = document.createElement('div')
-hand_minute.classList.add('hand_M')
+hand_minute.classList.add('hand_M', 'hand')
+// let content = document.createTextNode("data-minute-hand")
+// hand_minute.appendChild(content)
 analogue_clock.appendChild(hand_minute)
 
 const hand_second = document.createElement('div')
-hand_second.classList.add('hand_S')
+hand_second.classList.add('hand_S', 'hand')
+// let content = document.createTextNode("data-hour-hand")
+// hand_minute.appendChild(content)
 analogue_clock.appendChild(hand_second)
 
 /// /// /// /// style  clock /// /// /// ///
@@ -30,6 +36,20 @@ for (i=1; i < 13 ; i++) {
     fiveMinuteMark.innerHTML = i
     rotationdisc.appendChild(fiveMinuteMark)
 }
-/// /// /// /// style  3 pointers (hour minutes seconds) /// /// /// ///
-/// /// /// /// set time to clock /// /// /// ///
 
+/// /// /// /// set time to clock /// /// /// ///
+setInterval(setClock, 1000)
+
+function setClock() {
+    const currentDate = new Date()
+    const secondsRatio = currentDate.getSeconds() / 60
+    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+    const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
+    setRotation(hand_second, secondsRatio)
+    setRotation(hand_minute, minutesRatio)
+    setRotation(hand_hour, hoursRatio)
+}
+
+function setRotation(element, rotationRatio) {
+    element.style.setProperty('--rotation', rotationRatio * 360)
+}
