@@ -1,20 +1,14 @@
 /// /// /// /// const div elements (circle 3 hands) /// /// /// ///
 const hand_hour = document.createElement('div')
 hand_hour.classList.add('hand_H', 'hand')
-// let content = document.createTextNode("data-hour-hand")
-// hand_hour.appendChild(content)
 analogue_clock.appendChild(hand_hour)
 
 const hand_minute = document.createElement('div')
 hand_minute.classList.add('hand_M', 'hand')
-// let content = document.createTextNode("data-minute-hand")
-// hand_minute.appendChild(content)
 analogue_clock.appendChild(hand_minute)
 
 const hand_second = document.createElement('div')
 hand_second.classList.add('hand_S', 'hand')
-// let content = document.createTextNode("data-hour-hand")
-// hand_minute.appendChild(content)
 analogue_clock.appendChild(hand_second)
 
 /// /// /// /// style  clock /// /// /// ///

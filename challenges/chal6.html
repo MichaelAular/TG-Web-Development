@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chal6.scss" />
+    <title>chal6</title>
+  </head>
+
+  <body>
+    <input type="number" id="input" />
+    <button class="button" onclick="omzetten()">from number to text</button>
+    <div class="uitkomst"></div>
+
+    <script>
+      const nummer = ["", "een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen"];
+      const tienplus = ["tien", "elf", "twaalf", "dertien", "veertien", "vijftien", "zestien", "zeventien", "achttien", "negentien"];
+      const tientallen = ['',"tien", "twintig", "dertig", "veertig", "vijftig", "zestig", "zeventig", "tachtig", "negentig"];
+      const honderd = ["", "honderd", "tweehonderd", "driehonderd", "vierhonderd", "vijfhonderd", "zeshonderd", "zevenhonderd", "achthonderd", "negenhonderd"];
+
+      function omzetten() {
+        let getal = document.getElementById("input").value;
+
+        for (i = 0; i < 1; i++) {
+          const honderdGetallen = Math.floor(getal / 100);
+          const tienGetallen = Math.floor((getal - honderdGetallen * 100) / 10);
+          const heleGetallen = (getal - honderdGetallen * 100) - tienGetallen * 10;
+          let en = 'en'
+
+          if (tienGetallen < 2 || heleGetallen === 0) {
+            en = ''};
+
+          let textGetal = honderd[honderdGetallen] + nummer[heleGetallen] + en + tientallen[tienGetallen];
+          document.querySelector(".uitkomst").innerText = textGetal;
+        }
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAC,cAAc;CACxB",
+    "sources": [
+        "chal6.scss"
+    ],
+    "names": [],
+    "file": "chal6.css"
+}
