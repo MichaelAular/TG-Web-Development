@@ -20,8 +20,8 @@
       const honderd = ["", "honderd", "tweehonderd", "driehonderd", "vierhonderd", "vijfhonderd", "zeshonderd", "zevenhonderd", "achthonderd", "negenhonderd"];
 
       function omzetten() {
-          let getal = document.getElementById("input").value;
           for (i = 0; i < 1; i++) {
+          const getal = document.getElementById("input").value;
           const honderdGetallen = Math.floor(getal / 100);
           const tienGetallen = Math.floor((getal - honderdGetallen * 100) / 10);
           const heleGetallen = (getal - honderdGetallen * 100) - tienGetallen * 10;
@@ -32,8 +32,7 @@
             en = ''};
           if (honderdGetallen > 9) {
             console.log('max 3 cijfers');
-            break;
-          };
+            break;};
           if (uitzonderingsCheck > 10 && uitzonderingsCheck < 15) {
             let textGetal = honderd[honderdGetallen] + uitzondering[uitzonderingsCheck-11];
             document.querySelector(".uitkomst").innerText = textGetal;
@@ -41,7 +40,7 @@
             let textGetal = honderd[honderdGetallen] + nummer[heleGetallen] + en + tientallen[tienGetallen];
           document.querySelector(".uitkomst").innerText = textGetal;}
         };
-      };
+      }
     </script>
 
   </body>
