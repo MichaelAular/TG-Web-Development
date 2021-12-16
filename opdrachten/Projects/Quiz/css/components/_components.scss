@@ -1,0 +1,26 @@
+body {
+    background-color: $background_color;
+    font-family: script;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border: 1px solid $box_color;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/// /// set buttons /// ///
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: $box_color;
+    font-weight: bolder;
+}
+
