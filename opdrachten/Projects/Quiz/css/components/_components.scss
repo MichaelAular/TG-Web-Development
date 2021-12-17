@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 600px;
+    height: 620px;
     border: 1px solid $box_color;
     margin: auto;
     margin-top: 20px;
@@ -19,7 +19,7 @@ body {
 .page_Question {
     position: relative;
     width: 400px;
-    height: 600px;
+    height: 620px;
     background-color: $box_color;
     margin: auto;
     margin-top: 20px;
@@ -99,3 +99,12 @@ button {
 }
 
 /// /// /// question field /// /// ///
+.question {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    width: 360px;
+    height: 110px;
+    border-radius: 20px;
+    background-color: $background_color
+}

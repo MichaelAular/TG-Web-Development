@@ -15,6 +15,7 @@ function clickStart() {
         container.classList.add('page_Question', 'page1');
         constructButtons()
         constructAnswerblocks()
+        constructQuestion()
     }
 
 function constructButtons() {
@@ -48,10 +49,11 @@ function constructAnswerblocks() {
 }
 
 /// /// create question field /// ///
+function constructQuestion() {
 const question = document.createElement('div')
 question.classList.add('question')
 container.appendChild(question)
+}
 
-
-/// /// create question /// ///
+/// /// create questioncounter /// ///
 /// /// create answers /// ///

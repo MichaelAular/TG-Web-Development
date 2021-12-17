@@ -16,7 +16,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 400px;
-  height: 600px;
+  height: 620px;
   border: 1px solid teal;
   margin: auto;
   margin-top: 20px;
@@ -25,7 +25,7 @@ body {
 .page_Question {
   position: relative;
   width: 400px;
-  height: 600px;
+  height: 620px;
   background-color: teal;
   margin: auto;
   margin-top: 20px;
@@ -110,6 +110,16 @@ button:hover {
 
 .number2, .number4 {
   right: -15px;
+}
+
+.question {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  width: 360px;
+  height: 110px;
+  border-radius: 20px;
+  background-color: white;
 }
 
 * {
