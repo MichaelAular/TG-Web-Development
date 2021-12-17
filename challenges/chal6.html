@@ -27,10 +27,10 @@
           const uitzonderingsCheck = Math.floor(getal - honderdGetallen * 100);
           let en = 'en'
 
-          if (tienGetallen < 2 || heleGetallen === 0) {
-            en = ''};
           if (heleGetallen === 2 || heleGetallen === 3) {
             en = 'ën'};
+          if (tienGetallen < 2 || heleGetallen === 0) {
+            en = ''};
           if (honderdGetallen > 9) {
             return document.querySelector(".uitkomst").innerText = "getal kan niet groter dan 3";};
           if (uitzonderingsCheck > 10 && uitzonderingsCheck < 15) {
@@ -44,4 +44,3 @@
 
   </body>
 </html>
-

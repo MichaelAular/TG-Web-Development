@@ -4,8 +4,6 @@ body {
 }
 
 /// /// /// pages /// /// ///
-
-
 .page_Start {
     position: relative;
     display: flex;
@@ -20,9 +18,6 @@ body {
 
 .page_Question {
     position: relative;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     width: 400px;
     height: 600px;
     background-color: $box_color;
@@ -51,11 +46,43 @@ body {
 }
 
 .next_btn {
-    bottom: -70px;
+    bottom: -68px;
     left: 52%
 }
 
 .prev_btn {
-    bottom: -70px;
+    bottom: -68px;
     right: 52%
 }
+
+/// /// /// Options /// /// ///
+.option {
+    position: absolute;
+    width: 360px;
+    height: 50px;
+    background-color: $background_color;
+    left: 20px;
+}
+
+.option1 {
+    top: 250px;
+}
+.option2 {
+    top: 320px;
+}
+.option3 {
+    top: 390px;
+}
+.option4 {
+    top: 460px;
+}
+.option5 {
+    top: 530px;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    border: 10px solid $box_color;
+}
+
