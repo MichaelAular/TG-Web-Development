@@ -26,11 +26,19 @@ body {
 }
 
 /// /// set buttons /// ///
+button {
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    &:hover {
+        background-color: $button_hover_color
+    }
+}
+
 .start_btn {
     width: 200px;
     height: 50px;
     background-color: $box_color;
-    font-weight: bolder;
 }
 
 .btn {
@@ -38,11 +46,6 @@ body {
     width: 100px;
     height: 50px;
     background-color: $button_color;
-    border: none;
-    font-weight: bolder;
-    &:hover {
-        background-color: $button_hover_color;
-    }
 }
 
 .next_btn {
@@ -56,33 +59,43 @@ body {
 }
 
 /// /// /// Options /// /// ///
-.option {
+.answercontainer {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 390px;
+    gap: 20px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    position: relative;
     width: 360px;
     height: 50px;
     background-color: $background_color;
-    left: 20px;
-}
-
-.option1 {
-    top: 250px;
-}
-.option2 {
-    top: 320px;
-}
-.option3 {
-    top: 390px;
-}
-.option4 {
-    top: 460px;
-}
-.option5 {
-    top: 530px;
 }
 
 .number {
+    text-align: center;
+    position: absolute;
     width: 50px;
     height: 50px;
-    border: 10px solid $box_color;
+    border: 20px solid $box_color;
+    background-color: $background_color;
+    border-radius: 50%;
+    font-size: 40px;
+    top: -20px;
 }
 
+.number1, .number3, .number5{
+    left: -15px;
+}
+
+.number2, .number4 {
+    right: -15px;
+}
+
+/// /// /// question field /// /// ///

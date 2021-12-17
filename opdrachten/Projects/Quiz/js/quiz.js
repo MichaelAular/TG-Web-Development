@@ -20,29 +20,38 @@ function clickStart() {
 function constructButtons() {
     const prev_btn  = document.createElement('button');
     prev_btn.classList.add('prev_btn', 'btn');
-    prev_btn.innerText = 'BACK';
+    prev_btn.innerText = 'vorrige';
     container.appendChild(prev_btn);
     // prev_btn.onclick = () => {clickPrev()}
     const next_btn  = document.createElement('button');
     next_btn.classList.add('next_btn', 'btn');
-    next_btn.innerText = 'NEXT';
+    next_btn.innerText = 'volgende';
     container.appendChild(next_btn);
     // prev_btn.onclick = () => {clickNext()}
 }
 
 function constructAnswerblocks() {
+    const answercontainer = document.createElement('div')
+    answercontainer.classList.add('answercontainer')
+    container.appendChild(answercontainer)
+
     for (i=1 ; i < 6 ; i++) {
         const option = document.createElement('div')
         option.classList.add('option'+[i], 'option')
-        container.appendChild(option);
+        answercontainer.appendChild(option);
 
-        const number = document.createElement('div')
-        option.classList.add('number'+[i], 'number')
-        number.innerText = i
-        option.appendChild(number)
+        const numberSphere = document.createElement('div')
+        numberSphere.classList.add('number'+[i], 'number')
+        numberSphere.innerText = i
+        option.appendChild(numberSphere)
     }
 }
 
 /// /// create question field /// ///
+const question = document.createElement('div')
+question.classList.add('question')
+container.appendChild(question)
+
+
 /// /// create question /// ///
 /// /// create answers /// ///
