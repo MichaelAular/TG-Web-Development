@@ -35,6 +35,7 @@ button {
   font-weight: bolder;
   font-size: 20px;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
@@ -89,7 +90,9 @@ button:hover {
   position: relative;
   width: 360px;
   height: 50px;
+  font-size: 30px;
   background-color: white;
+  cursor: pointer;
 }
 
 .number {
@@ -112,14 +115,39 @@ button:hover {
   right: -15px;
 }
 
+.answerText {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+}
+
+.answerText1, .answerText3, .answerText5 {
+  left: 60px;
+}
+
+.answerText2, .answerText4 {
+  left: -20px;
+}
+
 .question {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 130px;
   left: 20px;
   width: 360px;
   height: 110px;
   border-radius: 20px;
   background-color: white;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .titleContainer {
@@ -144,10 +172,11 @@ button:hover {
   position: absolute;
   bottom: 0px;
   width: 360px;
-  height: 27px;
+  height: 30px;
   text-align: center;
   font-size: 28px;
   font-weight: bolder;
+  background-color: teal;
 }
 
 * {
