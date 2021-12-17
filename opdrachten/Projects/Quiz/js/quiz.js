@@ -10,13 +10,14 @@ start_btn.onclick = () => {clickStart()}
 
 /// /// /// functions /// /// ///
 function clickStart() {
-        container.classList.remove('page_Start');
-        container.removeChild(start_btn);
-        container.classList.add('page_Question', 'page1');
-        constructButtons()
-        constructAnswerblocks()
-        constructQuestion()
-    }
+    container.classList.remove('page_Start');
+    container.removeChild(start_btn);
+    container.classList.add('page_Question', 'page1');
+    constructButtons()
+    constructAnswerblocks()
+    constructQuestion()
+    constructTitle()
+}
 
 function constructButtons() {
     const prev_btn  = document.createElement('button');
@@ -24,6 +25,7 @@ function constructButtons() {
     prev_btn.innerText = 'vorrige';
     container.appendChild(prev_btn);
     // prev_btn.onclick = () => {clickPrev()}
+
     const next_btn  = document.createElement('button');
     next_btn.classList.add('next_btn', 'btn');
     next_btn.innerText = 'volgende';
@@ -41,19 +43,33 @@ function constructAnswerblocks() {
         option.classList.add('option'+[i], 'option')
         answercontainer.appendChild(option);
 
-        const numberSphere = document.createElement('div')
-        numberSphere.classList.add('number'+[i], 'number')
-        numberSphere.innerText = i
-        option.appendChild(numberSphere)
+        const numberCircle = document.createElement('div')
+        numberCircle.classList.add('number'+[i], 'number')
+        numberCircle.innerText = i
+        option.appendChild(numberCircle)
     }
 }
 
-/// /// create question field /// ///
 function constructQuestion() {
-const question = document.createElement('div')
-question.classList.add('question')
-container.appendChild(question)
+    const question = document.createElement('div')
+    question.classList.add('question')
+    container.appendChild(question)
 }
 
-/// /// create questioncounter /// ///
+function constructTitle() {
+    const titleContainer = document.createElement('div')
+    titleContainer.classList.add('titleContainer')
+    container.appendChild(titleContainer)
+
+    const title = document.createElement('div')
+    title.classList.add('title')
+    title.innerText = 'Math Problem'
+    titleContainer.appendChild(title)
+
+    const pageIndex= document.createElement('div')
+    pageIndex.classList.add('pageIndex')
+    pageIndex.innerText = "1 / 6"
+    titleContainer.appendChild(pageIndex)
+}
+
 /// /// create answers /// ///

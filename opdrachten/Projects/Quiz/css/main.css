@@ -122,6 +122,34 @@ button:hover {
   background-color: white;
 }
 
+.titleContainer {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 360px;
+  height: 100px;
+}
+
+.title {
+  position: absolute;
+  top: 0px;
+  width: 360px;
+  height: 70px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.pageIndex {
+  position: absolute;
+  bottom: 0px;
+  width: 360px;
+  height: 27px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
 * {
   font-family: "Indie Flower";
 }
