@@ -3,7 +3,10 @@ body {
     font-family: script;
 }
 
-.container {
+/// /// /// pages /// /// ///
+
+
+.page_Start {
     position: relative;
     display: flex;
     justify-content: center;
@@ -12,15 +15,47 @@ body {
     height: 600px;
     border: 1px solid $box_color;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+.page_Question {
+    position: relative;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 400px;
+    height: 600px;
+    background-color: $box_color;
+    margin: auto;
+    margin-top: 20px;
 }
 
 /// /// set buttons /// ///
-
-.btn {
+.start_btn {
     width: 200px;
     height: 50px;
     background-color: $box_color;
     font-weight: bolder;
 }
 
+.btn {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: $button_color;
+    border: none;
+    font-weight: bolder;
+    &:hover {
+        background-color: $button_hover_color;
+    }
+}
+
+.next_btn {
+    bottom: -70px;
+    left: 52%
+}
+
+.prev_btn {
+    bottom: -70px;
+    right: 52%
+}

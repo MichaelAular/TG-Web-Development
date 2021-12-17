@@ -4,7 +4,7 @@ body {
   font-family: script;
 }
 
-.container {
+.page_Start {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,14 +19,46 @@ body {
   height: 600px;
   border: 1px solid teal;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.btn {
+.page_Question {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background-color: teal;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.start_btn {
   width: 200px;
   height: 50px;
   background-color: teal;
   font-weight: bolder;
+}
+
+.btn {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: #04bdbc;
+  border: none;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background-color: #23dada;
+}
+
+.next_btn {
+  bottom: -70px;
+  left: 52%;
+}
+
+.prev_btn {
+  bottom: -70px;
+  right: 52%;
 }
 
 * {
