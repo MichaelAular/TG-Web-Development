@@ -87,7 +87,6 @@ button {
     width: 50px;
     height: 50px;
     border: 20px solid $box_color;
-    background-color: $background_color;
     border-radius: 50%;
     font-size: 40px;
     top: -20px;
@@ -159,4 +158,13 @@ button {
     font-size: 28px;
     font-weight: bolder;
     background-color: $box_color;
+}
+
+.correct {
+    background-color: $answer_correct_color;
+    ;
+}
+
+.wrong {
+    background-color: $answer_wrong_color;
 }

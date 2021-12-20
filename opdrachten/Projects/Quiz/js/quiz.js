@@ -2,7 +2,6 @@
 /// /// create start/// ///
 const page_start = document.querySelector('.page_Start');
 const container = document.querySelector('.container');
-const start_btn  = document.createElement('button');
 let pageCounter = 0
 
 /// /// create questions /// ///
@@ -11,9 +10,15 @@ const questionArray = ["49 - 32", "70 - 14", "80 - 15", "10 - 20", "56 + 11", "2
 /// /// create answers /// ///
 const answersArray = [
 "13", "17", "-17", "16", "697",
-"1", "2", "3", "4", "5",
-"a", "b", "c", "d", "e"]
+"18", "79", "56", "32", "34",
+"74", "65", "93", "40", "975",
+"-350", "-15", "-10", "-34", "-30",
+"102", "37", "44", "67", "50",
+"170", "18", "5", "2", "26"]
 
+let givenAnswers = []
+
+const start_btn  = document.createElement('button');
 start_btn.classList.add('start_btn')
 start_btn.innerText = 'START!'
 page_start.appendChild(start_btn)
@@ -48,11 +53,23 @@ function constructAnswerblocks() {
     const answercontainer = document.createElement('div')
     answercontainer.classList.add('answercontainer')
     container.appendChild(answercontainer)
+    let onetry = 0
+    console.log('given aswer was: '+givenAnswers[pageCounter])
 
     for (i=1 ; i < 6 ; i++) {
         const option = document.createElement('div')
         option.classList.add('option'+[i], 'option')
         answercontainer.appendChild(option);
+        if (givenAnswers.length > pageCounter){
+
+            console.log('pagin al eens bezocht')
+
+ 
+
+        }
+        else {
+        option.onclick = () => {clickInputAnswer()}
+        }
 
         const numberCircle = document.createElement('div')
         numberCircle.classList.add('number'+[i], 'number')
@@ -63,6 +80,24 @@ function constructAnswerblocks() {
         answerText.classList.add('answerText'+[i], 'answerText')
         answerText.innerText = answersArray[(pageCounter*5-1)+i]
         option.appendChild(answerText)
+
+        function clickInputAnswer() {
+            if (onetry === 0) {
+                onetry++
+                let clickedAnswer = eval(answerText.innerText)
+                givenAnswers.push(clickedAnswer)
+                let trueAnswer = eval(questionArray[pageCounter])
+                console.log(clickedAnswer)
+                console.log(trueAnswer)
+                if (clickedAnswer === trueAnswer) {
+                    option.classList.add('correct', 'chosen')
+                 }
+                else {
+                    option.classList.add('wrong', 'chosen')
+                }}
+            else {
+                return}
+        }
     }
 }
 
@@ -90,15 +125,15 @@ function constructTitle() {
 }
 
 function clickNext() {
-    pageCounter++
+    if (givenAnswers.length > pageCounter){
+        pageCounter++
     if (pageCounter > questionArray.length-1) {
         pageCounter = questionArray.length-1
     }
     constructTitle()
     constructAnswerblocks()
     constructQuestion()
-    console.log(pageCounter)
-}
+}}
 
 function clickPrev() {
     pageCounter--
@@ -108,6 +143,4 @@ function clickPrev() {
     constructTitle()
     constructAnswerblocks()
     constructQuestion()
-
-    console.log(pageCounter)
 }
