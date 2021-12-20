@@ -186,6 +186,10 @@ button:hover {
   background-color: #d52929;
 }
 
+.given {
+  background-color: #c4b5b5;
+}
+
 * {
   font-family: "Indie Flower";
 }

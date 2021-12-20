@@ -1,4 +1,3 @@
-
 /// /// create start/// ///
 const page_start = document.querySelector('.page_Start');
 const container = document.querySelector('.container');
@@ -54,23 +53,18 @@ function constructAnswerblocks() {
     answercontainer.classList.add('answercontainer')
     container.appendChild(answercontainer)
     let onetry = 0
-    console.log('given aswer was: '+givenAnswers[pageCounter])
+    const given = eval(givenAnswers[pageCounter])
+    console.log('given aswer was: ' + given)
 
     for (i=1 ; i < 6 ; i++) {
         const option = document.createElement('div')
-        option.classList.add('option'+[i], 'option')
+        option.classList.add('option', [i])
         answercontainer.appendChild(option);
-        if (givenAnswers.length > pageCounter){
-
-            console.log('pagin al eens bezocht')
-
- 
-
-        }
-        else {
-        option.onclick = () => {clickInputAnswer()}
+        if (givenAnswers.length <= pageCounter){
+            option.onclick = () => {clickInputAnswer()}
         }
 
+        let trueAnswer = eval(questionArray[pageCounter])
         const numberCircle = document.createElement('div')
         numberCircle.classList.add('number'+[i], 'number')
         numberCircle.innerText = i
@@ -81,19 +75,31 @@ function constructAnswerblocks() {
         answerText.innerText = answersArray[(pageCounter*5-1)+i]
         option.appendChild(answerText)
 
+        if (givenAnswers.length > pageCounter) {
+
+            let answers = eval(answerText.innerText)
+
+            if (answers === given) {
+               if (answers === trueAnswer) {
+                option.classList.add('correct')
+               } else  if (answers !== trueAnswer) {
+                option.classList.add('wrong')
+            }
+        }
+    }
+
         function clickInputAnswer() {
             if (onetry === 0) {
                 onetry++
                 let clickedAnswer = eval(answerText.innerText)
                 givenAnswers.push(clickedAnswer)
-                let trueAnswer = eval(questionArray[pageCounter])
                 console.log(clickedAnswer)
                 console.log(trueAnswer)
                 if (clickedAnswer === trueAnswer) {
-                    option.classList.add('correct', 'chosen')
+                    option.classList.add('correct')
                  }
                 else {
-                    option.classList.add('wrong', 'chosen')
+                    option.classList.add('wrong')
                 }}
             else {
                 return}
@@ -126,14 +132,14 @@ function constructTitle() {
 
 function clickNext() {
     if (givenAnswers.length > pageCounter){
-        pageCounter++
+        pageCounter++}
     if (pageCounter > questionArray.length-1) {
         pageCounter = questionArray.length-1
     }
     constructTitle()
     constructAnswerblocks()
     constructQuestion()
-}}
+}
 
 function clickPrev() {
     pageCounter--
