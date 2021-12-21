@@ -9,7 +9,6 @@ const answersArray = [
 "-350", "-15", "-10", "-34", "-30",
 "102", "37", "44", "67", "50",
 "170", "18", "5", "2", "26"]
-
 let givenAnswers = []
 let correctAnswers = []
 
@@ -35,14 +34,11 @@ function clickStart() {
 }
 
 function constructButtons() {
-    const container = document.querySelector('.container');
-
     const prev_btn  = document.createElement('button');
     prev_btn.classList.add('prev_btn', 'btn');
     prev_btn.innerText = 'vorrige';
     container.appendChild(prev_btn);
     prev_btn.onclick = () => {clickPrev()}
-
     const next_btn  = document.createElement('button');
     next_btn.classList.add('next_btn', 'btn');
     next_btn.innerText = 'volgende';
@@ -51,8 +47,6 @@ function constructButtons() {
 }
 
 function constructAnswerblocks() {
-    const container = document.querySelector('.container');
-
     const answercontainer = document.createElement('div')
     answercontainer.classList.add('answercontainer')
     container.appendChild(answercontainer)
@@ -72,16 +66,13 @@ function constructAnswerblocks() {
         numberCircle.classList.add('number'+[i], 'number')
         numberCircle.innerText = i
         option.appendChild(numberCircle)
-
         const answerText = document.createElement('div')
         answerText.classList.add('answerText'+[i], 'answerText')
         answerText.innerText = answersArray[(pageCounter*5-1)+i]
         option.appendChild(answerText)
 
         if (givenAnswers.length > pageCounter) {
-
             let answers = eval(answerText.innerText)
-
             if (answers === given) {
                if (answers === trueAnswer) {
                 option.classList.add('correct')
@@ -110,8 +101,6 @@ function constructAnswerblocks() {
 }
 
 function constructQuestion() {
-    const container = document.querySelector('.container');
-
     const question = document.createElement('div')
     question.classList.add('question')
     question.innerText = 'What is ' + questionArray[pageCounter]
@@ -119,16 +108,13 @@ function constructQuestion() {
 }
 
 function constructTitle() {
-    const container = document.querySelector('.container');
     const titleContainer = document.createElement('div')
     titleContainer.classList.add('titleContainer')
     container.appendChild(titleContainer)
-
     const title = document.createElement('div')
     title.classList.add('title')
     title.innerText = 'Math Problem'
     titleContainer.appendChild(title)
-
     const pageIndex= document.createElement('div')
     pageIndex.classList.add('pageIndex')
     pageIndex.innerText = pageCounter+1 + " / " + questionArray.length
@@ -136,17 +122,24 @@ function constructTitle() {
 }
 
 function clickNext() {
+        clear = document.querySelector('.container')
+
     if (givenAnswers.length > pageCounter){
-        pageCounter++}
+        pageCounter++
+        clear.innerHTML = ""
+        constructTitle()
+        constructAnswerblocks()
+        constructQuestion()
+        constructButtons()
+    }
     if (pageCounter > questionArray.length-1) {
         constructResult()
     }
-    constructTitle()
-    constructAnswerblocks()
-    constructQuestion()
 }
 
 function clickPrev() {
+    clear = document.querySelector('.container')
+    clear.innerHTML = ""
     pageCounter--
     if (pageCounter < 0 ) {
         pageCounter = 0
@@ -154,24 +147,22 @@ function clickPrev() {
     constructTitle()
     constructAnswerblocks()
     constructQuestion()
+    constructButtons()
 }
 
 function constructResult() {
-    const container = document.querySelector('.container');
-    container.remove();
-    const page_result = document.createElement('div')
-    document.body.appendChild(page_result);
-    page_result.classList.add('page_Start');
-
+    clear = document.querySelector('.container')
+    clear.innerHTML = ""
+    container.classList.add('page_Start');
+    container.classList.remove('page_Question')
     const resultText = document.createElement('div')
     resultText.classList.add('resultText')
-    page_result.appendChild(resultText)
-    resultText.innerText = 'Gefeliciteerd! Je hebt ' + correctAnswers.length + ' van de ' + questionArray.length + ' vagen goed!'
-
+    container.appendChild(resultText)
+    resultText.innerText = 'Gefeliciteerd! Je hebt ' + correctAnswers.length + ' van de ' + questionArray.length + ' vragen goed!'
     const restart_btn  = document.createElement('button');
     restart_btn.classList.add('btn', 'restart_btn')
     restart_btn.innerText = 'replay!'
-    page_result.appendChild(restart_btn)
+    container.appendChild(restart_btn)
     restart_btn.onclick = () => {clickRestart()}
 }
 
@@ -179,14 +170,10 @@ function constructResult() {
      givenAnswers.length = 0
      correctAnswers.length = 0
      pageCounter = 0
-
-     let allClear = document.querySelector('.page_Start')
-     document.body.removeChild(allClear);
-
-    const container = document.createElement('div')
-    document.body.appendChild(container);
-    container.classList.add('page_Question', 'container');
-
+    clear = document.querySelector('.container')
+    clear.innerHTML = "";
+    container.classList.remove('page_Start');
+    container.classList.add('page_Question');
     constructButtons()
     constructAnswerblocks()
     constructQuestion()
