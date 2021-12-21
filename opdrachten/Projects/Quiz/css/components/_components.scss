@@ -162,7 +162,6 @@ button {
 
 .correct {
     background-color: $answer_correct_color;
-    ;
 }
 
 .wrong {
@@ -171,5 +170,19 @@ button {
 
 .given {
     background-color: $answer_given_color;
+}
 
+.resultText {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 360px;
+    height: 300px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.restart_btn {
+    top: 400px;
 }

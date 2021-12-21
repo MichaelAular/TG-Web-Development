@@ -190,6 +190,21 @@ button:hover {
   background-color: #c4b5b5;
 }
 
+.resultText {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 360px;
+  height: 300px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.restart_btn {
+  top: 400px;
+}
+
 * {
   font-family: "Indie Flower";
 }

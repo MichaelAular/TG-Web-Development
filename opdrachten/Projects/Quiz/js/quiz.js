@@ -1,8 +1,3 @@
-/// /// create start/// ///
-const page_start = document.querySelector('.page_Start');
-const container = document.querySelector('.container');
-let pageCounter = 0
-
 /// /// create questions /// ///
 const questionArray = ["49 - 32", "70 - 14", "80 - 15", "10 - 20", "56 + 11", "21 - 16"];
 
@@ -16,7 +11,12 @@ const answersArray = [
 "170", "18", "5", "2", "26"]
 
 let givenAnswers = []
+let correctAnswers = []
 
+/// /// create start/// ///
+const page_start = document.querySelector('.page_Start');
+const container = document.querySelector('.container');
+let pageCounter = 0
 const start_btn  = document.createElement('button');
 start_btn.classList.add('start_btn')
 start_btn.innerText = 'START!'
@@ -54,7 +54,6 @@ function constructAnswerblocks() {
     container.appendChild(answercontainer)
     let onetry = 0
     const given = eval(givenAnswers[pageCounter])
-    console.log('given aswer was: ' + given)
 
     for (i=1 ; i < 6 ; i++) {
         const option = document.createElement('div')
@@ -93,15 +92,14 @@ function constructAnswerblocks() {
                 onetry++
                 let clickedAnswer = eval(answerText.innerText)
                 givenAnswers.push(clickedAnswer)
-                console.log(clickedAnswer)
-                console.log(trueAnswer)
                 if (clickedAnswer === trueAnswer) {
                     option.classList.add('correct')
+                    correctAnswers.push('x')
                  }
                 else {
                     option.classList.add('wrong')
-                }}
-            else {
+                }
+            } else {
                 return}
         }
     }
@@ -134,7 +132,7 @@ function clickNext() {
     if (givenAnswers.length > pageCounter){
         pageCounter++}
     if (pageCounter > questionArray.length-1) {
-        pageCounter = questionArray.length-1
+        constructResult()
     }
     constructTitle()
     constructAnswerblocks()
@@ -150,3 +148,38 @@ function clickPrev() {
     constructAnswerblocks()
     constructQuestion()
 }
+
+function constructResult() {
+    container.remove();
+    const page_result = document.createElement('div')
+    document.body.appendChild(page_result);
+    page_result.classList.add('page_Start');
+
+    const resultText = document.createElement('div')
+    resultText.classList.add('resultText')
+    page_result.appendChild(resultText)
+    resultText.innerText = 'Gefeliciteerd! Je hebt ' + correctAnswers.length + ' van de ' + questionArray.length + ' vagen goed!'
+
+    const restart_btn  = document.createElement('button');
+    restart_btn.classList.add('btn', 'restart_btn')
+    restart_btn.innerText = 'replay!'
+    page_result.appendChild(restart_btn)
+    restart_btn.onclick = () => {clickRestart()}
+}
+
+ function clickRestart() {
+     givenAnswers.length = 0
+     correctAnswers.length = 0
+
+     let allClear = document.querySelector('.page_Start')
+     document.body.removeChild(allClear);
+
+    const container = document.createElement('div')
+    document.body.appendChild(container);
+    container.classList.add('page_Question', 'container');
+
+    constructButtons()
+    constructAnswerblocks()
+    constructQuestion()
+    constructTitle()
+ }
