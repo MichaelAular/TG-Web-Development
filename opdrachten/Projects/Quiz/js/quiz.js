@@ -35,6 +35,8 @@ function clickStart() {
 }
 
 function constructButtons() {
+    const container = document.querySelector('.container');
+
     const prev_btn  = document.createElement('button');
     prev_btn.classList.add('prev_btn', 'btn');
     prev_btn.innerText = 'vorrige';
@@ -49,6 +51,8 @@ function constructButtons() {
 }
 
 function constructAnswerblocks() {
+    const container = document.querySelector('.container');
+
     const answercontainer = document.createElement('div')
     answercontainer.classList.add('answercontainer')
     container.appendChild(answercontainer)
@@ -106,6 +110,8 @@ function constructAnswerblocks() {
 }
 
 function constructQuestion() {
+    const container = document.querySelector('.container');
+
     const question = document.createElement('div')
     question.classList.add('question')
     question.innerText = 'What is ' + questionArray[pageCounter]
@@ -113,6 +119,7 @@ function constructQuestion() {
 }
 
 function constructTitle() {
+    const container = document.querySelector('.container');
     const titleContainer = document.createElement('div')
     titleContainer.classList.add('titleContainer')
     container.appendChild(titleContainer)
@@ -150,6 +157,7 @@ function clickPrev() {
 }
 
 function constructResult() {
+    const container = document.querySelector('.container');
     container.remove();
     const page_result = document.createElement('div')
     document.body.appendChild(page_result);
@@ -170,6 +178,7 @@ function constructResult() {
  function clickRestart() {
      givenAnswers.length = 0
      correctAnswers.length = 0
+     pageCounter = 0
 
      let allClear = document.querySelector('.page_Start')
      document.body.removeChild(allClear);
