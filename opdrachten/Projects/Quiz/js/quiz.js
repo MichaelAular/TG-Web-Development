@@ -1,16 +1,30 @@
 /// /// create questions /// ///
-const questionArray = ["49 - 32", "70 - 14", "80 - 15", "10 - 20", "56 + 11", "21 - 16"];
+const questionArrayRandom = []
+for (i = 0 ; i < 10 ; i++) {
+    const a = Math.floor(Math.random() * (300 - 1))
+    const b = Math.floor(Math.random() * (300 - 1))
+    let question = a + ' + ' + b
+    questionArrayRandom.push(question)
+}
 
 /// /// create answers /// ///
-const answersArray = [
-"13", "17", "-17", "16", "697",
-"18", "79", "56", "32", "34",
-"74", "65", "93", "40", "975",
-"-350", "-15", "-10", "-34", "-30",
-"102", "37", "44", "67", "50",
-"170", "18", "5", "2", "26"]
+let answerArrayRandom = []
+let trueAnswers = []
 let givenAnswers = []
 let correctAnswers = []
+
+for (iTrue = 0 ; iTrue < 10 ; iTrue++) {
+    let trueAnswer =  eval(questionArrayRandom[iTrue])
+    trueAnswers.push(trueAnswer)
+    //  answerArrayRandom[getRandomNumber(0, 4)] = correctAnswer;
+    answerArrayRandom.push(trueAnswer)
+    for (iFalse = 0 ; iFalse < 4; iFalse++) {
+        const a = Math.floor(Math.random() * (600 - 1))
+        answerArrayRandom.push(a)
+    }
+}
+console.log(answerArrayRandom)
+console.log(trueAnswers)
 
 /// /// create start/// ///
 const page_start = document.querySelector('.page_Start');
@@ -53,6 +67,15 @@ function constructAnswerblocks() {
     let onetry = 0
     const given = eval(givenAnswers[pageCounter])
 
+
+
+    const answerTextArray = []
+        for (i = 0 ; i < 5 ; i++) {
+        const tempAnswer = answerArrayRandom[(pageCounter*5)+i]
+        answerTextArray.push(tempAnswer)
+        }
+        console.log(answerTextArray)
+
     for (i=1 ; i < 6 ; i++) {
         const option = document.createElement('div')
         option.classList.add('option', [i])
@@ -61,15 +84,39 @@ function constructAnswerblocks() {
             option.onclick = () => {clickInputAnswer()}
         }
 
-        let trueAnswer = eval(questionArray[pageCounter])
+        let trueAnswer = eval(questionArrayRandom[pageCounter])
+        console.log('trueAnswer = '+trueAnswer)
         const numberCircle = document.createElement('div')
         numberCircle.classList.add('number'+[i], 'number')
         numberCircle.innerText = i
         option.appendChild(numberCircle)
+
+
+
         const answerText = document.createElement('div')
+
+        // function shuffle(answerTextArray) {
+        //     let m = answerTextArray.length
+        //     // While there remain elements to shuffle…
+        //     while (m) {
+        //       // Pick a remaining element…
+        //       i = Math.floor(Math.random() * m--);
+        //       // And swap it with the current element.
+        //       t = answerTextArray[m];
+        //       answerTextArray[m] = answerTextArray[i];
+        //       answerTextArray[i] = t;
+        //     }
+        //     console.log(answerTextArray)
+        //   }
+
+        //   shuffle()
+
         answerText.classList.add('answerText'+[i], 'answerText')
-        answerText.innerText = answersArray[(pageCounter*5-1)+i]
+        answerText.innerText = answerArrayRandom[(pageCounter*5-1)+i]
         option.appendChild(answerText)
+
+
+
 
         if (givenAnswers.length > pageCounter) {
             let answers = eval(answerText.innerText)
@@ -103,7 +150,7 @@ function constructAnswerblocks() {
 function constructQuestion() {
     const question = document.createElement('div')
     question.classList.add('question')
-    question.innerText = 'What is ' + questionArray[pageCounter]
+    question.innerText = 'What is ' + questionArrayRandom[pageCounter]
     container.appendChild(question)
 }
 
@@ -117,7 +164,7 @@ function constructTitle() {
     titleContainer.appendChild(title)
     const pageIndex= document.createElement('div')
     pageIndex.classList.add('pageIndex')
-    pageIndex.innerText = pageCounter+1 + " / " + questionArray.length
+    pageIndex.innerText = pageCounter+1 + " / " + questionArrayRandom.length
     titleContainer.appendChild(pageIndex)
 }
 
@@ -132,7 +179,7 @@ function clickNext() {
         constructQuestion()
         constructButtons()
     }
-    if (pageCounter > questionArray.length-1) {
+    if (pageCounter > questionArrayRandom.length-1) {
         constructResult()
     }
 }
@@ -158,7 +205,7 @@ function constructResult() {
     const resultText = document.createElement('div')
     resultText.classList.add('resultText')
     container.appendChild(resultText)
-    resultText.innerText = 'Gefeliciteerd! Je hebt ' + correctAnswers.length + ' van de ' + questionArray.length + ' vragen goed!'
+    resultText.innerText = 'Gefeliciteerd! Je hebt ' + correctAnswers.length + ' van de ' + questionArrayRandom.length + ' vragen goed!'
     const restart_btn  = document.createElement('button');
     restart_btn.classList.add('btn', 'restart_btn')
     restart_btn.innerText = 'replay!'
