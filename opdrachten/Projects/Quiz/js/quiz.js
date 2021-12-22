@@ -1,9 +1,12 @@
 /// /// create questions /// ///
+const plusminArray = ["+", "-"]
 const questionArrayRandom = []
 for (i = 0 ; i < 10 ; i++) {
+    const randomSpot = Math.floor(Math.random() * 2 - 0)
+    const plusmin = plusminArray[randomSpot]
     const a = Math.floor(Math.random() * (300 - 1))
-    const b = Math.floor(Math.random() * (300 - 1))
-    let question = a + ' + ' + b
+    const b = Math.floor(Math.random() * (a - 1))
+    let question = a + ' ' + plusmin + ' ' + b
     questionArrayRandom.push(question)
 }
 
@@ -60,7 +63,7 @@ function constructAnswerblocks() {
 
     const answerTextArray = []
         for (i = 0 ; i < 4 ; i++) {
-                const a = Math.floor(Math.random() * (600 - 1))
+                const a = Math.floor(Math.random() * (600 - 0))
                 answerTextArray.push(a)
         }
         let randomSpot = Math.floor(Math.random() * 5 - 0)
@@ -75,7 +78,6 @@ function constructAnswerblocks() {
         }
 
         let trueAnswer = eval(questionArrayRandom[pageCounter])
-        console.log('trueAnswer = '+trueAnswer)
         const numberCircle = document.createElement('div')
         numberCircle.classList.add('number'+[i], 'number')
         numberCircle.innerText = i
