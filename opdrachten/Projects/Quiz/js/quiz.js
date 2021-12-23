@@ -6,6 +6,7 @@ for (i = 0 ; i < 10 ; i++) {
     const plusmin = plusminArray[randomSpot]
     const a = Math.floor(Math.random() * (300 - 1))
     const b = Math.floor(Math.random() * (a - 1))
+
     let question = a + ' ' + plusmin + ' ' + b
     questionArrayRandom.push(question)
 }
@@ -71,7 +72,7 @@ function constructAnswerblocks() {
 
     for (i=1 ; i < 6 ; i++) {
         const option = document.createElement('div')
-        option.classList.add('option', [i])
+        option.classList.add('option', 'option' + [i])
         answercontainer.appendChild(option);
         if (givenAnswers.length <= pageCounter){
             option.onclick = () => {clickInputAnswer()}
@@ -90,14 +91,28 @@ function constructAnswerblocks() {
         answerText.innerText = answerTextArray[i-1]
 
         if (givenAnswers.length > pageCounter) {
-            let answers = eval(answerText.innerText)
-            if (answers === given) {
-               if (answers === trueAnswer) {
-                option.classList.add('correct')
-               } else  if (answers !== trueAnswer) {
-                option.classList.add('wrong')
-            }
-        }
+            let answers = []
+            answers.push(Math.floor(Math.random() * (300 - 1)))
+            answers.push(Math.floor(Math.random() * (300 - 1)))
+            answers.push(Math.floor(Math.random() * (300 - 1)))
+            if (givenAnswers[pageCounter] == trueAnswers[pageCounter]) {
+                answers.push(Math.floor(Math.random() * (300 - 1)))
+                console.log('random answer')
+            } else { answers.push(givenAnswers[pageCounter])
+            console.log('give answer')}
+            answers.push(trueAnswers[pageCounter])
+            answerText.innerText = answers[i-1]
+            console.log('answers: ' + answers)
+
+            const chosen = document.querySelectorAll(".option")
+            chosen.forEach( function (q) {
+                if(eval(q.innerText) === trueAnswer) {
+                    console.log("True")
+                    q.classList.add('correct')
+                } else if(eval(q.innerText) !== trueAnswer) {
+                    q.classList.add('wrong')
+                }
+            })
     }
 
         function clickInputAnswer() {
@@ -106,7 +121,7 @@ function constructAnswerblocks() {
                 let clickedAnswer = eval(answerText.innerText)
                 givenAnswers.push(clickedAnswer)
                 if (clickedAnswer === trueAnswer) {
-                    option.classList.add('correct')
+                   option.classList.add('correct')
                     correctAnswers.push('x')
                  }
                 else {
