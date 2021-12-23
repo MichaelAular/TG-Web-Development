@@ -19,6 +19,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  background-image: url("./img/background_archer.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .button-container {
@@ -31,14 +38,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: red;
-  width: 600px;
-  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#727bbb), to(black));
+  background: linear-gradient(180deg, #727bbb 0%, black 100%);
+  width: 500px;
+  height: 300px;
   gap: 1rem;
+  border-radius: 15px;
 }
 
 .btn {
-  background-color: aquamarine;
+  background: -webkit-gradient(linear, left bottom, left top, from(#727bbb), to(black));
+  background: linear-gradient(0deg, #727bbb 0%, black 100%);
   padding: 0.5rem 0.5rem;
   cursor: pointer;
   z-index: 1;
@@ -49,6 +59,7 @@ body {
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 1px solid black;
 }
 
 #overlay {
@@ -69,13 +80,14 @@ body {
 
 .modal {
   position: relative;
-  width: 200px;
-  height: 100px;
+  width: 600px;
+  height: 400px;
   display: block;
   position: absolute;
   padding: 4rem 4rem;
-  background-color: white;
+  background-color: black;
   z-index: 1;
+  border-radius: 10px;
 }
 
 .close {
@@ -84,6 +96,7 @@ body {
   right: 10px;
   content: "x";
   cursor: pointer;
+  color: white;
   /* z-index: 100; */
 }
 
