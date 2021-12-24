@@ -1,112 +1,58 @@
+const buttonContainer = document.querySelector(".button-container");
+const button_archer = document.querySelector(".archer")
+const button_lana = document.querySelector(".lana")
+const button_krieger = document.querySelector(".krieger")
 
-      const catBtn = document.querySelector('.cat-btn');
-      const dogBtn = document.querySelector('.dog-btn');
-      const parrotBtn = document.querySelector('.parrot-btn');
-      const buttons = document.querySelectorAll('.btn');
-      const buttonContainer = document.querySelector('.button-container');
-      const overlay = document.getElementById('overlay');
-      const fact = document.querySelector('.fact');
+const archerFacts = [
+"Archer Fact1",
+"Archer Fact2",
+"Archer Fact3",
+"Archer Fact4",
+"Archer Fact5"];
 
-      console.log('BUTTON CONTAINER SELECTOR', buttonContainer);
+const lanaFacts = [
+"Lana Fact1",
+"Lana Fact2",
+"Lana Fact3",
+"Lana Fact4",
+"Lana Fact5"];
 
-      const catFacts = ['catFact1', 'catFact2', 'catFact3', 'catFact4', 'catFact5'];
-      const dogFacts = ['dogFact1', 'dogFact2', 'dogFact3', 'dogFact4', 'dogFact5'];
-      const parrotfacts = [
-        'parrotFact1',
-        'parrotFact2',
-        'parrotFact3',
-        'parrotFact4',
-        'parrotFact5',
-      ];
+const kriegerfacts = [
+"Krieger Fact1",
+"Krieger Fact2",
+"Krieger Fact3",
+"Krieger Fact4",
+"Krieger Fact5"];
 
-      const getRandom = (min, max) => {
-        return Math.floor(Math.random() * max) + min;
-      };
+const modalContainer = document.createElement('div')
+modalContainer.classList.add('modalContainer')
+document.body.appendChild(modalContainer)
 
-      const createModal = () => {
-        // create and element with the class of modal that
-        // has a span with a close class and a fact class
+const modal = document.createElement('div')
+modal.classList.add('modal')
+modalContainer.appendChild(modal)
 
-        const newModal = document.createElement('div');
+const closeBtn = document.createElement('button')
+closeBtn.classList.add('close')
+modal.appendChild(closeBtn)
+closeBtn.innerText = 'X'
 
-        // add the modal class to the newly created div
-        newModal.classList.add('modal');
+const facts = document.createElement('div')
+facts.classList.add('facts')
+modal.appendChild(facts);
 
-        // create a close span
+button_archer.addEventListener('click', () => {
+    modalContainer.classList.add('show')
+});
 
-        const newCloseSpan = document.createElement('span');
-        newCloseSpan.classList.add('close');
+button_lana.addEventListener('click', () => {
+    modalContainer.classList.add('show')
+});
 
-        newCloseSpan.innerText = 'X';
+button_krieger.addEventListener('click', () => {
+    modalContainer.classList.add('show')
+});
 
-        newCloseSpan.onclick = () => {
-          overlay.style.opacity = '0';
-          newModal.remove();
-        };
-
-        // create a fact span
-
-        const newFactSpan = document.createElement('span');
-        newFactSpan.classList.add('fact');
-
-        // add close and fact span to new innerHTML of newmodal
-
-        newModal.appendChild(newCloseSpan);
-        newModal.appendChild(newFactSpan);
-
-        buttonContainer.append(newModal);
-      };
-
-      for (let i = 0; i < buttons.length; i++) {
-        buttons[i].onclick = () => {
-          const modal = document.querySelector('.modal');
-          const overlay = document.querySelector('#overlay')
-
-          overlay.classList.add('open')
-
-          if (modal) return;
-
-        createModal();
-
-        };
-      }
-
-      window.addEventListener('click', (event) => {
-        const close = document.querySelector('.close');
-
-        if (event.target === close || event.target === overlay) {
-          const modal = document.querySelector('.modal');
-          overlay.classList.remove('open');
-          console.log(modal)
-          modal.remove();
-        }
-      })
-      // catBtn.onclick = () => {
-      //   const catFact = catFacts[getRandom(0, 5)];
-
-      //   console.log('CAT FACT', catFact);
-
-      //   // when button is clicked overlay height = 100%
-      //   overlay.style.height = '100%';
-      //   // modal opens
-      //   modal.style.display = 'block';
-      //   // random cat fact is inserted into the box
-
-      //   fact.textContent = catFact;
-      // };
-
-      // function closeFunction2() {
-      //   console.log('log something');
-      // }
-
-      // const closeFunc = () => {
-      //   console.log('somethimg');
-      // };
-
-      // close.addEventListener('click', () => {
-      //   console.log('click click click');
-      // });
-
-      // close.addEventListener('mouseover', function () {
-      //   console.log('mouseover');
-      // });
+closeBtn.addEventListener('click', () => {
+    modalContainer.classList.remove('show')
+})
