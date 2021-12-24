@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type='text/javascript' defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="inputveld">
+            <label for=".naam">Naam:</label>
+            <input type="text" class='naam' placeholder='Naam'>
+
+            <label for=".tel">Telefoonnummer:</label>
+            <input type="number" class='tel' placeholder='Telefoonnummer'>
+
+            <label for=".straat">Straatnaam:</label>
+            <input type="text" class='straat' placeholder='Straatnaam'>
+
+            <label for=".huisnummer">Huisnummer:</label>
+            <input type="number" class='huisnummer' placeholder='Huisnummer'>
+
+            <label for=".postcode">Postcode:</label>
+            <input type="text" class='postcode' placeholder='Postcode'>
+
+            <label for=".stad">Stad:</label>
+            <input type="text" class='stad' placeholder='Stad'>
+
+            <label for=".email">Email:</label>
+            <input type="email" class='email' placeholder='Email'>
+
+            <button onclick="input()">Verzend</button>
+        </div>
+        <div class="card">
+            Naam <span class="displayNaam"></span> <br>
+            Telefoonnummer <span class="displayTel"></span><br>
+            Adres <span class="displayStraat"></span>
+            <span class="displayHuisNummer"></span>
+            <span class="displayPostcode"></span>
+            <span class="displayStad"></span> <br>
+            Email <span class="displayEmail"></span><br>
+            UserID <span class="displayUserID"></span>
+        </div>
+    </div>
+</body>
+</html>
