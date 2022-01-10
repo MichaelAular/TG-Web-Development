@@ -4,9 +4,9 @@ const button_lana = document.querySelector(".lana")
 const button_krieger = document.querySelector(".krieger")
 
 const archerFacts = [
-"Archer Fact1",
-"Archer Fact2",
-"Archer Fact3",
+"Archers codename is Duchess, after his mother's dog.",
+"Archer and the others were hired to save the life of a brilliant scientist by shrinking down and destroying a lethal blood clot in his brain",
+"Archer got married to Katya Kasanova, a former KGB spymaster who later died in a atemp to kill Archers nemesis Barry the Cyborg.",
 "Archer Fact4",
 "Archer Fact5"];
 
@@ -17,8 +17,8 @@ const lanaFacts = [
 "Lana Fact4",
 "Lana Fact5"];
 
-const kriegerfacts = [
-"Krieger Fact1",
+const kriegerFacts = [
+"Krieger build fort Kickass",
 "Krieger Fact2",
 "Krieger Fact3",
 "Krieger Fact4",
@@ -39,20 +39,30 @@ closeBtn.innerText = 'X'
 
 const facts = document.createElement('div')
 facts.classList.add('facts')
-modal.appendChild(facts);
+modal.appendChild(facts)
 
 button_archer.addEventListener('click', () => {
+    const facts = document.querySelector('.facts')
     modalContainer.classList.add('show')
+    const randomfact = Math.floor(Math.random() * (5 - 0))
+    facts.innerText = archerFacts[randomfact]
 });
 
 button_lana.addEventListener('click', () => {
+    const facts = document.querySelector('.facts')
     modalContainer.classList.add('show')
+    const randomfact = Math.floor(Math.random() * (5 - 0))
+    facts.innerText = lanaFacts[randomfact]
 });
 
 button_krieger.addEventListener('click', () => {
+    const facts = document.querySelector('.facts')
     modalContainer.classList.add('show')
+    const randomfact = Math.floor(Math.random() * (5 - 0))
+    facts.innerText = kriegerFacts[randomfact]
 });
 
 closeBtn.addEventListener('click', () => {
     modalContainer.classList.remove('show')
+    facts.innerText = ""
 })

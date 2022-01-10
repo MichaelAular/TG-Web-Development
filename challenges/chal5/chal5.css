@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:ital,wght@1,500&display=swap");
 *,
 *::after,
 *::before {
@@ -26,6 +27,8 @@ body {
   overflow: hidden;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  color: white;
+  font-size: 40px;
 }
 
 .button-container {
@@ -98,5 +101,18 @@ body {
   height: 350px;
   border-radius: 20px;
   padding: 20px 20px;
+  font-family: Amatic SC;
+  text-align: center;
+}
+
+.close {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+.close:hover {
+  font-size: 32px;
 }
 /*# sourceMappingURL=chal5.css.map */
